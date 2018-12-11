@@ -1,4 +1,4 @@
-package com.lijian.jackon;
+package com.lijian.json.jackon;
 
 import com.oracle.webservices.internal.api.databinding.DatabindingMode;
 import lombok.AllArgsConstructor;

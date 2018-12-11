@@ -1,11 +1,9 @@
 package com.lijian.jackson;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.core.JsonToken;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.lijian.jackon.Friend;
+import com.lijian.json.jackon.Friend;
 import org.junit.Test;
 
 import java.io.File;
