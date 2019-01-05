@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<world>
+    <comuntry id="1">
+        <name>China</name>
+        <capital>Beijing</capital>
+        <population>1234</population>
+        <area>960</area>
+    </comuntry>
+    <comuntry id="2">
+        <name id="">America</name>
+        <capital>Washington</capital>
+        <population>234</population>
+        <area>900</area>
+    </comuntry>
+    <comuntry id="3">
+        <name >Japan</name>
+        <capital>Tokyo</capital>
+        <population>234</population>
+        <area>60</area>
+    </comuntry>
+    <comuntry id="4">
+        <name >Russia</name>
+        <capital>Moscow</capital>
+        <population>34</population>
+        <area>1960</area>
+    </comuntry>
+    <user name ="lijian" age="20" school="five-moddel"></user>
+    <user name="liumin" age="18" school="first-moddel"></user>
+</world>
+
