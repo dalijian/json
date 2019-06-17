@@ -28,7 +28,7 @@ public class Test
             index++;  
             System.out.println("2= " + getTimes()+" "  +index);
             System.out.println(Thread.currentThread().getName());
-            if(index >=10){
+            if(index >=100){
                 stp.shutdown();
                 if(stp.isShutdown()){
                     System.out.println("停止了？？？？");

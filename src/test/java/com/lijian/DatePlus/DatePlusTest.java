@@ -2,6 +2,7 @@ package com.lijian.DatePlus;
 
 import org.junit.Test;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -38,5 +39,20 @@ public class DatePlusTest {
         }
         System.out.println(list.size());
         System.out.println(list);
+    }
+    @Test
+    public void test1() throws ParseException {
+
+
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        Date d;
+
+
+        Calendar ca = Calendar.getInstance();
+        ca.add(Calendar.DATE, -1);// num为增加的天数，可以改变的
+        d = ca.getTime();
+        Date lastDate = format.parse(format.format(d));
+        System.out.println(lastDate);
+
     }
 }

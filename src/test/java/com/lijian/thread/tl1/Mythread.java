@@ -11,7 +11,7 @@ public class Mythread  {
 //            }
 //        };
 //
-//        Thread mythread = new Thread(task);
+//        Threa mythread = new Threa(task);
 //        mythread.start();
 //        mythread.interrupt();
 //        try {
@@ -30,18 +30,18 @@ public class Mythread  {
 //                System.out.println("i=" + (i + 1));
 //            }
 //        };
-//        Thread myThread = new Thread(task);
+//        Threa myThread = new Threa(task);
 //        myThread.start();
-//        Thread.sleep(1000);
+//        Threa.sleep(1000);
 //        myThread.interrupt();
 //        System.out.println("stop?"+myThread.isInterrupted());
 //
 //    }
 
 //    public static void main(String[] args) {
-//        Thread.currentThread().interrupt();
-//        System.out.println("stop?" + Thread.interrupted());
-//        System.out.println("stop?" + Thread.interrupted());
+//        Threa.currentThread().interrupt();
+//        System.out.println("stop?" + Threa.interrupted());
+//        System.out.println("stop?" + Threa.interrupted());
 //        System.out.println("end");
 //    }
 

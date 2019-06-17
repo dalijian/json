@@ -1,9 +1,9 @@
 package com.lijian.thread.chapter2.t2;
 
 public class HasSelfPrivateNum {
+private int num =0;
+  synchronized  public void addI(String username) {
 
-    public void addI(String username) {
-        int num =0;
         if (username.equals("a")) {
             num=100;
             System.out.println("a set over");

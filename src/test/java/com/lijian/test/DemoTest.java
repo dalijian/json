@@ -1,14 +1,32 @@
 package com.lijian.test;
 
+import java.awt.*;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.math.BigDecimal;
+import java.sql.Timestamp;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.atomic.AtomicLongFieldUpdater;
+import java.util.concurrent.atomic.AtomicReference;
+
+import org.apache.commons.logging.Log;
 import org.junit.Test;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
+import org.springframework.web.client.RestTemplate;
 
 public class DemoTest {
     public static void main(String[] args) {
@@ -185,5 +203,133 @@ public class DemoTest {
 
         System.out.println(mapOrderByValue);
         System.out.println(list);
+    }
+
+    @Test
+    public void String(){
+        String a = "A";
+        String b = "A";
+        System.out.println(a==b);
+    }
+    @Test
+    public void getPath(){
+        System.out.println(System.getProperties());
+        System.out.println();
+        System.out.println(System.getProperty("user.dir"));
+    }
+
+
+
+@Test
+    public void degimal(){
+    DecimalFormat df = new DecimalFormat("00%");
+    System.out.println(df.format(0.1234));
+
+}
+@Test
+    public void runnableTest(){
+    ExecutorService service = Executors.newFixedThreadPool(1000);
+    Runnable runnable = ()->{
+        System.out.println("lijain");
+
+    };
+    runnable.run();
+}
+
+    @Test
+    public void getFormat() {
+        // 创建一个数值格式化对象
+        NumberFormat nt = NumberFormat.getInstance();
+        // 设置精确到小数点后2位
+//        nt.setMinimumFractionDigits(2);
+//        nt.setMaximumFractionDigits(2);
+        System.out.println(deciMal(3, 10));
+//        System.out.println(nt.format((float) 3 / (float) 10));
+//        System.out.println((double) 3 / 10);
+//
+//        System.out.println(getInspectDesc(3, 10));
+    }
+    private String   getInspectDesc(int missNum,int allNum){
+        String inspectDesc = "";
+        DecimalFormat df = new DecimalFormat("00%");
+        if (allNum == 0) {
+            inspectDesc = "未安装";
+        }
+        else if (missNum == 0) {
+            inspectDesc = "正常";
+        }else{
+            inspectDesc = "设备异常" + df.format((double
+                    ) missNum / allNum);
+        }
+        return inspectDesc;
+    }
+    private double deciMal(int top, int below) {
+        double result = new BigDecimal((double) top / below).setScale(2, BigDecimal.ROUND_HALF_UP).doubleValue();
+
+        return result;
+    }
+    @Test
+            public void decimal() {
+
+
+//    计算5除以6，保留2位小数
+        DecimalFormat df = new DecimalFormat("00%");
+
+        BigDecimal b = new BigDecimal((float) 2 / 317);
+
+//    四舍五入保留2位
+        Double result = b.setScale(2, BigDecimal.ROUND_HALF_UP).doubleValue();
+        if (result < 0.1) {
+            DecimalFormat dff = new DecimalFormat("0%");
+            System.out.println(dff.format(result));
+        }
+        System.out.println(df.format(result));
+//    如需保留3位
+
+//        Double result = b.setScale(3, BigDecimal.ROUND_HALF_UP).doubleValue();
+    }
+    @Test
+    public void tempTIme(){
+        System.out.println(new Timestamp(System.currentTimeMillis()));
+
+    }
+
+    @Test
+    public void MathFloor(){
+        System.out.println(Math.floor(12.3423));
+        System.out.println(Math.floor(12.977989));
+
+    }
+
+
+    private static volatile Integer num1 = 0;
+    private static AtomicReference<Integer> ar=new AtomicReference<Integer>(num1);
+
+    @Test
+    public void dfasd111() throws InterruptedException{
+        for (int i = 0; i < 1000; i++) {
+            new Thread(() -> {
+                for (int i1 = 0; i1 < 10000; i1++)
+                    while(true){
+                        Integer temp=ar.get();
+                        if(ar.compareAndSet(temp, temp+1))break;
+                    }
+            }).start();
+        }
+        Thread.sleep(10000);
+        System.out.println(ar.get()); //10000000
+    }
+
+    @Test
+    public void dfasd1112() throws InterruptedException{
+        for (int i = 0; i < 1000; i++) {
+            new Thread(() -> {
+                for (int i1 = 0; i1 < 10000; i1++) {
+                    num1=num1++;
+                }
+            }).start();
+        }
+        Thread.sleep(10000);
+        System.out.println(num1); //something like 238981
     }
 }

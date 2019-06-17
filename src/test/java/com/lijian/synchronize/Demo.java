@@ -157,7 +157,7 @@ class Demo00{
 		final int THREAD_NUM = 5;
 		Thread threads[] = new Thread[THREAD_NUM];
 		for (int i = 0; i < THREAD_NUM; i ++) {
-			threads[i] = new Thread(accountOperator, "Thread" + i);
+			threads[i] = new Thread(accountOperator, "Threa" + i);
 			threads[i].start();
 		}
 	}

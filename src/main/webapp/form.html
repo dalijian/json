@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:p="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <style type="text/css">
+        html,body{
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color:sandybrown;
+
+        }
+        a::before{
+            content: 'this is a address';
+        }
+        p {
+            color: blue;
+            font-size: 40px;
+            padding: 0;
+            margin: 0;
+
+            /*border: 1px solid red;*/
+
+        }
+        form {
+            border: 1px solid gold;
+            margin: 0 ;
+            padding: 0 ;
+
+
+        }
+
+        b {
+            border: inherit;
+        }
+        h1 {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 400px;
+
+            font-size: 25px;
+            border: 1px solid red;
+        }
+        input {
+            display: inline-block;
+            width: 500px;
+            height: 40px;
+            border: 1px solid rgba(100,200,200,0.4);
+            border-radius: 5%;
+
+        }
+        input.submit{
+            cursor:pointer;
+        }
+        div.a {
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            float: left;
+            visibility: visible;
+            box-shadow: 5px 4px 1px 2px gray inset;
+
+        }div.b {
+            width: 200px;
+            height: 200px;
+            background-color:palegreen;
+                     /*float: left;*/
+                     opacity: 0.5;
+                     clear: both;
+
+        }
+
+        div.c {
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+            float: left;
+            outline: 10px red;
+
+        }
+
+
+    </style>
+
+    <script>
+        username = document.getElementById("username");
+        password = document.getElementById("password");
+        // alert(username + password);
+        function loadXMLDoc()
+        {
+            var xmlhttp;
+            if (window.XMLHttpRequest)
+            {
+                // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+                xmlhttp=new XMLHttpRequest();
+            }
+            else
+            {
+                // IE6, IE5 浏览器执行代码
+                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange=function()
+            {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                {
+                    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("GET", "http://www.baidu.com?username" + username + "&password=" + password, true);
+            xmlhttp.send();
+        }
+    </script>
+</head>
+<body>
+
+<form action="http://www.baidu.com" method="post">
+    <br>
+    <label for="username" title="this is login username">username</label>
+    <br>
+    <input type="text" id="username" name="username">
+    <br>
+    <label for="password">password</label>
+    <br>
+    <input type="password" id="password" width="300px" height="50px" name="password">
+    <br>
+    <input  class="submit" type="submit" value="提交" onclick="loadXMLDoc()">
+    <br>
+</form>
+</body>
+</html>

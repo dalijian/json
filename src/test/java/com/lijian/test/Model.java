@@ -45,3 +45,4 @@ public class Model
         return Objects.hash(date);
     }
 }
+
