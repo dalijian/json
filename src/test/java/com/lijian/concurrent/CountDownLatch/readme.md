@@ -3,3 +3,4 @@
 ## CountDownLatch 的await方法会阻塞当前线程，直到N变成零。
 ###1. 由于countDown方法可以使用在任何地方，所以N可以是N个线程，也可以是一个线程里的Nge执行步骤，
 ###2. 用在多个线程时，只需要把这个CountDownLatch的引用传递到线程里
+1. countDownLatch 当countDownLatch为0时 主线线程与子线程 应该是同时经行的 ，没有 先后之分

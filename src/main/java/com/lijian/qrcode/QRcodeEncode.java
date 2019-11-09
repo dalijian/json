@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.EncodeHintType;
 import com.google.zxing.MultiFormatWriter;
@@ -20,7 +22,10 @@ public class QRcodeEncode {
 //            String content = "Hello QRcode!";
 //            String content = "https://mvs.gsafetyweixinsupport.cn:1080/cas/login";
 //            String content = "http://www.baidu.com/s?ie=UTF-8&wd=java+%E4%BA%8C%E7%BB%B4%E7%A0%81";
-            String content = "http://weather.123.duba.net/static/weather_info/101120201.html?callback=";
+//            String content = "http://weather.123.duba.net/static/weather_info/101120201.html?callback=";
+//            String content = "aaaa8669710331996771145";
+//            String content = "0000";
+            String content = "AAAA18030508012900";
 //            String content = "<!DOCTYPE html>\n" +
 //                    "<html lang=\"en\" xmlns:p=\"http://www.w3.org/1999/xhtml\">\n" +
 //                    "<head>\n" +
@@ -107,12 +112,12 @@ public class QRcodeEncode {
 //                    "</body>\n" +
 //                    "</html>";
             //二维码生成路径
-            String path = "E:";
+            String path = "C:/users/lijian/desktop";
             MultiFormatWriter multiFormatWriter = new MultiFormatWriter(); 
             Map hints = new HashMap();     
             hints.put(EncodeHintType.CHARACTER_SET, "UTF-8");  
             BitMatrix bitMatrix = multiFormatWriter.encode(content, BarcodeFormat.QR_CODE, 300, 300,hints);
-            File file1 = new File(path,"test.jpg"); 
+            File file1 = new File(path,content+".jpg");
             ImageWrite.writeToFile(bitMatrix, "jpg", file1);
             System.out.println("二维码已生成！");
         } catch (IOException e) {

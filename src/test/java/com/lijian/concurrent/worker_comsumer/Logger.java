@@ -30,15 +30,18 @@ public class Logger {
                 long perFT = System.currentTimeMillis();
 
                 while (true) {
+//                    拿到queue 内容
                     LogMsg log = blockingQueue.poll(5, TimeUnit.SECONDS);
                     if (log != null) {
                         writer.write(log.toString());
                         ++curIdx;
                     }
+//                    根据curIdx 判断  三种情况
                     if (curIdx <= 0) {
                         continue;
                     }
                     if (log != null && log.level == LEVEL.ERROR || curIdx == batchSize || System.currentTimeMillis() - perFT > 5000) {
+//                        刷盘
                         writer.flush();
                         curIdx = 0;
                         perFT = System.currentTimeMillis();

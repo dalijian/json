@@ -1,5 +1,7 @@
 package com.lijian.concurrent.future;
 
+import org.junit.Test;
+
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.concurrent.*;
@@ -63,6 +65,7 @@ public class FutureTest {
 
     }
     //华罗庚-泡茶
+    @Test
     public void tea(){
         FutureTask<String> ft2 = new FutureTask<>(new T2Task());
 

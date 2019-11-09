@@ -35,6 +35,7 @@ public final class Router {
                 Objects.equals(iface, router.iface);
     }
 
+
     @Override
     public int hashCode() {
         return Objects.hash(ip, port, iface);

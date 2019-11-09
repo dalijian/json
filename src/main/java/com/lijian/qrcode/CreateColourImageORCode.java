@@ -189,6 +189,6 @@ public class CreateColourImageORCode {
     public static void main(String[] args) throws UnsupportedEncodingException {
         // 依次为内容,宽,长,logo图标路径,储存路径
         CreateColourImageORCode.encode("https://www.baidu.com/", 500, 500, "C:\\Users\\lijian\\Desktop\\mysql-连接器.jpg",
-                "E:/qrcode.jpg");
+                "C:/users/lijian/desktop/qrcode.jpg");
     }
 }

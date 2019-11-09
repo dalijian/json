@@ -23,9 +23,7 @@ public class CyclicBarrierTest3 {
       thread.interrupt();
         try {
             c.await();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (BrokenBarrierException e) {
+        } catch (InterruptedException | BrokenBarrierException e) {
             e.printStackTrace();
         }
         System.out.println(c.isBroken());

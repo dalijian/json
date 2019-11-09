@@ -92,8 +92,12 @@ public class QrCodeCreateUtil {
      */
     public static void main(String[] args) throws IOException, WriterException {  
         
-        createQrCode(new FileOutputStream(new File("d:\\qrcode.jpg")),"WE1231238239128sASDASDSADSDWEWWREWRERWSDFDFSDSDF123123123123213123",500,"JPEG");
-        readQrCode(new FileInputStream(new File("d:\\qrcode.jpg")));  
+//        createQrCode(new FileOutputStream(new File("C:/users/lijian/desktop/qrcode.jpg")),"868744034245500",500,"JPEG");
+        createQrCode(new FileOutputStream(new File("C:/users/lijian/desktop/qrcode.jpg")),"8669710331996771145",400,"JPEG");
+
+
+
+//        readQrCode(new FileInputStream(new File("d:\\qrcode.jpg")));
     }  
   
 }

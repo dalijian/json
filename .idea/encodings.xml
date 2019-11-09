@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/algorithms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/muti_thread" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/lijian/poi/excel/CreteTemplate.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/lijian/poi/excel/PoiExpExcel_xls.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/lijian/poi/excel/PoiReadExcel.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/lijian/poi/src/com/imooc/excel/CreteTemplate.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/lijian/test/poi/world/Commission.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/lijian/test/poi/world/WordCreate.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
