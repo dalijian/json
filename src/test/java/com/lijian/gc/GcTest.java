@@ -15,7 +15,7 @@ public class GcTest {
         TimeUnit.SECONDS.sleep(20);
 
     }
-
+//    当申请内存无法分配时  出现 这个 异常 Exception in thread "main" java.lang.NegativeArraySizeException
     public static void main(String[] args) throws InterruptedException {
         TimeUnit.SECONDS.sleep(15);
         byte[] placeHolder = new byte[1024*1024*1000];

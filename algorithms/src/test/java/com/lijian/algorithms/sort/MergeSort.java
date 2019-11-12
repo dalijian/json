@@ -3,11 +3,11 @@ package com.lijian.algorithms.sort;
 import java.util.Arrays;
 
 /**
- * Created by chengxiao on 2016/12/8.
+ * 并归排序, 并归是由 部分 到 全局， 而 快排 是由 全局 到 部分
  */
 public class MergeSort {
     public static void main(String []args){
-        int []arr = {9,8,7,6,5,4,3,2,1};
+        int []arr = {9,8,7,6,5,4,3,2,1,12,11,13,15};
         sort(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -43,9 +43,10 @@ public class MergeSort {
         }
         t = 0;
         //将temp中的元素全部拷贝到原数组中
-        while(left <= right){
-            arr[left++] = temp[t++];
-        }
+//        while(left <= right){
+//            arr[left++] = temp[t++];
+//        }
+       System.arraycopy(temp, 0, arr, left, right - left+1);
     }
 
     public static void Merge(int[] array, int low, int mid, int high,int [] temp) {

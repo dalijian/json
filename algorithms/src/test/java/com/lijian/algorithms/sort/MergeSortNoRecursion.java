@@ -1,7 +1,7 @@
 package com.lijian.algorithms.sort;
 
 import org.junit.Test;
-
+//并归排序，非递归
 public class MergeSortNoRecursion {
 
 

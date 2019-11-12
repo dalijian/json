@@ -9,6 +9,9 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -17,7 +20,29 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class RegexTest {
+    @Test
+    public void dateTest() {
+        Pattern pattern = Pattern.compile("(.*?)\\[");
+        Matcher matcher = pattern.matcher("2019-11-09 16:05:30.522 [restartedMain]");
+        String groupOne =null;
+        while (matcher.find()) {
+            String groupStr = matcher.group();
+             groupOne = matcher.group(1);
+            System.out.println(groupOne);
+            System.out.println(groupStr);
+        }
 
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
+        try {
+          Date date =  simpleDateFormat.parse(groupOne);
+            System.out.println(date);
+            System.out.println(date.getTime());
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+//        List<String> strList = Stream.of(str.split("/")).collect(Collectors.toList());
+//        System.out.println(strList.get(strList.size()-2)+"/"+strList.get(strList.size()-1));
+    }
     @Test
     public void groupTest() {
         Pattern pattern = Pattern.compile("^0*");

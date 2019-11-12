@@ -393,8 +393,13 @@ public class StreamTest {
 
     }
 
+    @Test
+    public void test(){
 
+
+    }
 }
+
 class Book {
 
     private String name;

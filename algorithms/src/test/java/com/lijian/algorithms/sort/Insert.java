@@ -1,7 +1,7 @@
 package com.lijian.algorithms.sort;
 
 import org.junit.Test;
-
+//插入排序
 public class Insert {
 //    插入排序 是 取未排序区间中的元素，在已排序区间中找到合适的插入位置将其插入，并保证已排序区间一直有序
     @Test
