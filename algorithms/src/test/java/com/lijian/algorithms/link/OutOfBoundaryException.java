@@ -1,4 +1,4 @@
 package com.lijian.algorithms.link;
 
-public class OutOfBoundaryException {
+public class OutOfBoundaryException extends Exception {
 }

@@ -1,5 +1,6 @@
 package com.lijian.test;
 
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -395,7 +396,11 @@ public class StreamTest {
 
     @Test
     public void test(){
-
+        List<String> result = Stream.of(",li,jian".split(","))
+                .filter(x -> StringUtils.isNotBlank(x))
+                .collect(Collectors.toList());
+        result.replaceAll(s -> s);
+        System.out.println(result);
 
     }
 }

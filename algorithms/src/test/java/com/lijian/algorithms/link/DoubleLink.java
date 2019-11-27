@@ -117,7 +117,7 @@ public class DoubleLink<T> {
      /**
       * 插入节点
       */
-     public void inesert(int index,T value){
+     public void insert(int index,T value){
          //如果这次插入时 链表是空的
          if(index==0){
              //这个节点的
@@ -148,7 +148,7 @@ public class DoubleLink<T> {
       */
      public void insertTo(T Value)
      {
-         inesert(0,Value);
+         insert(0,Value);
      }
      /**
       * 将元素插入到链表的尾部
@@ -185,5 +185,12 @@ public class DoubleLink<T> {
      */
     public void delLast(){
         del(size-1);
+    }
+
+    public static void main(String[] args) {
+        DoubleLink<String> doubleLink = new DoubleLink<>();
+        doubleLink.insert(1, "first");
+        doubleLink.insert(2, "second");
+
     }
 }

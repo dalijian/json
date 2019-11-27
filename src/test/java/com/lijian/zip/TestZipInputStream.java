@@ -263,7 +263,6 @@ public class TestZipInputStream
     @Test
     public void zip() throws IOException {
 
-
             decompressionFile("C:/users/lijian/desktop/NMGHHHT_BGHDJD_20180705.zip", "C:/users/lijian/desktop/lijian/");
 
     }

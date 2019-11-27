@@ -1,6 +1,6 @@
 package com.lijian.algorithms.tree;
 //二叉查找树
-public class BinarySearchTree {
+public class BinarySearchTree2 {
   private Node tree;
 
   public Node find(int data) {

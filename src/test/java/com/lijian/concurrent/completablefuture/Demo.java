@@ -172,6 +172,21 @@ public class Demo {
 
     }
 
+    @Test
+    public void asy(){
 
+        CompletableFuture.runAsync(()-> {
+            for (int i = 0; i < 1000; i++) {
+                System.out.println(i);
+            }
+        });
+
+        System.out.println("123456");
+//        try {
+//            TimeUnit.SECONDS.sleep(1);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+    }
 
 }

@@ -203,11 +203,11 @@
           <artifactId>javase</artifactId>
           <version>3.3.0</version>
       </dependency>
-      <dependency>
-          <groupId>commons-net</groupId>
-          <artifactId>commons-net</artifactId>
-          <version>3.3</version>
-      </dependency>
+      <!--<dependency>-->
+          <!--<groupId>commons-net</groupId>-->
+          <!--<artifactId>commons-net</artifactId>-->
+          <!--<version>3.3</version>-->
+      <!--</dependency>-->
 
 
 <!--      guava-->
@@ -243,6 +243,27 @@
           <version>0.7</version>
       </dependency>
 
+      <dependency>
+          <groupId>net.coobird</groupId>
+          <artifactId>thumbnailator</artifactId>
+          <version>0.4.8</version>
+      </dependency>
+
+
+
+        <!--apache commons virtual file system -->
+      <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-vfs2 -->
+      <dependency>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-vfs2</artifactId>
+          <version>2.4.1</version>
+      </dependency>
+
+      <dependency>
+          <groupId>commons-net</groupId>
+          <artifactId>commons-net</artifactId>
+          <version>3.6</version>
+      </dependency>
   </dependencies>
 
   <build>

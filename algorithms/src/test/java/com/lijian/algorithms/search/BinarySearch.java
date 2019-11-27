@@ -13,8 +13,6 @@ public class BinarySearch {
 
         int[] array = {1, 1,1,4, 9, 10, 34, 45, 65, 78, 99};
 
-
-
       int index =  bSearch(array, 0, array.length - 1, 99);
 
         int num = bSearchFirst(99);
@@ -22,12 +20,21 @@ public class BinarySearch {
 
     }
 //    递归式
+
+    /***
+     *
+     * @param array 查找集合
+     * @param left  左元素
+     * @param right 右元素
+     * @param i     查找值
+     * @return
+     */
     private int bSearch(int[] array, int left,int right,int i) {
         int middle = (left+right)/2;
         if (i == array[middle]) {
             return middle;
         }
-                if (left == right) {
+        if (left == right) {
             return -1;
         }
         if ( i>array[middle]) {
@@ -157,6 +164,16 @@ public class BinarySearch {
                 if ((mid == n - 1) || (a[mid + 1] > value)) return mid;
                 else low = mid + 1;
             }
+        }
+        return -1;
+    }
+
+    public int binSearch(int[] s, int low, int high, int key){
+        while(low<=high){
+            int mid = (low + high)/2;
+            if (s[mid]==key) return mid;
+            else if (s[mid]>key) high = mid - 1;
+            else low = mid + 1;
         }
         return -1;
     }
