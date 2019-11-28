@@ -1,7 +1,7 @@
 package com.lijian.algorithms.link;
 
 
-
+// 双向列表
 public class LinkedListDLNode implements LinkedList {
 
     private int size;

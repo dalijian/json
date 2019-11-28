@@ -1,8 +1,10 @@
 package com.lijian.algorithms.link;
 
+// 链表 迭代器
 public class LinkedListIterator implements Iterator {
     private LinkedList list;
 
+    // 当前 元素
     private Node current;
 
     public LinkedListIterator(LinkedList list) {

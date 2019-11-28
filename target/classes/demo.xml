@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <employees>
+        <employee id="001">
+            <name>cici</name>
+            <department>finace</department>
+            <supervisor>lily</supervisor>
+        </employee>
+        <employee id="002">
+            <name>alex</name>
+            <department>develope</department>
+            <supervisor>lily</supervisor>
+        </employee>
+    </employees>
+

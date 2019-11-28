@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<excel id="mainDevice" code="mianDevice_bdqn" name="主机编码表_北大青鸟">
+    <colgroup>
+        <col index="A" width='17em'></col>
+        <col index="B" width='17em'></col>
+        <col index="C" width='17em'></col>
+        <col index="D" width='17em'></col>
+        <col index="E" width='17em'></col>
+        <col index="F" width='17em'></col>        
+    </colgroup>
+    <title>
+        <tr height="16px">
+            <td rowspan="1" colspan="6" value="主机编码表" />
+        </tr>
+    </title>
+    <thead>
+<!--        表头占用行数-->
+            <tr height="16px" rows="1">
+        	<th key="num" value="序号" />
+            <th key="laMake" value="控制器号" />
+            <th key="laLoop" value="回路号" />
+            <th key="laPoint" value="部位号" />
+            <th key="describe" value="汉字注释" />
+            <th key="operation" value="操作" />
+        </tr>
+    </thead>
+    <tbody>
+        <tr height="16px" firstrow="2" firstcol="0" repeat="5">
+            <td type="string"  isnullable="false" maxlength="30" /><!--用户编号 -->
+            <td type="string" isnullable="false" maxlength="50" /><!--姓名 -->
+            <td type="String" format="##0" isnullable="false" /><!--年龄 -->
+            <td type="String " format="男,女" isnullable="true" /><!--性别 -->
+            <td type="String" isnullable="false" maxlength="30" /><!--出生日期 -->
+            <td type="String" format="足球,篮球,乒乓球" isnullable="true" /><!--爱好 -->
+        </tr>
+    </tbody>
+</excel>

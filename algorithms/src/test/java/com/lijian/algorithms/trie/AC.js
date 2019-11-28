@@ -2,6 +2,7 @@
 
 class Node{
     root;
+    children;
 }
 
 class Trie {
@@ -67,7 +68,7 @@ function match(ac, text) {
         }
         var node = p;
         while (node != root) {
-            //  收集出可以匹配的模式串
+            //  
             if (node.endCount) {
                 var pos = i - node.pattern.length + 1;
                 console.log(`匹配模式串 ${node.pattern}其起始位置在${pos}`)

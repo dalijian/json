@@ -6,7 +6,9 @@ import java.util.Queue;
 public class AC {
     private AcNode root = new AcNode('/'); // 存储无意义字符
 
-
+    /***
+     * ac 自动机 构建 失败 指针
+     */
     public void buildFailurePointer() {
         Queue<AcNode> queue = new LinkedList<>();
         root.fail = null;
@@ -37,6 +39,10 @@ public class AC {
         }
     }
 
+    /***
+     * ac 自动机 匹配
+     * @param text 主串 ，即 要 判断 是否 有 敏感词汇的 字符串
+     */
 
     public void match(char[] text) { // text是主串
         int n = text.length;

@@ -243,6 +243,7 @@
           <version>0.7</version>
       </dependency>
 
+      <!--图片处理-->
       <dependency>
           <groupId>net.coobird</groupId>
           <artifactId>thumbnailator</artifactId>

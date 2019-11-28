@@ -1,0 +1,1 @@
+1. weakhashmap 弱引用 

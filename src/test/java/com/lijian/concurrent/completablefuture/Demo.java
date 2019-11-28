@@ -189,4 +189,20 @@ public class Demo {
 //        }
     }
 
+    @Test
+    public void checkException() throws InterruptedException {
+
+
+        CompletableFuture.runAsync(() -> {
+            System.out.println(1/0);
+        }).exceptionally(e -> {
+            System.out.println("輸出 異常");
+
+            e.printStackTrace();
+            return null;
+        });
+
+        TimeUnit.SECONDS.sleep(5L);
+
+    }
 }
