@@ -4,8 +4,6 @@ import org.junit.Test;
 
 public class BM {
     private static final int SIZE = 256;
-
-
     /***
      * 利用散列表 在 模式串中 查找  xi  地址， 数组的下标 对应字符的ASCII码值，数组中存储这个字符在模式串中出现的位置
      * @param b 变量 b 是 模式串
@@ -54,6 +52,13 @@ public class BM {
             i = i + (j - bc[a[i + j]]);  // 等同于将模式串往后滑动 j-bc[(int)a[i+j]] 位
         }
         return -1;
+    }
+
+    @Test
+    public void bmTest(){
+        String m = "abbaccabaa";
+        String s = "aba";
+        bm(m.toCharArray(), m.length(), s.toCharArray(), s.length());
     }
 
 

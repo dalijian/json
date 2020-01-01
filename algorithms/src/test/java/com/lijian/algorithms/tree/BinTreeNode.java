@@ -1,18 +1,25 @@
 package com.lijian.algorithms.tree;
 
+import com.lijian.algorithms.Strategy;
 import com.lijian.algorithms.link.Iterator;
 import com.lijian.algorithms.link.LinkedList;
 import com.lijian.algorithms.link.LinkedListDLNode;
 import com.lijian.algorithms.link.Node;
+import com.lijian.algorithms.queue.Queue;
+import com.lijian.algorithms.queue.QueueArray;
+import com.lijian.algorithms.stack.Stack;
+import com.lijian.algorithms.stack.StackSLinked;
+
 
 public class BinTreeNode implements Node {
+    private BinTreeNode root;
     private Object data; //数据域
     private BinTreeNode parent; //父结点
     private BinTreeNode lChild; //左孩子
     private BinTreeNode rChild; //右孩子
     private int height; //以该结点为根的子树的高度, 只有 自身 节点时 高度 为 0
     private int size; //该结点子孙数（包括结点本身）
-
+    private Strategy strategy;
     public BinTreeNode() {
 
         this(null);
@@ -171,4 +178,281 @@ public class BinTreeNode implements Node {
 //        preOrderRecursion(rt.getLChild(), list);
 //        preOrderRecursion(rt.getRChild(), list);
 //    }
+
+
+    public Iterator preOrder() {
+
+
+        LinkedList list = new LinkedListDLNode();
+
+        preOrderTraverse(this.root, list);
+
+        return list.elements();
+
+
+    }
+
+    /***
+     *  利用 stack 可以 代替  recursion
+     * @param root
+     * @param list
+     */
+    private void preOrderTraverse(BinTreeNode root, LinkedList list) {
+        if (root == null) {
+            return;
+        }
+        BinTreeNode p = root;
+
+        Stack stack = new StackSLinked();
+
+        while (p != null) {
+            while (p != null) {
+
+                // 插入 根节点
+                list.insertLast(p);
+
+                BinTreeNode RNode = p.getRChild();
+                //记录 右 节点
+                if (root.hasRChild()) {
+                    stack.push(RNode);
+                }
+
+
+                p = p.getLChild();
+            }
+            if (!stack.isEmpty()) {
+                p = (BinTreeNode) stack.pop();
+            }
+        }
+    }
+
+
+    public Iterator inOrder() {
+
+        LinkedList list = new LinkedListDLNode();
+
+        inOrderTraverse(this.root, list);
+
+        return list.elements();
+
+
+    }
+
+    private void inOrderTraverse(BinTreeNode root, LinkedList list) {
+        if (root == null) {
+            return;
+        }
+        inOrderTraverse(root.getLChild(), list);
+
+        list.insertLast(root);
+
+        inOrderTraverse(root.getRChild(), list);
+
+
+    }
+
+    private void inOrderTraverseRe(BinTreeNode root, LinkedList list) {
+        if (root == null) {
+            return;
+        }
+        Stack stack = new StackSLinked();
+
+        while (root != null || !stack.isEmpty()) {
+            while (root != null) {
+
+                stack.push(root);
+
+                root = root.getLChild();
+
+            }
+            if (!stack.isEmpty()) {
+                BinTreeNode p = (BinTreeNode) stack.pop();
+
+                list.insertLast(p);
+
+                root = p.getRChild();
+
+            }
+        }
+
+
+    }
+
+
+    private void postOrderTraverseRe(BinTreeNode root, LinkedList list) {
+        if (root == null) {
+            return;
+        }
+        inOrderTraverse(root.getLChild(), list);
+
+
+        inOrderTraverse(root.getRChild(), list);
+
+        list.insertLast(root);
+    }
+
+        // 后序 遍历 的 非 递归
+    private void postOrderTraverse(BinTreeNode root, LinkedList list) {
+        if (root == null) {
+            return;
+        }
+        BinTreeNode p = root;
+
+        Stack s = new StackSLinked();
+
+
+        while (p != null || !s.isEmpty()) {
+            // 先 左 后 右 不断 深入
+            while (p != null) {
+                // 将 根 节点 入栈
+                s.push(p);
+
+                if (p.hasLChild()) {
+                    p = getLChild();
+                } else {
+                    p = p.getRChild();
+                }
+            }
+            if (!s.isEmpty()) {
+                //取出 栈顶 根 结点 访问
+                p= (BinTreeNode) s.pop();
+                list.insertLast(p);
+            }
+
+// 满足 条件 时， 说明 栈顶 根 节点 右子树 已 访问， 应 出 栈 访问 之
+            while (!s.isEmpty() && ((BinTreeNode) s.peek()).getRChild() == p) {
+                p= (BinTreeNode) s.pop();
+                list.insertLast(p);
+            }
+// 转 向 栈顶 根 结点 的 右子树 继续 后序 遍历
+            if (!s.isEmpty()) {
+                p=((BinTreeNode)s.peek()).getRChild();
+
+            }else{
+                p=null;
+            }
+
+        }
+
+
+    }
+
+
+    /***
+     * 安 层 遍历   使用 queue 队列
+     */
+
+        public Iterator levelOrder(){
+
+            LinkedList linkedList = new LinkedListDLNode();
+
+
+            levelOrderTraverse(this.root, linkedList);
+
+
+            return  linkedList.elements();
+        }
+
+    private void levelOrderTraverse(BinTreeNode root, LinkedList linkedList) {
+
+        if (root == null) {
+            return;
+        }
+        Queue q = new QueueArray();
+        // 根节点 入队
+        q.enqueue(root);
+        while (!q.isEmpty()) {
+            // 取出 队首 节点 p 并 访问
+            BinTreeNode p = (BinTreeNode) q.dequeue();
+
+            linkedList.insertLast(p);
+              if (p.hasLChild()) {
+                    // 将 p 的 非空 左右 孩子 依次 入 队
+                    q.enqueue(p.getLChild());
+                }
+                if (p.hasRChild()) {
+                    q.enqueue(p.getRChild());
+                }
+            }
+
+        }
+
+    /***
+     *  在 树中 查找 元素 object 对应 的 结点
+     * @param object
+     * @return
+     */
+    public BinTreeNode find(Object object) {
+        return searchE(root, object);
+    }
+
+    /***
+     *  递归 查早 元素 e
+     * @param root
+     * @param object
+     * @return
+     */
+    private BinTreeNode searchE(BinTreeNode root, Object object) {
+
+        if (root == null) {
+            return null;
+        }
+        if (strategy.equal(root.getData(), object)) {
+            return  root;
+        }
+        BinTreeNode v = searchE(root.getLChild(), object);
+        if (v == null) {
+            v = searchE(root.getRChild(), object);
+        }
+        return v;
+    }
+
+
+    public void testpreOrder(BinTreeNode root,LinkedList list){
+//        1.   stack 辅助
+//        2.  先 序 遍历  新 结点 ，再 左 结点 ，再 右 结点
+//        3. 将 右节点 入栈
+        Stack stack = new StackSLinked();
+        while (root != null) {
+            // 向 左 结点 走到底
+            while (root != null) {
+                list.insertLast(root);
+                if(root.hasRChild()) stack.push(root.getRChild());
+                root = root.getLChild();
+            }
+            //  遍历 右节点
+            if (!stack.isEmpty()) {
+                root = (BinTreeNode) stack.pop();
+            }
+        }
+    }
+
+    public void testInOrder(BinTreeNode root, LinkedList list) {
+        Stack stack = new StackSLinked();
+        while (!stack.isEmpty() || root != null) {
+            while (root != null) {
+                stack.push(root);
+                root = root.getLChild();
+            }
+            if (!stack.isEmpty()) {
+                BinTreeNode p = (BinTreeNode) stack.pop();
+                list.insertLast(p);
+                root = p.getRChild();
+            }
+        }
+    }
+
+    public void hanio (int n, char x, char y, char z){
+        if (n==1) move ( x, n, z);
+        else {
+            hanio (n-1, x, z, y);
+            move (x, n, z);
+            hanio(n-1, y, x, z);
+        }
+    }
+    private void move(char x, int n, char y) {
+        System.out.println ("Move " + n + " from " + x + " to " + y);
+    }
+
+
 }

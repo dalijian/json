@@ -19,12 +19,18 @@ package com.lijian.poi.excel;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintStream;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.xml.parsers.ParserConfigurationException;
 
+import org.apache.commons.collections4.map.LinkedMap;
+import org.apache.log4j.lf5.util.StreamUtils;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.apache.poi.openxml4j.opc.OPCPackage;
 import org.apache.poi.openxml4j.opc.PackageAccess;
@@ -89,7 +95,7 @@ public class XLSX2CSV {
                 output.append('\n');
             }
         }
-
+        // excel 读取 行 开始
         @Override
         public void startRow(int rowNum) {
             // If there were gaps, output the missing rows
@@ -99,7 +105,7 @@ public class XLSX2CSV {
             currentRow = rowNum;
             currentCol = -1;
         }
-
+        //excel  读取 行 结束
         @Override
         public void endRow(int rowNum) {
             // Ensure the minimum number of columns
@@ -107,6 +113,7 @@ public class XLSX2CSV {
                 output.append(',');
             }
             output.append('\n');
+
         }
 
         @Override
@@ -225,6 +232,48 @@ public class XLSX2CSV {
             ++index;
         }
     }
+    public List<String> getSheetNameList() throws OpenXML4JException, IOException {
+        try {
+            XSSFReader xssfReader = new XSSFReader(this.xlsxPackage);
+            XSSFReader.SheetIterator iter = (XSSFReader.SheetIterator) xssfReader.getSheetsData();
+            List<String> list = new ArrayList<>();
+            while (iter.hasNext()) {
+                list.add(iter.getSheetName());
+            }
+            return list;
+        } catch (InvalidFormatException e) {
+            e.printStackTrace();
+            throw e;
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw e;
+        } catch (OpenXML4JException e) {
+            e.printStackTrace();
+            throw e;
+        }
+
+    }
+    public List<LinkedMap<String,Object>> getRecordBySheetName() throws OpenXML4JException, IOException {
+        try {
+            XSSFReader xssfReader = new XSSFReader(this.xlsxPackage);
+            XSSFReader.SheetIterator iter = (XSSFReader.SheetIterator) xssfReader.getSheetsData();
+            List<String> list = new ArrayList<>();
+            while (iter.hasNext()) {
+                list.add(iter.getSheetName());
+            }
+            return null;
+        } catch (InvalidFormatException e) {
+            e.printStackTrace();
+            throw e;
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw e;
+        } catch (OpenXML4JException e) {
+            e.printStackTrace();
+            throw e;
+        }
+
+    }
 
 //    public static void main(String[] args) throws Exception {
 //        if (args.length < 1) {
@@ -255,14 +304,25 @@ public class XLSX2CSV {
 
 
     public static void main(String[] args) throws Exception {
-        File xlsxFile = new File("device.xlsx");
+        File xlsxFile = new File("c:/users/lijian/desktop/都昌县悦华大酒店.xlsx");
+        if (!xlsxFile.exists()) {
+            System.out.println("xlsxFile is not exist");
+        }
         // The package open is instantaneous, as it should be.
         int     minColumns = -1;
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         PrintStream printStream = new PrintStream(outputStream);
+
+
         try (OPCPackage p = OPCPackage.open(xlsxFile.getPath(), PackageAccess.READ)) {
             XLSX2CSV xlsx2csv = new XLSX2CSV(p, printStream, minColumns);
             xlsx2csv.process();
         }
+
+
+        FileOutputStream fileOutputStream = new FileOutputStream("xlsxFile2csv.csv");
+        org.springframework.util.StreamUtils.copy(outputStream.toByteArray(), fileOutputStream);
+
+
     }
 }

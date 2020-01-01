@@ -98,7 +98,7 @@ public class StreamTest {
         System.out.println(result);
 
 //        Map<Integer, String> resultMap = appleList.stream().collect(Collectors.toMap(Apple::getId, a -> a.getName(), (k1, k2) -> k1 + "," + k2));
-//        System.out.println(resultMap);
+////        System.out.println(resultMap);
     }
 
     @Test

@@ -23,6 +23,8 @@ class Trie {
         cur.endCount++; //这个字符串重复添加的次数
     }
 }
+//1. 对整个 字典树进行宽度优先遍历。
+//2. 若当前搜索到点x,那么对于x的第i个儿子(也就是代表字符i的儿子)，一直往x的fail跳，直到跳到某个点也有i这个儿子，x的第i个儿子的fail就指向这个点的儿子i.
 function createFail(ac) {
     var root = ac.root;
     var queue = [root]; //root所在层为第0层

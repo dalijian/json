@@ -1,4 +1,4 @@
-package com.lijian.algorithms.search;
+package com.lijian.algorithms.tree;
 
 import com.lijian.algorithms.Strategy;
 import com.lijian.algorithms.link.Node;
@@ -43,6 +43,12 @@ public class BinarySearchTree {
         }
     }
 
+    /***
+     * 查找 已 v 为 根 的 二叉 查找树 中最小 元素 的 位置
+     * @param v
+     * @return
+     */
+
 
     public Node min(BinTreeNode v) {
         if (v != null) {
@@ -52,6 +58,12 @@ public class BinarySearchTree {
         }
         return v;
     }
+
+    /***
+     *  查找 已 v 为 根 的 二叉 查找树 中最大 元素 的 位置
+     * @param v
+     * @return
+     */
 
     public Node max(BinTreeNode v) {
         if (v != null) {
@@ -65,26 +77,20 @@ public class BinarySearchTree {
     /***
      *时间复杂度 为 O（h) h为 树高
      * @param v 根节点 v
-     * @return  返回v 在 中序遍历序列 中的后序结点
+     * @return  返回v 在 中序遍历序列 中的后序结点  ( 第一个 大于 v 的值)
      */
     private BinTreeNode getSuccessor(BinTreeNode v) {
-        if (v == null) {
-            return null;
-        }
-        if (v.hasRChild()) {
-            return (BinTreeNode) min(v.getRChild());
-        }
+        if (v == null) return null;
+        if (v.hasRChild()) return (BinTreeNode) min(v.getRChild());
 //        如果v是 右子树节点，那么 v的 后继节点 就是 v的父节点的父节点
-        while (v.isRChild()) {
-            v = v.getParent();
-        }
+        while (v.isRChild()) v = v.getParent();
         return v.getParent();
     }
 
     /***
      *
      * @param v 待插入元素
-     * @return 在二叉查找树中插入ele
+     * @return 在二叉查找树中插入ele  (第一个 小于 v 的 值)
      */
     public BinTreeNode getPredecessor(BinTreeNode v) {
         if (v == null) {

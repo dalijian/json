@@ -14,6 +14,8 @@ import java.util.zip.CheckedOutputStream;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
+import static com.lijian.zip.Zip.BUFFER;
+
 public class ZipDemo {
 
 
@@ -28,7 +30,7 @@ public class ZipDemo {
             ZipOutputStream out = new
                     ZipOutputStream(new
                     BufferedOutputStream(checksum));
-            File f = new File("C:\\Users\\lijian\\Desktop\\koa-demo-1");
+            File f = new File("C:\\Users\\lijian\\Desktop\\迅雷下载");
             recursion(f,out);
             out.close();
             System.out.println("checksum: "+checksum.getChecksum().getValue());
@@ -42,10 +44,22 @@ public class ZipDemo {
     public void recursion(File file,ZipOutputStream out) throws IOException {
         if (file.isFile()) {
             String fileName = file.getAbsolutePath();
-          fileName =fileName.substring(fileName.indexOf("koa-demo-1"));
+          fileName =fileName.substring(fileName.indexOf("迅雷下载"));
             ZipEntry entry = new ZipEntry(fileName);
             out.putNextEntry(entry);
-            out.write(StreamUtils.copyToByteArray(new FileInputStream(file)));
+//            使用 文件 输出流 FileInputStream  + while  批量 写入 byte[]  可以 不消耗 内存   实现 压缩
+            BufferedInputStream origin = new
+                    BufferedInputStream(new FileInputStream(file), BUFFER);
+            int count;
+            byte data[] = new byte[BUFFER];
+            while ((count = origin.read(data, 0,
+                    BUFFER)) != -1) {
+                out.write(data, 0, count);
+            }
+            origin.close();
+
+//            StreamUtils.copyToByteArray(new FileInputStream(file))   会 把 file  字节 一次 全拿出来 , 而不是 循环写入   大文件 会导致 OOM
+//            out.write(StreamUtils.copyToByteArray(new FileInputStream(file)));
             return ;
         }
         for (int i = 0; i < file.listFiles().length; i++) {

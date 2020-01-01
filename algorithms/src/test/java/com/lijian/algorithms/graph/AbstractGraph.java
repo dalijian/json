@@ -4,9 +4,12 @@ import com.lijian.algorithms.link.Iterator;
 import com.lijian.algorithms.link.LinkedList;
 import com.lijian.algorithms.link.LinkedListDLNode;
 import com.lijian.algorithms.link.Node;
+import com.lijian.algorithms.queue.Queue;
+import com.lijian.algorithms.queue.QueueSLinked;
+import com.lijian.algorithms.stack.Stack;
+import com.lijian.algorithms.stack.StackSLinked;
 
-import java.util.Queue;
-import java.util.Stack;
+
 
 public class AbstractGraph implements Graph {
 
@@ -43,7 +46,6 @@ public class AbstractGraph implements Graph {
 
     @Override
     public void remove(Edge e) {
-
     }
 
     @Override
@@ -104,7 +106,7 @@ public class AbstractGraph implements Graph {
     //深度优先算法
     public Iterator DFSTraverse(Vertex v) {
         LinkedList traverseSeq = new LinkedListDLNode();//遍历结果
-        resetVexStatus(); //重置顶点状态
+//        resetVexStatus(); //重置顶点状态
         DFSRecursion(v, traverseSeq); //从 v 点出发深度优先搜索
         Iterator it = getVertex(); //从图未曾访问的其他顶点重新搜索（调用图操作③）
         for (it.first(); !it.isDone(); it.next()) {
@@ -159,11 +161,9 @@ public class AbstractGraph implements Graph {
      * @param v 结点
      *
      */
-
-
     public Iterator BFSTraverse(Vertex v) {
         LinkedList traverseSeq = new LinkedListDLNode();//遍历结果
-        resetVexStatus(); //重置顶点状态
+//        resetVexStatus(); //重置顶点状态
         BFS(v, traverseSeq); //从 v 点出发广度优先搜索
         Iterator it = getVertex(); //从图中未访问的顶点重新搜索（调用图操作③）
         for (it.first(); !it.isDone(); it.next()) {

@@ -1,6 +1,7 @@
 package com.lijian.algorithms.search;
 
 import com.lijian.algorithms.tree.BinTreeNode;
+import com.lijian.algorithms.tree.BinarySearchTree;
 
 public class AVLTree extends BinarySearchTree {
 

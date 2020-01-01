@@ -67,6 +67,8 @@ public class VFSTest {
         FileSystemManager manager = VFS.getManager();
 
 //        FileObject file = manager.resolveFile("ftp://ftpuser:password@106.13.145.160:21/home/ftpuser/123/00010132b.jpg");
+
+        // 设施 ftp 连接 配置
         FileSystemOptions options = new FileSystemOptions();
         FtpFileSystemConfigBuilder.getInstance().setPassiveMode(options, true);
 

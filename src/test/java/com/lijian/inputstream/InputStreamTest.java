@@ -4,6 +4,9 @@ import org.junit.Test;
 import org.springframework.util.StreamUtils;
 
 import java.io.ByteArrayInputStream;
+import java.io.DataInputStream;
+import java.io.EOFException;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.charset.Charset;
 
@@ -37,5 +40,45 @@ public class InputStreamTest {
         byteArrayInputStream.reset();
         System.out.println(StreamUtils.copyToString(byteArrayInputStream, Charset.forName("utf-8")));
 
+    }
+
+
+    public static void main(String[] args) {
+        DataInputStream input = null;
+        try {
+            //do something
+            // Read all characters, until an EOFException is thrown.
+            String file = "alice.txt";
+            input = new DataInputStream(new FileInputStream(file));
+            while(true) {
+                char num;
+                try {
+                    num = input.readChar();
+                    System.out.println("Reading from file: " + num);
+                }
+                catch (EOFException ex1) {
+                    ex1.printStackTrace();
+                    break; //EOF reached.
+                }
+                catch (IOException ex2) {
+                    System.err.println("An IOException was caught: " + ex2.getMessage());
+                    ex2.printStackTrace();
+                }
+            }
+        }
+        catch (IOException ex) {
+            System.err.println("An IOException was caught: " + ex.getMessage());
+            ex.printStackTrace();
+        }
+        finally {
+            try {
+                // Close the input stream.
+                input.close();
+            }
+            catch(IOException ex) {
+                System.err.println("An IOException was caught: " + ex.getMessage());
+                ex.printStackTrace();
+            }
+        }
     }
 }

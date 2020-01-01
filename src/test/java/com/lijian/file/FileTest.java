@@ -4,6 +4,8 @@ import org.junit.Test;
 
 import java.io.File;
 import java.nio.channels.FileChannel;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -62,6 +64,37 @@ public class FileTest {
     public static void main(String[] args) throws Exception {
         changeFile("BigFileRW.java", 3, 5);
         System.out.println("changeOK...");
+    }
+
+
+    @Test
+    public void testPath(){
+
+        String linuxPath = "adadfhaldfh   afhas" +
+                "" +
+                "" +
+                "" +
+                "" +
+                "aldshfa ,.as/f1e3o47y210473'';;oka\\p]akmmmmmmm/128037s";
+
+        List<String> invalidCharacter = Stream.of(",", ".", "/", "\\", "·", "`", "!", "@", "#", "$", "%", "^", "&", "*", "[", "]", "{", "}", "|", "?",
+                "，", "。", "？", "；", "：", "‘", "”", "‘", "“", "【", "】", "{", "}", "、", "|",
+                "~", "！", "￥", "……", "&", "（", "）", "——", " ","'",";").collect(Collectors.toList());
+        for (String str : invalidCharacter) {
+            if (linuxPath.contains(str)) {
+            linuxPath =    linuxPath.replace(str, "_");
+            }
+        }
+
+        System.out.println(linuxPath);
+
+
+
+
+
+
+
+
     }
 
 }

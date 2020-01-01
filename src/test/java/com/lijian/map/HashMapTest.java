@@ -6,12 +6,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class HashMapTest {
 
@@ -67,7 +70,39 @@ public class HashMapTest {
         }
 
     }
+
+    @Test
+    public void test2(){
+
+
+        Map<Integer, Integer> map = Stream.of("1123356743".split("")).collect(Collectors.toMap(x -> Integer.valueOf(x), y -> 0, (k1, k2) -> k1));
+
+        // 默认 是  insert-order ,   显示 支持 access-order
+        LinkedHashMap<Integer, Integer> linkedHashMap = new LinkedHashMap<>(map);
+
+        System.out.println(linkedHashMap);
+        linkedHashMap.put(1, 7);
+        System.out.println(linkedHashMap);
+
+        System.out.println("**************");
+
+// 10是初始大小，0.75是装载因子，true是表示按照访问时间排序
+        HashMap<Integer, Integer> m = new LinkedHashMap<>(10, 0.75f, true);
+        m.put(3, 11);
+        m.put(1, 12);
+        m.put(5, 23);
+        m.put(2, 22);
+
+        m.put(3, 26);
+        m.get(5);
+
+        for (Map.Entry e : m.entrySet()) {
+            System.out.println(e.getKey());
+        }
+        System.out.println(m);
     }
+
+}
 
     class Person {
 

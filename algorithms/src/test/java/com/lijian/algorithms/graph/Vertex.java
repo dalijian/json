@@ -97,11 +97,11 @@ public class Vertex {
     }
 
     //取或设置顶点应用信息
-    protected Object getAppObj() {
+    public Object getAppObj() {
         return application;
     }
 
-    protected void setAppObj(Object app) {
+    public void setAppObj(Object app) {
         application = app;
     }
 

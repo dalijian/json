@@ -162,35 +162,35 @@ public class Demo {
         array[left]= base;
     }
 
-    @Test
-    public  void DFS(Vertex vertex){
+//    @Test
+//    public  void DFS(Vertex vertex){
+//
+//        LinkedList result = new LinkedList();
+//        DFSRecur(vertex, result);
+//        //  拿到 全部  结点
+//        LinkedList allVertex =   getVertex();
+//
+//        for (int i = 0; i < allVertex.size(); i++) {
+//            if (!allVertex[i].isVisited()) {
+//                DFSRecur(allVertex[i],result);
+//            }
+//        }
+//
+//
+//    }
 
-        LinkedList result = new LinkedList();
-        DFSRecur(vertex, result);
-        //  拿到 全部  结点
-        LinkedList allVertex =   getVertex();
-
-        for (int i = 0; i < allVertex.size(); i++) {
-            if (!allVertex[i].isVisited()) {
-                DFSRecur(allVertex[i],result);
-            }
-        }
-
-
-    }
-
-    private void DFSRecur(Vertex vertex, LinkedList result) {
-        vertex.isVisited();
-        result.add(vertex);
-        LinkedList<Vertex>  adjVertexs =   vertex.adjVertexs(vertex);
-        for (int i = 0; i < adjVertexs.size(); i++) {
-            if (!adjVertexs[i].isVisited()){
-                DFSRecur(adjVertexs[i], result);
-            }
-
-        }
-
-    }
+//    private void DFSRecur(Vertex vertex, LinkedList result) {
+//        vertex.isVisited();
+//        result.add(vertex);
+//        LinkedList<Vertex>  adjVertexs =   vertex.adjVertexs(vertex);
+//        for (int i = 0; i < adjVertexs.size(); i++) {
+//            if (!adjVertexs[i].isVisited()){
+//                DFSRecur(adjVertexs[i], result);
+//            }
+//
+//        }
+//
+//    }
 
 
 }
