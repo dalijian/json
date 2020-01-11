@@ -8,6 +8,14 @@ import java.util.List;
 public class KMP {
 
 
+    @Test
+    public void kmpTest(){
+
+        String a= "asdfasdasdfg";
+        String b = "sda";
+        kmp(a.toCharArray(), a.length(), b.toCharArray(), b.length());
+    }
+
     // a, b分别是主串和模式串；n, m分别是主串和模式串的长度。
 
     // KMP 是 从 前 往 后 比较，  所以 外层 循环 要 有 n 次
@@ -16,6 +24,7 @@ public class KMP {
         int j = 0;
         for (int i = 0; i < n; ++i) {
             while (j > 0 && a[i] != b[j]) { // 一直找到a[i]和b[j]
+                // 匹配 失败，主串 不移动， 模式串 移动 j 单位
                 j = next[j - 1] + 1;
             }
             if (a[i] == b[j]) {
@@ -120,6 +129,7 @@ public class KMP {
     @Test
     public void nextTest(){
         String str = "aabbabac";
+        str = "abababzabababa";
         int[] result = next(str.toCharArray());
 
         for (int i = 0; i < result.length; i++) {

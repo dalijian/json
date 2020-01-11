@@ -244,7 +244,7 @@ public class EightQueen {
 
     @Test
     public void queen8Test() {
-
+        // 存放 皇后 所在 列的 下标
         int[] queenList = new int[8];
 
         addQueen(0, queenList);
@@ -252,9 +252,10 @@ public class EightQueen {
         for (int i = 0; i < queenList.length; i++) {
             System.out.println(queenList[i]);
         }
-        System.out.println("count:"+count);
+        System.out.println("count:" + count);
     }
-    private int count   =0;
+
+    private int count = 0;
 
     public void addQueen(int i, int[] queenList) {
 
@@ -262,17 +263,13 @@ public class EightQueen {
             printQueens(queenList);
             return; // 8行棋子都放好了，已经没法再往下递归了，所以就return
         }
-
         for (int j = 0; j < 8; j++) {
             count++;
             if (checkQueenExist(i, j, queenList)) {
                 queenList[i] = j;
                 addQueen(i + 1, queenList);
             }
-
         }
-
-
     }
 
     private boolean checkQueenExist(int i, int j, int[] queenList) {
@@ -289,14 +286,14 @@ public class EightQueen {
         return true;
     }
 
-     // 循环 嵌套 递归   不等于 循环 + 循环
+    // 循环 嵌套 递归   不等于 循环 + 循环
     @Test
-    public void queen8Test2(){
+    public void queen8Test2() {
 
-        List<int []> queenList = new ArrayList<>();
+        List<int[]> queenList = new ArrayList<>();
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
-                if (checkQueenExist(i, j,queenList)) {
+                if (checkQueenExist(i, j, queenList)) {
                     queenList.add(new int[]{i, j});
                     break;
                 }
@@ -313,9 +310,9 @@ public class EightQueen {
         }
         for (int k = 0; k < queenList.size(); k++) {
             int[] temp = queenList.get(k);
-            if (Math.abs(temp[0] - i) == Math.abs(temp[1] - j)||
-                    Math.abs(temp[0] - i)==0||
-                    Math.abs(temp[1] - j)==0) {
+            if (Math.abs(temp[0] - i) == Math.abs(temp[1] - j) ||
+                    Math.abs(temp[0] - i) == 0 ||
+                    Math.abs(temp[1] - j) == 0) {
                 return false;
             }
         }

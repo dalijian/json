@@ -1,11 +1,21 @@
 package com.lijian.algorithms.trie;
 
+import org.junit.Test;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class AC {
     private AcNode root = new AcNode('/'); // 存储无意义字符
 
+
+
+    @Test
+    public void buildFailurePointerTest(){
+
+
+        buildFailurePointer();
+    }
     /***
      * ac 自动机 构建 失败 指针
      */
@@ -64,4 +74,10 @@ public class AC {
             }
         }
     }
+
+
+
+
+
+
 }

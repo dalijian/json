@@ -24,8 +24,8 @@ public class UndirectedGraph extends AbstractGraph {
 
     // 生成 最小 生成树
     public void generateMST() {
-        resetVexStatus(); //重置图中各顶点的状态信息
-        resetEdgeType(); //重置图中各边的类型信息
+//        resetVexStatus(); //重置图中各顶点的状态信息
+//        resetEdgeType(); //重置图中各边的类型信息
         Iterator it = getVertex(); //（调用图操作③）  拿到顶点迭代器
         Vertex v = (Vertex) it.currentItem();//选第一个顶点作为起点
         v.setToVisited(); //顶点 v 进入集合 S

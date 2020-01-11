@@ -8,7 +8,7 @@ public class BF {
 
     @Test
     public void match() {
-        String str = "alsdkfjaiodhganfaephtasdgha;djaweifasfgnamdbaehf;wejifasdj;fasjghasdf;";
+        String str = "alsd";
         String subStr = "sd";
 
         int index = index(str.toCharArray(), subStr.toCharArray());
@@ -24,7 +24,7 @@ public class BF {
      */
 
     public int index(char[] pStr, char[] cStr) {
-        for (int i = 0; i < pStr.length - cStr.length; i++) {
+        for (int i = 0; i < pStr.length - cStr.length+1; i++) {
             int j = 0;
             while (j < cStr.length) {
                 if (pStr[i + j] == cStr[j]) {
@@ -41,5 +41,8 @@ public class BF {
         }
         return -1;
     }
+
+
+
 
 }
