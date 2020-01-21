@@ -45,7 +45,7 @@ public class DP {
         }
         for (int i = 1; i < n; ++i) { // 动态规划状态转移
             //  两条 动态 规划 路线
-            for (int j = 0; j <= w; ++j) {// 不把第i个物品放入背包
+            for (int j = 0; j <= w; ++j) {// 不把第i个物品放入背包   // 由于 我们 不知道 第 i个 物品 的 重量 ， 所以 要使用 循环  判断 第 i个 物品的 重量
                 if (states[i - 1][j] == true) states[i][j] = states[i - 1][j];
             }
             for (int j = 0; j <= w - weight[i]; ++j) {//把第i个物品放入背包
@@ -146,7 +146,7 @@ public class DP {
         }
     }
 
-
+    //最短 路径
     public int minDistDP(int[][] matrix, int n) {
         int[][] states = new int[n][n];
         int sum = 0;
@@ -261,4 +261,7 @@ public class DP {
         if (z < minv) minv = z;
         return minv;
     }
+
+
+
 }
