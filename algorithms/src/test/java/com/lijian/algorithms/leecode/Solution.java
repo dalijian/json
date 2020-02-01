@@ -2,9 +2,12 @@ package com.lijian.algorithms.leecode;
 
 import org.junit.Test;
 
+import java.math.BigDecimal;
+import java.math.MathContext;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -37,15 +40,15 @@ public class Solution {
         int[] indexs = new int[2];
 
         // 建立k-v ，一一对应的哈希表
-        HashMap<Integer,Integer> hash = new HashMap<Integer,Integer>();
-        for(int i = 0; i < nums.length; i++){
-            if(hash.containsKey(nums[i])){
+        HashMap<Integer, Integer> hash = new HashMap<Integer, Integer>();
+        for (int i = 0; i < nums.length; i++) {
+            if (hash.containsKey(nums[i])) {
                 indexs[0] = i;
                 indexs[1] = hash.get(nums[i]);
                 return indexs;
             }
             // 将数据存入 key为补数 ，value为下标
-            hash.put(target-nums[i],i);
+            hash.put(target - nums[i], i);
         }
         // // 双重循环 循环极限为(n^2-n)/2
         // for(int i = 0; i < nums.length; i++){
@@ -250,38 +253,38 @@ public class Solution {
         if (str.length() == 0) {
             return 0;
         }
-        int j = 0, i = 0, f = 0,z=0;
+        int j = 0, i = 0, f = 0, z = 0;
         while (i < strlist.length) {
 
             if (strlist[i] == ' ') {
                 i++;
                 continue;
             }
-            if (i<strlist.length&&strlist[i] == '-' && f <= 1) {
+            if (i < strlist.length && strlist[i] == '-' && f <= 1) {
                 i++;
                 f++;
             }
-            if (i<strlist.length&&strlist[i] == '+' && z <= 1) {
+            if (i < strlist.length && strlist[i] == '+' && z <= 1) {
                 i++;
                 z++;
             }
 
-            if (i<strlist.length&&strlist[i] >= '0' && strlist[i] <= '9') {
+            if (i < strlist.length && strlist[i] >= '0' && strlist[i] <= '9') {
                 j = 0;
                 while (i + j < str.length() && strlist[i + j] >= '0' && strlist[i + j] <= '9') {
                     j++;
                 }
 //                i=i+j;
-                String cStr = str.substring(i, i+j);
+                String cStr = str.substring(i, i + j);
                 Long num = Long.valueOf(cStr);
                 if (f == 0) {
                     if (num.longValue() > Integer.MAX_VALUE) {
                         return Integer.MAX_VALUE;
-                    }else{
+                    } else {
                         return num.intValue();
                     }
 
-                }else{
+                } else {
                     if (-num.longValue() < Integer.MIN_VALUE) {
                         return Integer.MIN_VALUE;
                     }
@@ -290,7 +293,7 @@ public class Solution {
 
 
             }
-            if (i<strlist.length&&(strlist[i] <= '0' || strlist[i] >= '9')) {
+            if (i < strlist.length && (strlist[i] <= '0' || strlist[i] >= '9')) {
                 return 0;
             }
 
@@ -298,7 +301,7 @@ public class Solution {
         if (j == 0) {
             return 0;
         }
-        String cStr = str.substring(i-j-1, i-1);
+        String cStr = str.substring(i - j - 1, i - 1);
         Long num = Long.valueOf(cStr);
         return num.intValue();
     }
@@ -588,14 +591,10 @@ public class Solution {
             while (regex[i] == '*' && array[pointer - 1] == 1 && pointer < array.length && value == str[pointer]) {
                 value = str[pointer];
                 array[pointer++] = 1;
-
             }
-
-
             if (pointer == str.length) {
                 break;
             }
-
         }
         if (array[str.length - 1] == 1) {
             return true;
@@ -869,7 +868,7 @@ public class Solution {
     @Test
     public void threeSumTest() {
 
-        List<List<Integer>> result = threeSum(new int[]{-1,0,1,2,-1,-4});
+        List<List<Integer>> result = threeSum(new int[]{-1, 0, 1, 2, -1, -4});
         System.out.println(result);
     }
     //三数之和 为0；
@@ -882,11 +881,11 @@ public class Solution {
 
         List<List<Integer>> list = new ArrayList<>();
         Arrays.sort(nums);
-        Map<Integer,Integer> map = new LinkedHashMap<>();
+        Map<Integer, Integer> map = new LinkedHashMap<>();
         for (int i = 0; i < nums.length; i++) {
             if (map.containsKey(nums[i])) {
                 continue;
-            }else{
+            } else {
                 map.put(nums[i], i);
             }
             list.addAll(twoSum3(nums, nums[i], i));
@@ -896,13 +895,13 @@ public class Solution {
 
     public List<List<Integer>> twoSum3(int[] nums, int target, int index) {
         List<List<Integer>> totalList = new ArrayList<>();
-        Map<Integer,Integer> map =new LinkedHashMap<>();
-        for (int i = index+1; i < nums.length; i++) {
+        Map<Integer, Integer> map = new LinkedHashMap<>();
+        for (int i = index + 1; i < nums.length; i++) {
             if (map.containsKey(nums[i])) {
-                List<Integer> result = Arrays.asList(nums[i],nums[ map.get(nums[i])], target);
-                while (i+1<nums.length&&nums[i] == nums[ i+1]) i++;
+                List<Integer> result = Arrays.asList(nums[i], nums[map.get(nums[i])], target);
+                while (i + 1 < nums.length && nums[i] == nums[i + 1]) i++;
                 totalList.add(result);
-            }else {
+            } else {
                 map.put(-target - nums[i], i);
             }
         }
@@ -914,7 +913,7 @@ public class Solution {
         List<List<Integer>> ls = new ArrayList<>();
         for (int i = 0; i < nums.length - 2; i++) {
             if (i == 0 || (i > 0 && nums[i] != nums[i - 1])) {  // 跳过可能重复的答案
-                    // 固定 第一个 值
+                // 固定 第一个 值
                 int l = i + 1, r = nums.length - 1, sum = 0 - nums[i];
                 while (l < r) {
                     if (nums[l] + nums[r] == sum) {
@@ -943,11 +942,12 @@ public class Solution {
 
 
     @Test
-    public void threeSumClosestTest(){
+    public void threeSumClosestTest() {
 
         int result = threeSumClosest(new int[]{-1, 2, 1, -4}, 1);
         System.out.println(result);
     }
+
     public int threeSumClosest(int[] nums, int target) {
         Arrays.sort(nums);
 
@@ -955,18 +955,18 @@ public class Solution {
         for (int i = 0; i < nums.length; i++) {
             int l = i + 1;
             int a = target - nums[i];
-            int r = nums.length-1;
+            int r = nums.length - 1;
 
             while (l < r) {
                 if (nums[l] + nums[r] == a) {
-                    closest= nums[i] + nums[l] + nums[r];
+                    closest = nums[i] + nums[l] + nums[r];
                     while (l < r && nums[l] == nums[l + 1]) l++;
                     while (l < r && nums[r] == nums[r - 1]) r--;
                     l++;
                     r--;
                 } else if (nums[l] + nums[r] < a) {
                     if (Math.abs(closest) < Math.abs(a - nums[l] - nums[r] - nums[i])) {
-                        closest=a - nums[l] - nums[r] - nums[i];
+                        closest = a - nums[l] - nums[r] - nums[i];
                     }
                     while (l < r && nums[l] == nums[l + 1]) l++;   // 跳过重复值
                     l++;
@@ -1158,23 +1158,18 @@ public class Solution {
 
     @Test
     public void testCanJump() {
-        System.out.println(canJump(new int[]{
-                3, 2, 1, 0, 4}));
+        System.out.println(canJump(new int[]{3, 2, 1, 0, 4}));
     }
 
-    // nums 的 value  表示 最大  可 跳跃 的 最 大 长度，
+    // nums 的 value  表示 最大 可 跳跃 的 最 大 长度，
     //  每次选择 与 前一次选择 相关 ，  用动态规划 写
     // num[i] +i 表示 当前 位置 能 到达的 最远 距离 ，
     // 之前 使用 +  法 计算 总距离， 没有 考虑到 位置  选择 的 关联 性， 使用 max 比较 ，可以 拿到 最大 距离
     public boolean canJump(int[] nums) {
-
         int current = 0;
         int maxDis = nums[0];
-
-
         for (int i = 0; i < nums.length - 1; i++) {
             maxDis = Math.max(maxDis, nums[i] + i);
-
         }
         return maxDis >= nums.length - 1;
     }
@@ -1184,15 +1179,12 @@ public class Solution {
 //    bool canJump(vector<int>& nums) {
 //        int len = nums.size();
 //        if (len <= 1) return true;
-//
 //        int maxDis = nums[0];
-//
 //        for (int i = 1; i < len - 1; i++) {
 //            if (i <= maxDis) {
 //                maxDis = max(maxDis, nums[i]+i);
 //            }
 //        }
-//
 //        return maxDis >= len - 1;
 //    }
 
@@ -1406,13 +1398,14 @@ public class Solution {
         ListNode node = new ListNode(1);
         node.next = new ListNode(2);
         node.next.next = new ListNode(3);
-        ListNode result = reverse(node);
-//        ListNode result2 = reverseList(node);
+        node.next.next.next = new ListNode(4);
+//        ListNode result = reverse(node);
+        ListNode result2 = reverseList(node);
 //        System.out.println(result);
 
     }
 
-    // 反转 链表
+    // 反转 链表 递归
     public ListNode reverse(ListNode head) {
         if (head == null || head.next == null)
             return head;
@@ -1443,7 +1436,7 @@ public class Solution {
         return head;
     }
 
-
+    // 反转 链表 循环
     public ListNode reverseList(ListNode node) {
         ListNode pre = null;
         ListNode next = null;
@@ -1730,7 +1723,7 @@ public class Solution {
 //    1，2，3，4 -> 2,1,4,3
 
     @Test
-    public void swapPairsTest(){
+    public void swapPairsTest() {
         ListNode node = new ListNode(1);
         node.next = new ListNode(2);
         node.next.next = new ListNode(3);
@@ -1739,7 +1732,7 @@ public class Solution {
     }
 
     public ListNode swapPairs(ListNode head) {
-        if(head == null || head.next == null){
+        if (head == null || head.next == null) {
             return head;
         }
         ListNode next = head.next;
@@ -1905,7 +1898,7 @@ public class Solution {
         return k;
     }
 
-
+//    26. 删除排序数组中的重复项
     public int removeDuplicates2(int[] nums) {
         // 使用双指针
         if (nums == null || nums.length == 1) {
@@ -2060,89 +2053,6 @@ public class Solution {
         return false;
     }
 
-    // 从 存在 重复 集合 M 中 抽取  1 一个
-    @Test
-    public void pernuteUniqueTest() {
-
-        List<List<Integer>> result = permuteUnique(new int[]{1, 1, 2});
-        System.out.println(result);
-    }
-
-
-    public List<List<Integer>> permuteUnique(int[] nums) {
-
-        if (nums.length == 0) {
-            return Collections.emptyList();
-        }
-        // 预处理 nums
-        Map<Integer, Integer> map = new LinkedHashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            if (map.containsKey(nums[i])) {
-                map.put(nums[i], map.get(nums[i]) + 1);
-            } else {
-                map.put(nums[i], 1);
-            }
-        }
-        List<List<Integer>> list = new ArrayList<>();
-        permuteUniqueRe(list, 0, nums, new int[nums.length], map);
-        return list;
-
-    }
-
-    private void permuteUniqueRe(List<List<Integer>> list, int i, int[] nums, int[] tempList, Map<Integer, Integer> map) {
-        if (i == nums.length) {
-            // 好奇 这里 如果 不是 new List()  而是  使用 参数 传递 过来 的 list ， 输出的 list  只有 一个值  ，
-            // 而 如果 new LIst()  那么 输出 的 值 包含 全部  排列 类型
-            List<Integer> list1 = new ArrayList<>();
-            for (int j = 0; j < tempList.length; j++) {
-                list1.add(tempList[j]);
-            }
-            list.add(list1);
-            return;
-        }
-        for (int j = 0; j < nums.length; j++) {
-            // 这边 是 指定 位置 nums[i] 不包含   nums[j]
-            if (!listContainsUnique(i, j, nums, tempList, map)) {
-                // 这里 必须 是 替换 ，而不能 是 新增
-                tempList[i] = nums[j];
-                permuteUniqueRe(list, i + 1, nums, tempList, map);
-            }
-        }
-    }
-
-
-    /**
-     * 判断 元素 是否 可以 插入
-     *
-     * @param i        插入 元素 在 tempList 的 下标
-     * @param j        插入 元素 在  nums 的 下标
-     * @param nums     递归-循环问题 中的 中问题  使用  循环 解决  从 集合 中 选择 一个
-     * @param tempList 当前 排列
-     * @param map
-     * @return
-     */
-    private boolean listContainsUnique(int i, int j, int[] nums, int[] tempList, Map<Integer, Integer> map) {
-
-        if (tempList.length == 0) {
-            return false;
-        }
-        int count = 0;
-
-        for (int k = 0; k < i; k++) {
-            if (tempList[k] == nums[j]) {
-                count++;
-            }
-            if (tempList[k] == nums[j] && count >= map.get(nums[j])) {
-
-                return true;
-            }
-            if (count >= map.get(nums[j])) {
-                return true;
-            }
-        }
-        return false;
-    }
-
 
     public ListNode reverseList2(ListNode node) {
         ListNode pre = null;
@@ -2224,13 +2134,13 @@ public class Solution {
 
     }
 
-@Test
-public void countAndSayTest(){
+    @Test
+    public void countAndSayTest() {
 
 
-    String result = countAndSay(4);
-    System.out.println(result);
-}
+        String result = countAndSay(4);
+        System.out.println(result);
+    }
 
     public String countAndSay(int n) {
 
@@ -2242,20 +2152,270 @@ public void countAndSayTest(){
     }
 
     private String say(String s) {
-      char [] chars=  s.toCharArray();
+        char[] chars = s.toCharArray();
         String result = "";
         for (int i = 0; i < chars.length; i++) {
             char temp = chars[i];
-            int j=0;
-            while (i+j<chars.length&&chars[i+j] == temp) {
+            int j = 0;
+            while (i + j < chars.length && chars[i + j] == temp) {
 
                 j++;
             }
-            i+=j-1;
+            i += j - 1;
             result += j + String.valueOf(chars[i]);
         }
         return result;
     }
 
+    @Test
+    public void firstMissingPositiveTest() {
+        int result = firstMissingPositive(new int[]{3, 4, -1, 1});
+        System.out.println(result);
+    }
+
+//    从第一个位置开始，让座位上的乘客走到自己应该坐的位置，并让该位置的人坐到第一个位置。
+// 一直进行这样的操作，直到第一个位置的人坐到自己位置。不过有时候我们知道，有的人总喜欢逃票。
+// 因此终止条件就是，一旦发现第一个位置的人逃票（票号 <= 0，或 >= 最大座位号)，则终止交换。
+//    对第二到N个位置做相同的操作。
+
+    //    遍历一次数组把大于等于1的和小于数组大小的值放到原数组对应位置，
+//    然后再遍历一次数组查当前下标是否和值对应，
+//    如果不对应那这个下标就是答案，否则遍历完都没出现那么答案就是数组长度加1。
+    public int firstMissingPositive(int[] nums) {
+        for (int i = 0; i < nums.length; i++) {
+// 如果 nums 的 数组 值 不等于 下标值 
+            while (nums[i] <= nums.length && i < nums.length && nums[i] > 0 && nums[i] != nums[nums[i] - 1]) {
+//                交换 nums[i] 与 nums[nums[i]-1]
+                swap(nums, i);
+            }
+        }
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != i + 1) {
+                return i + 1;
+            }
+        }
+        return nums.length + 1;
+    }
+
+    private void swap(int[] nums, int j) {
+        int temp = nums[j];
+        nums[j] = nums[nums[j] - 1];
+        nums[temp - 1] = temp;
+
+    }
+
+    public int trap(int[] height) {
+
+        int sum = 0;
+        for (int i = 0; i < height.length; i++) {
+            int j = 0;
+
+            while (height[j] > height[i]) {
+                j++;
+            }
+            i = j - 1;
+            sum += j;
+        }
+        return 0;
+    }
+
+    // 为什么 计算结果 是 121932631112635264， 程序 没问题
+    @Test
+    public void multiplyTest() {
+        String result = multiply("123456789", "987654321");
+        System.out.println(result);
+        System.out.println(Long.MAX_VALUE);
+    }
+
+    public String multiply(String num1, String num2) {
+        String[] numChar1 = num1.split("");
+        String[] numChar2 = num2.split("");
+
+        long sum = (0);
+        for (int i = numChar1.length - 1; i >= 0; i--) {
+            for (int j = numChar2.length - 1; j >= 0; j--) {
+                sum += Integer.valueOf(numChar1[i]) * Integer.valueOf(numChar2[j]) * Math.pow(10, num1.length() + num2.length() - i - j - 2);
+            }
+        }
+        return String.valueOf(sum);
+    }
+
+
+//    public int[][] merge(int[][] array) {
+//        // 先排序
+//        for (int i = 0; i < array.length-1; i++) {
+//            for (int j = 0; j < array.length -1- i; j++) {
+//                if (array[j + 1][0] < array[j][0]) {
+//                    int[] temp = array[j];
+//                    array[j] = array[j + 1];
+//                    array[j+1]=temp;
+//                }
+//            }
+//        }
+//        for (int i = 0; i < array.length-1; i++) {
+//            if (array[i][array[i].length - 1] > array[i + 1][0]) {
+//                if (array[i][array[i].length - 1] > array[i + 1][array.length - 1]) {
+//                    continue;
+//                } else if (array[i][array[i].length - 1] < array[i + 1][array.length - 1]) {
+//                    array[i][array[i].length - 1] = array[i + 1][array.length - 1];
+//                }
+//            }
+//        }
+//        return array;
+//    }
+
+    @Test
+    public void mergeTest() {
+        int[][] result = merge2(new int[][]{{1, 3}, {2, 2}, {15, 18}});
+        for (int i = 0; i < result.length; i++) {
+            for (int j = 0; j < result[i].length; j++) {
+                System.out.print(result[i][j]);
+                System.out.print(",");
+            }
+            System.out.println();
+        }
+    }
+
+    public int[][] merge2(int[][] intervals) {
+        if (intervals.length < 2) return intervals;
+        // 排序：根据区间开始值升序
+        Arrays.sort(intervals, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return o1[0] - o2[0];
+            }
+        });
+        List<int[]> list = new ArrayList<>();
+        int[] lastInterval = null;
+        for (int[] interval : intervals) {
+            if (lastInterval == null || lastInterval[1] < interval[0]) {
+                lastInterval = interval;
+                list.add(lastInterval);
+            } else if (lastInterval[1] < interval[1]) {
+                lastInterval[1] = interval[1];
+            }
+        }
+        return list.toArray(new int[0][]);
+    }
+
+    @Test
+    public void lengthOfLastWordTest() {
+
+        int result = lengthOfLastWord("    ");
+        System.out.println(result);
+
+    }
+
+
+    public int lengthOfLastWord(String s) {
+
+        if (s.length() == 0) {
+            return 0;
+        }
+
+        for (int i = s.length() - 1; i >= 0; i--) {
+            int j = 0;
+            int k = 0;
+
+            while (i - k >= 0 && s.charAt(i - k) == ' ') {
+                k++;
+
+            }
+            while (i - k >= 0 && s.charAt(i - k) != ' ') {
+                k++;
+                j++;
+            }
+            return j;
+        }
+        return s.length();
+    }
+
+
+    @Test
+    public void generateMatrixTest(){
+
+        int[][] result = generateMatrix(3);
+
+        for (int i = 0; i < result.length; i++) {
+            for (int j = 0; j < result[0].length; j++) {
+                System.out.print(result[i][j]);
+                System.out.println(",");
+
+            }
+            System.out.println();
+
+        }
+    }
+
+    public int[][] generateMatrix(int n) {
+        int[][] mat = new int[n][n];
+
+        int num = 0;
+        int t=1;
+        while (num < n * n) {
+            int left=0;
+            int right=n;
+            int up=0;
+            int down = n;
+
+//            填充 up
+
+            for (int i = 0; i < n; i++) {
+                mat[up][i] = i * i;
+                up++;
+                num++;
+            }
+//            填充 right
+            for (int i = 0; i < n; i++) {
+                mat[i][right] = (n + 1) * (n + 1);
+                num++;
+
+            }
+//            填充 down
+            for (int i = 0; i < n; i++) {
+                mat[down][i] = (n + 1) * (n + 1);
+                num++;
+            }
+//            填充 left
+            for (int i = 0; i < n; i++) {
+                mat[i][left] = (n + 1) * (n + 1);
+                num++;
+            }
+
+        }
+        return mat;
+
+    }
+
+    @Test
+    public void generateMatrix2Test(){
+
+        int[][] result = generateMatrix2(3);
+
+        for (int i = 0; i < result.length; i++) {
+            for (int j = 0; j < result[0].length; j++) {
+                System.out.print(result[i][j]);
+                System.out.print(",");
+            }
+            System.out.println();
+
+        }
+    }
+    public int[][] generateMatrix2(int n) {
+        int l = 0, r = n - 1, t = 0, b = n - 1;
+        int[][] mat = new int[n][n];
+        int num = 1, tar = n * n;
+        while(num <= tar){
+            for(int i = l; i <= r; i++) mat[t][i] = num++; // left to right.
+            t++;
+            for(int i = t; i <= b; i++) mat[i][r] = num++; // top to bottom.
+            r--;
+            for(int i = r; i >= l; i--) mat[b][i] = num++; // right to left.
+            b--;
+            for(int i = b; i >= t; i--) mat[i][l] = num++; // bottom to top.
+            l++;
+        }
+        return mat;
+    }
 
 }

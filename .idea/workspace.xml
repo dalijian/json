@@ -5,41 +5,49 @@
   </component>
   <component name="BookmarkManager">
     <bookmark url="jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/lang/ref/WeakReference.java" description="弱引用" line="31" />
-    <bookmark url="jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/util/LinkedList.java" line="106" />
-    <bookmark url="jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/util/LinkedList.java" line="107" />
-    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" description="合并两个链表" line="102" />
+    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" description="合并两个链表" line="105" />
     <bookmark url="jar://D:/java-EE/maven-localRepository/com/google/guava/guava/23.0/guava-23.0-sources.jar!/com/google/common/hash/BloomFilter.java" description="guaua-布隆过滤器" line="64" />
     <bookmark url="jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/util/BitSet.java" description="BitSet-位图存储" line="64" />
-    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" description="组合" line="1058" />
-    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" description="回文数" line="403" />
+    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" description="回文数" line="406" />
     <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" description="排列" line="1025" />
-    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" description="合并链表-递归" line="1388" />
-    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" description="合并链表-循环" line="168" />
+    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" description="合并链表-递归" line="1380" />
+    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" description="合并链表-循环" line="171" />
     <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/charpter_1/Evaluate.java" description="双栈实现算术表达式" line="13" />
-    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" description="递归+循环" line="1682" />
-    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" description="快慢指针" line="1913" />
-    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" description="链表-反转-递归" line="1414" />
-    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" description="链表-反转-循环" line="1434" />
-    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" description="链表-移除第N个元素" line="1632" />
-    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/StackExample.java" description="栈-回文数判断" line="11" />
+    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" description="递归+循环" line="1675" />
+    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" description="快慢指针" line="1906" />
+    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" description="链表-反转-递归" line="1407" />
+    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" description="链表-反转-循环" line="1427" />
+    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" description="链表-移除第N个元素" line="1625" />
+    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/StackExample.java" description="栈-回文数判断" line="13" />
     <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/dynamicprogramming/DP.java" description="最短路径问题" line="132" />
-    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java" description="莱文斯坦距离-动态规划" line="405" />
-    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java" description="莱文斯坦距离-回溯" line="438" />
+    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java" description="莱文斯坦距离-动态规划" line="497" />
+    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java" description="莱文斯坦距离-回溯" line="530" />
+    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java" description="动态规划-打印棋盘路径" line="275" />
+    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BinarySearch.java" description="二分法-平方根" line="111" />
+    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" description="组合" line="1058" />
+    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java" description="組合-使用List輸出" line="578" />
+    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DoubleIndex.java" description="数组-删除重复元素-通用模板" line="148" />
+    <bookmark url="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/ListExample.java" description="链表-反转-递归2" line="246" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f05faf8f-11eb-4ba9-bc65-3c5875d5fe8e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BinarySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Distribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DoubleIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/HashExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/StackExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/merge-distribute.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/ArrayExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Greedy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/ListExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/SlidingWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/StringExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/dynamicprogramming/DP.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/dynamicprogramming/DP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DoubleIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DoubleIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/HashExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/HashExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/lijian/test/StreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lijian/test/StreamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/StackExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/StackExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/search/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/sort/Bubble.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/sort/Bubble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/sort/Merge.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -92,33 +100,8 @@
       <file leaf-file-name="Solution.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-233">
-              <caret line="1043" column="10" selection-start-line="1043" selection-start-column="10" selection-end-line="1043" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DynamicProgram.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#12350#12359#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HashExample.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/HashExample.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="142" column="36" selection-start-line="142" selection-start-column="36" selection-end-line="142" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-714">
+              <caret line="1442" column="30" lean-forward="true" selection-start-line="1442" selection-start-column="30" selection-end-line="1442" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -126,44 +109,26 @@
       <file leaf-file-name="BinarySearch.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BinarySearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="88" selection-start-line="88" selection-end-line="88" />
+            <state relative-caret-position="344">
+              <caret line="254" column="66" lean-forward="true" selection-start-line="254" selection-start-column="66" selection-end-line="254" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TwoSumFast.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/charpter_1/TwoSumFast.java">
+      <file leaf-file-name="MergeSort.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/sort/MergeSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+            <state relative-caret-position="572">
+              <caret line="26" column="66" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinarySearch.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/search/BinarySearch.java">
+      <file leaf-file-name="ArrayExample.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/ArrayExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1246">
-              <caret line="137" column="18" lean-forward="true" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BackTrack.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="198" column="6" lean-forward="true" selection-start-line="198" selection-start-column="6" selection-end-line="198" selection-end-column="6" />
+            <state relative-caret-position="2860">
+              <caret line="132" selection-start-line="132" selection-end-line="132" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -171,20 +136,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StreamTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/lijian/test/StreamTest.java">
+      <file leaf-file-name="BackTrack.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="335" lean-forward="true" selection-start-line="335" selection-end-line="335" />
+            <state relative-caret-position="121">
+              <caret line="708" column="64" lean-forward="true" selection-start-line="708" selection-start-column="64" selection-end-line="708" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#20525#20533#0" expanded="true" />
+                <element signature="e#20581#20589#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IntStream.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/util/stream/IntStream.java">
+      <file leaf-file-name="String.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/lang/String.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="662" column="40" lean-forward="true" selection-start-line="662" selection-start-column="40" selection-end-line="662" selection-end-column="40" />
+            <state relative-caret-position="402">
+              <caret line="1924" column="18" selection-start-line="1924" selection-start-column="18" selection-end-line="1924" selection-end-column="18" />
+              <folding>
+                <element signature="e#66457#66458#0" expanded="true" />
+                <element signature="e#66495#66496#0" expanded="true" />
+                <element signature="e#82971#82972#0" expanded="true" />
+                <element signature="e#83020#83021#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DoubleIndex.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DoubleIndex.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="141" column="34" lean-forward="true" selection-start-line="141" selection-start-column="34" selection-end-line="141" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListExample.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/ListExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="498">
+              <caret line="299" lean-forward="true" selection-start-line="299" selection-end-line="299" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DynamicProgram.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="882" lean-forward="true" selection-start-line="882" selection-end-line="882" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -204,40 +213,41 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>buildFailurePointer</find>
-      <find>longestPalindrome</find>
-      <find>longestPalindrome2</find>
-      <find>reverse</find>
-      <find>pow</find>
-      <find>isMatch</find>
-      <find>intToRoman</find>
-      <find>longestCommonPrefix</find>
-      <find>回文</find>
-      <find>mergeTwoLists</find>
-      <find>cur</find>
-      <find>isValid</find>
-      <find>BF</find>
-      <find>generateParenthesis</find>
-      <find>permute</find>
-      <find>permuteUnique</find>
-      <find>reverseList</find>
-      <find>swapPairs</find>
-      <find>threeSum</find>
-      <find>[1, 0, -1]</find>
-      <find>threeSumClosest</find>
-      <find>three</find>
       <find>strStr</find>
       <find>divide</find>
-      <find>uniquePathsWithObstacles</find>
       <find>PriorityQueue</find>
       <find>longestValidParentheses</find>
       <find>binarySearch</find>
       <find>&quot;</find>
+      <find>firstMissingPositive</find>
+      <find>jump</find>
+      <find>permuteUnique</find>
+      <find>queen</find>
+      <find>solveNQueens</find>
+      <find>maxSubArray</find>
+      <find>canJump</find>
+      <find>b</find>
+      <find>isMatch</find>
+      <find>[</find>
+      <find>uniquePaths</find>
+      <find>uniquePathsWithObstacles</find>
+      <find>mySqrt</find>
+      <find>simplifyPath</find>
+      <find>setZeroes</find>
       <find>]</find>
+      <find>searchMatrix</find>
+      <find>sortColors</find>
+      <find>maximalRectangle</find>
+      <find>removeDuplicates</find>
+      <find>numDecodings</find>
+      <find>reverseBetween</find>
+      <find>restoreIpAddresses</find>
+      <find>reverseList</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>'</replace>
+      <replace>{</replace>
       <replace>}</replace>
     </replaceStrings>
     <dirStrings>
@@ -254,13 +264,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/charpter_2/Multiway.java" />
-        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/search/BinarySearch.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/lijian/Hash/MD5.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lijian/security/PasswordHash.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/lijian/map/HashMapTest.java" />
-        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/tree/BinarySearchTree.java" />
-        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/tree/BinTreeNode.java" />
         <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/heap/Heap.java" />
         <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/heap/MergeFile.java" />
         <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/heap/TopM.java" />
@@ -290,21 +293,28 @@
         <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/path/DijkstraDemo.java" />
         <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/backtracking/EightQueen.java" />
         <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/match/BF.java" />
-        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DoubleIndex.java" />
         <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DymaicG.java" />
-        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/StackExample.java" />
         <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DropBacking.java" />
         <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Distrebute.java" />
         <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/distribute.java" />
         <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Distribute.java" />
         <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/dynamicprogramming/DP.java" />
-        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java" />
-        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BinarySearch.java" />
-        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/test.java" />
-        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/HashExample.java" />
-        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/lijian/test/StreamTest.java" />
+        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Greedy.java" />
+        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/HashExample.java" />
+        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/sort/Bubble.java" />
+        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/StringExample.java" />
+        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/search/BinarySearch.java" />
+        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/test.java" />
+        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/ArrayExample.java" />
+        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/SlidingWindow.java" />
+        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DoubleIndex.java" />
+        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/StackExample.java" />
+        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BinarySearch.java" />
+        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java" />
+        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java" />
         <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java" />
+        <option value="$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/ListExample.java" />
       </list>
     </option>
   </component>
@@ -352,10 +362,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1525" />
-    <option name="height" value="580" />
+    <option name="x" value="426" />
+    <option name="y" value="10" />
+    <option name="width" value="1175" />
+    <option name="height" value="1060" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -364,75 +374,7 @@
       <hideEmptyPackages ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="json" type="b2602c69:ProjectViewProjectNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="json" type="b2602c69:ProjectViewProjectNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="json" type="b2602c69:ProjectViewProjectNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="json" type="b2602c69:ProjectViewProjectNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="json" type="b2602c69:ProjectViewProjectNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="json" type="b2602c69:ProjectViewProjectNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="charpter_1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="json" type="b2602c69:ProjectViewProjectNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="leecode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="json" type="b2602c69:ProjectViewProjectNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -442,13 +384,13 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="StreamT&#9;PSI&#9;JAVA://com.lijian.test.StreamTest&#10;Bi&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/leecode/BinarySearch.java&#10;dy&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/dynamicprogramming&#10;Qu&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/backtracking/EightQueen.java&#10;Q&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/backtracking/EightQueen.java&#10;solu&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java&#10;eva&#9;PSI&#9;JAVA://com.lijian.algorithms.charpter_1.Evaluate&#10;quee&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/backtracking/EightQueen.java&#10;dj&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/path/DijkstraDemo.java&#10;graph&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/graph/AbstractGraph.java&#10;ac.j&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/trie/AC.js&#10;BitSet&#9;PSI&#9;JAVA://java.util.BitSet&#10;Bloom&#9;PSI&#9;JAVA://com.google.common.hash.BloomFilter&#10;solution&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java&#10;path&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/path&#10;gra&#9;PSI&#9;JAVA://com.lijian.algorithms.graph.Graph&#10;Graph&#9;PSI&#9;JAVA://com.lijian.guava.GraphTest&#10;merge&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/practise/MergeSort.java&#10;Dy&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/dynamicprogramming&#10;8q&#9;PSI&#9;JAVA://com.lijian.algorithms.backtracking.EightQueen#cal8queens&#10;Eva&#9;PSI&#9;JAVA://com.lijian.algorithms.charpter_1.Evaluate&#10;Merge&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/practise/MergeSort.java&#10;bean&#9;PSI&#9;JAVA://com.lijian.beanUtils.BeanUtilsTest&#10;solut&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java&#10;application.&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/main/resources/application.properties&#10;String&#9;FILE&#9;jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/lang/String.java&#10;BF&#9;PSI&#9;JAVA://com.lijian.algorithms.match.BF&#10;pri&#9;FILE&#9;jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/util/PriorityQueue.java&#10;bfs&#9;PSI&#9;JAVA://com.lijian.algorithms.graph.Graph#BFSTraverse&#10;BFS&#9;PSI&#9;JAVA://com.lijian.algorithms.graph.AbstractGraph#BFS&#10;lee&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/leecode&#10;mergeSor&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/practise/MergeSort.java&#10;leecode&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/leecode&#10;hash&#9;PSI&#9;JAVA://com.lijian.map.HashMapTest&#10;md&#9;PSI&#9;JAVA://com.lijian.security.MD5&#10;compl&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/src/test/java/com/lijian/concurrent/completablefuture&#10;completable&#9;PSI&#9;JAVA://java.util.concurrent.CompletableFuture&#10;zip&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/src/test/java/com/lijian/zip/Zip.java&#10;inputstr&#9;PSI&#9;JAVA://com.lijian.inputstream.InputStreamTest&#10;pom&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/pom.xml&#10;vfs&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/src/test/java/com/lijian/vfs/VFSTest.java&#10;excel&#9;PSI&#9;JAVA://com.lijian.poi.excel.ExcelTest&#10;stream&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/src/test/java/com/lijian/test/StreamTest.java&#10;streamT&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/src/test/java/com/lijian/test/StreamTest.java&#10;guava&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/src/test/java/com/lijian/guava&#10;file&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/src/test/java/com/lijian/file/FileTest.java&#10;bloomF&#9;PSI&#9;JAVA://com.google.common.hash.BloomFilter&#10;BigSet&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/src/test/java/com/lijian/bigset/BigSetDemo.java&#10;ArrayList&#9;PSI&#9;JAVA://java.util.ArrayList&#10;list&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/link/LinkedList.java" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/leecode/StringExample.java&#10;StreamT&#9;PSI&#9;JAVA://com.lijian.test.StreamTest&#10;Bi&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/leecode/BinarySearch.java&#10;dy&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/dynamicprogramming&#10;Qu&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/backtracking/EightQueen.java&#10;Q&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/backtracking/EightQueen.java&#10;solu&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java&#10;eva&#9;PSI&#9;JAVA://com.lijian.algorithms.charpter_1.Evaluate&#10;quee&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/backtracking/EightQueen.java&#10;dj&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/path/DijkstraDemo.java&#10;graph&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/graph/AbstractGraph.java&#10;ac.j&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/trie/AC.js&#10;BitSet&#9;PSI&#9;JAVA://java.util.BitSet&#10;Bloom&#9;PSI&#9;JAVA://com.google.common.hash.BloomFilter&#10;solution&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java&#10;path&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/path&#10;gra&#9;PSI&#9;JAVA://com.lijian.algorithms.graph.Graph&#10;Graph&#9;PSI&#9;JAVA://com.lijian.guava.GraphTest&#10;merge&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/practise/MergeSort.java&#10;Dy&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/dynamicprogramming&#10;8q&#9;PSI&#9;JAVA://com.lijian.algorithms.backtracking.EightQueen#cal8queens&#10;Eva&#9;PSI&#9;JAVA://com.lijian.algorithms.charpter_1.Evaluate&#10;Merge&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/practise/MergeSort.java&#10;bean&#9;PSI&#9;JAVA://com.lijian.beanUtils.BeanUtilsTest&#10;solut&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java&#10;application.&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/main/resources/application.properties&#10;String&#9;FILE&#9;jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/lang/String.java&#10;BF&#9;PSI&#9;JAVA://com.lijian.algorithms.match.BF&#10;pri&#9;FILE&#9;jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/util/PriorityQueue.java&#10;bfs&#9;PSI&#9;JAVA://com.lijian.algorithms.graph.Graph#BFSTraverse&#10;BFS&#9;PSI&#9;JAVA://com.lijian.algorithms.graph.AbstractGraph#BFS&#10;lee&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/leecode&#10;mergeSor&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/practise/MergeSort.java&#10;leecode&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/algorithms/src/test/java/com/lijian/algorithms/leecode&#10;hash&#9;PSI&#9;JAVA://com.lijian.map.HashMapTest&#10;md&#9;PSI&#9;JAVA://com.lijian.security.MD5&#10;compl&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/src/test/java/com/lijian/concurrent/completablefuture&#10;completable&#9;PSI&#9;JAVA://java.util.concurrent.CompletableFuture&#10;zip&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/src/test/java/com/lijian/zip/Zip.java&#10;inputstr&#9;PSI&#9;JAVA://com.lijian.inputstream.InputStreamTest&#10;pom&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/pom.xml&#10;vfs&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/src/test/java/com/lijian/vfs/VFSTest.java&#10;excel&#9;PSI&#9;JAVA://com.lijian.poi.excel.ExcelTest&#10;stream&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/src/test/java/com/lijian/test/StreamTest.java&#10;streamT&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/src/test/java/com/lijian/test/StreamTest.java&#10;guava&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/src/test/java/com/lijian/guava&#10;file&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/src/test/java/com/lijian/file/FileTest.java&#10;bloomF&#9;PSI&#9;JAVA://com.google.common.hash.BloomFilter&#10;BigSet&#9;FILE&#9;file://C:/Users/lijian/IdeaProjects/json/src/test/java/com/lijian/bigset/BigSetDemo.java&#10;ArrayList&#9;PSI&#9;JAVA://java.util.ArrayList" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/lijian" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../datastruct-master/pom.xml" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/GitHub/jcip.github.com" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -459,12 +401,8 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.lijian.algorithms.link" />
-      <recent name="com.lijian.concurrent.future" />
-      <recent name="com.lijian.test" />
-      <recent name="com.lijian.connectionPool" />
-      <recent name="com.lijian.howTomcatWork.chapter3" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lijian\IdeaProjects\json\algorithms\src\test\resources" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\lijian\IdeaProjects\json\algorithms\src\test\java\com\lijian\algorithms\leecode" />
@@ -480,8 +418,12 @@
       <recent name="com.lijian.muti_thread.guarded_suspension.a2_my" />
       <recent name="com.lijian.clone" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\lijian\IdeaProjects\json\algorithms\src\test\resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.lijian.algorithms.link" />
+      <recent name="com.lijian.concurrent.future" />
+      <recent name="com.lijian.test" />
+      <recent name="com.lijian.connectionPool" />
+      <recent name="com.lijian.howTomcatWork.chapter3" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -496,7 +438,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BackTrack.combinationSumTest22">
+  <component name="RunManager" selected="JUnit.ListExample.reverseList2Test">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lijian.algorithms.charpter_1.practise.Demo" />
       <module name="algorithms" />
@@ -514,7 +456,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BackTrack.combinationSumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BackTrack.restoreIpAddressesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithms" />
       <extension name="coverage">
         <pattern>
@@ -526,7 +468,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.lijian.algorithms.leecode" />
       <option name="MAIN_CLASS_NAME" value="com.lijian.algorithms.leecode.BackTrack" />
-      <option name="METHOD_NAME" value="combinationSumTest" />
+      <option name="METHOD_NAME" value="restoreIpAddressesTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -537,7 +479,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="BackTrack.combinationSumTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DynamicProgram.numDecodingsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithms" />
       <extension name="coverage">
         <pattern>
@@ -548,8 +490,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.lijian.algorithms.leecode" />
-      <option name="MAIN_CLASS_NAME" value="com.lijian.algorithms.leecode.BackTrack" />
-      <option name="METHOD_NAME" value="combinationSumTest2" />
+      <option name="MAIN_CLASS_NAME" value="com.lijian.algorithms.leecode.DynamicProgram" />
+      <option name="METHOD_NAME" value="numDecodingsTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -560,7 +502,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="BackTrack.combinationSumTest22" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ListExample.reverseBetweenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithms" />
       <extension name="coverage">
         <pattern>
@@ -571,8 +513,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.lijian.algorithms.leecode" />
-      <option name="MAIN_CLASS_NAME" value="com.lijian.algorithms.leecode.BackTrack" />
-      <option name="METHOD_NAME" value="combinationSumTest22" />
+      <option name="MAIN_CLASS_NAME" value="com.lijian.algorithms.leecode.ListExample" />
+      <option name="METHOD_NAME" value="reverseBetweenTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -583,7 +525,30 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="Solution.countAndSayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ListExample.reverseList2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lijian.algorithms.leecode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.lijian.algorithms.leecode" />
+      <option name="MAIN_CLASS_NAME" value="com.lijian.algorithms.leecode.ListExample" />
+      <option name="METHOD_NAME" value="reverseList2Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="Solution.reverseListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithms" />
       <extension name="coverage">
         <pattern>
@@ -595,30 +560,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.lijian.algorithms.leecode" />
       <option name="MAIN_CLASS_NAME" value="com.lijian.algorithms.leecode.Solution" />
-      <option name="METHOD_NAME" value="countAndSayTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="Solution.f3Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lijian.algorithms.leecode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.lijian.algorithms.leecode" />
-      <option name="MAIN_CLASS_NAME" value="com.lijian.algorithms.leecode.Solution" />
-      <option name="METHOD_NAME" value="f3Test" />
+      <option name="METHOD_NAME" value="reverseListTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -684,19 +626,19 @@
     <list>
       <item itemvalue="Spring Boot.MutiThreadApplication" />
       <item itemvalue="Spring Boot.AlgorithmsApplication" />
-      <item itemvalue="JUnit.Solution.countAndSayTest" />
-      <item itemvalue="JUnit.BackTrack.combinationSumTest" />
-      <item itemvalue="JUnit.BackTrack.combinationSumTest2" />
-      <item itemvalue="JUnit.Solution.f3Test" />
-      <item itemvalue="JUnit.BackTrack.combinationSumTest22" />
+      <item itemvalue="JUnit.DynamicProgram.numDecodingsTest" />
+      <item itemvalue="JUnit.Solution.reverseListTest" />
+      <item itemvalue="JUnit.BackTrack.restoreIpAddressesTest" />
+      <item itemvalue="JUnit.ListExample.reverseBetweenTest" />
+      <item itemvalue="JUnit.ListExample.reverseList2Test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BackTrack.combinationSumTest22" />
-        <item itemvalue="JUnit.BackTrack.combinationSumTest2" />
-        <item itemvalue="JUnit.Solution.f3Test" />
-        <item itemvalue="JUnit.BackTrack.combinationSumTest" />
-        <item itemvalue="JUnit.Solution.countAndSayTest" />
+        <item itemvalue="JUnit.ListExample.reverseList2Test" />
+        <item itemvalue="JUnit.ListExample.reverseBetweenTest" />
+        <item itemvalue="JUnit.BackTrack.restoreIpAddressesTest" />
+        <item itemvalue="JUnit.Solution.reverseListTest" />
+        <item itemvalue="JUnit.DynamicProgram.numDecodingsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -959,7 +901,11 @@
       <workItem from="1579182196149" duration="13181000" />
       <workItem from="1579410922299" duration="17160000" />
       <workItem from="1579438952166" duration="9577000" />
-      <workItem from="1579505229461" duration="19698000" />
+      <workItem from="1579505229461" duration="21075000" />
+      <workItem from="1579608510669" duration="53591000" />
+      <workItem from="1580263634224" duration="18054000" />
+      <workItem from="1580299765112" duration="4371000" />
+      <workItem from="1580363648593" duration="34888000" />
     </task>
     <task id="LOCAL-00001" summary="add jaskson test">
       <created>1544112475921</created>
@@ -1038,43 +984,50 @@
       <option name="project" value="LOCAL" />
       <updated>1578720593536</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="commit 添加 leetcode 算法2">
+      <created>1579598596252</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1579598596252</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BackTrack_combinationSumTest2 - 2020.01.21 at 16h 53m 58s.xml">
-      <configuration name="BackTrack.combinationSumTest2" configurationId="JUnit" />
+    <history-entry file="ListExample_reverseBetweenTest - 2020.01.31 at 18h 14m 09s.xml">
+      <configuration name="ListExample.reverseBetweenTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BackTrack_combinationSumTest2 - 2020.01.21 at 16h 57m 07s.xml">
-      <configuration name="BackTrack.combinationSumTest2" configurationId="JUnit" />
+    <history-entry file="ListExample_reverseBetweenTest - 2020.01.31 at 18h 17m 02s.xml">
+      <configuration name="ListExample.reverseBetweenTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BackTrack_combinationSumTest2 - 2020.01.21 at 16h 57m 31s.xml">
-      <configuration name="BackTrack.combinationSumTest2" configurationId="JUnit" />
+    <history-entry file="ListExample_reverseBetweenTest - 2020.01.31 at 20h 37m 37s.xml">
+      <configuration name="ListExample.reverseBetweenTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BackTrack_combinationSumTest2 - 2020.01.21 at 17h 02m 02s.xml">
-      <configuration name="BackTrack.combinationSumTest2" configurationId="JUnit" />
+    <history-entry file="ListExample_reverseBetweenTest - 2020.01.31 at 20h 58m 20s.xml">
+      <configuration name="ListExample.reverseBetweenTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BackTrack_combinationSumTest2 - 2020.01.21 at 17h 07m 21s.xml">
-      <configuration name="BackTrack.combinationSumTest2" configurationId="JUnit" />
+    <history-entry file="ListExample_reverseList2Test - 2020.01.31 at 21h 28m 57s.xml">
+      <configuration name="ListExample.reverseList2Test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BackTrack_combinationSumTest22 - 2020.01.21 at 17h 07m 25s.xml">
-      <configuration name="BackTrack.combinationSumTest22" configurationId="JUnit" />
+    <history-entry file="ListExample_reverseBetweenTest - 2020.01.31 at 21h 28m 57s.xml">
+      <configuration name="ListExample.reverseBetweenTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BackTrack_combinationSumTest2 - 2020.01.21 at 17h 07m 32s.xml">
-      <configuration name="BackTrack.combinationSumTest2" configurationId="JUnit" />
+    <history-entry file="ListExample_reverseList2Test - 2020.01.31 at 21h 30m 34s.xml">
+      <configuration name="ListExample.reverseList2Test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BackTrack_combinationSumTest2 - 2020.01.21 at 17h 09m 48s.xml">
-      <configuration name="BackTrack.combinationSumTest2" configurationId="JUnit" />
+    <history-entry file="ListExample_reverseList2Test - 2020.01.31 at 21h 42m 45s.xml">
+      <configuration name="ListExample.reverseList2Test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BackTrack_combinationSumTest22 - 2020.01.21 at 17h 11m 50s.xml">
-      <configuration name="BackTrack.combinationSumTest22" configurationId="JUnit" />
+    <history-entry file="ListExample_reverseList2Test - 2020.01.31 at 21h 51m 03s.xml">
+      <configuration name="ListExample.reverseList2Test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BackTrack_combinationSumTest2 - 2020.01.21 at 17h 20m 45s.xml">
-      <configuration name="BackTrack.combinationSumTest2" configurationId="JUnit" />
+    <history-entry file="ListExample_reverseList2Test - 2020.01.31 at 22h 20m 30s.xml">
+      <configuration name="ListExample.reverseList2Test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1781953000" />
+    <option name="totallyTimeSpent" value="1894234000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1086,35 +1039,35 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="2" />
       <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.5020107" side_tool="true" weight="0.48609078" />
       <window_info anchor="right" id="Maven Projects" order="10" weight="0.2989276" />
-      <window_info anchor="right" id="CDI" order="12" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="CDI" order="12" weight="0.3297587" />
       <window_info id="Capture Tool" order="9" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="9" weight="0.3290469" />
-      <window_info anchor="right" id="JSF" order="11" weight="0.3297587" />
+      <window_info anchor="right" id="Database" order="9" weight="0.32841823" />
       <window_info id="Structure" order="1" sideWeight="0.846678" side_tool="true" weight="0.30937973" />
+      <window_info anchor="right" id="JSF" order="11" weight="0.3297587" />
       <window_info anchor="right" id="Translate" order="8" weight="0.3297587" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info id="UI Designer" order="5" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5065886" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39531478" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32827324" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3045388" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.24304539" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32879046" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4977307" weight="0.3491461" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49798927" weight="0.28257686" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49798927" weight="0.19033675" />
       <window_info anchor="bottom" id="Spring" order="16" weight="0.32650074" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.5387994" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.15332198" weight="0.25938338" />
-      <window_info anchor="right" id="Bean Validation" order="15" weight="0.3297587" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.35139093" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.15332198" weight="0.2761394" />
+      <window_info anchor="right" id="Bean Validation" order="15" side_tool="true" weight="0.3297587" />
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.71888727" />
       <window_info anchor="right" id="Theme Preview" order="5" />
@@ -1122,7 +1075,6 @@
       <window_info anchor="bottom" id="Statistic" order="9" />
       <window_info anchor="bottom" id="Inspection Results" order="18" weight="0.32879046" />
       <window_info anchor="right" id="Coverage" order="14" sideWeight="0.5008518" side_tool="true" weight="0.3297587" />
-      <window_info anchor="bottom" id="JRebel Executor" order="14" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info id="Learn" order="7" weight="0.32980332" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -1132,6 +1084,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.24932976" />
       <window_info id="JRebel" order="3" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="JRebel Executor" order="14" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Mongo Explorer" order="6" weight="0.3290469" />
     </layout>
@@ -1191,7 +1144,8 @@
     <MESSAGE value="commit 添加 图，DFS,BFS" />
     <MESSAGE value="commit 添加 图 最小生成树，最短路径" />
     <MESSAGE value="commit 添加 leetcode 算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 添加 leetcode 算法" />
+    <MESSAGE value="commit 添加 leetcode 算法2" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 添加 leetcode 算法2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1365,12 +1319,6 @@
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/sort/Bubble.java</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/sort/MergeSortNoRecursion.java</url>
           <line>56</line>
           <properties />
@@ -1530,61 +1478,61 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>111</line>
+          <line>114</line>
           <properties />
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>108</line>
+          <line>111</line>
           <properties />
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>193</line>
+          <line>196</line>
           <properties />
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>195</line>
+          <line>198</line>
           <properties />
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>198</line>
+          <line>201</line>
           <properties />
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>324</line>
+          <line>327</line>
           <properties />
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>371</line>
+          <line>374</line>
           <properties />
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>367</line>
+          <line>370</line>
           <properties />
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>456</line>
+          <line>459</line>
           <properties />
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>471</line>
+          <line>474</line>
           <properties />
           <option name="timeStamp" value="74" />
         </line-breakpoint>
@@ -1644,25 +1592,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>526</line>
+          <line>529</line>
           <properties />
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>763</line>
+          <line>762</line>
           <properties />
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>769</line>
+          <line>768</line>
           <properties />
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>824</line>
+          <line>823</line>
           <properties />
           <option name="timeStamp" value="91" />
         </line-breakpoint>
@@ -1698,85 +1646,85 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1170</line>
+          <line>1168</line>
           <properties />
           <option name="timeStamp" value="98" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1207</line>
+          <line>1199</line>
           <properties />
           <option name="timeStamp" value="99" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1209</line>
+          <line>1201</line>
           <properties />
           <option name="timeStamp" value="100" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1239</line>
+          <line>1231</line>
           <properties />
           <option name="timeStamp" value="101" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1268</line>
+          <line>1260</line>
           <properties />
           <option name="timeStamp" value="103" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1275</line>
+          <line>1267</line>
           <properties />
           <option name="timeStamp" value="104" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1278</line>
+          <line>1270</line>
           <properties />
           <option name="timeStamp" value="105" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1302</line>
+          <line>1294</line>
           <properties />
           <option name="timeStamp" value="106" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1521</line>
+          <line>1514</line>
           <properties />
           <option name="timeStamp" value="111" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1488</line>
+          <line>1481</line>
           <properties />
           <option name="timeStamp" value="113" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1511</line>
+          <line>1504</line>
           <properties />
           <option name="timeStamp" value="114" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1374</line>
+          <line>1366</line>
           <properties />
           <option name="timeStamp" value="115" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1483</line>
+          <line>1476</line>
           <properties />
           <option name="timeStamp" value="116" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1461</line>
+          <line>1454</line>
           <properties />
           <option name="timeStamp" value="117" />
         </line-breakpoint>
@@ -1806,31 +1754,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1562</line>
+          <line>1555</line>
           <properties />
           <option name="timeStamp" value="139" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1587</line>
+          <line>1580</line>
           <properties />
           <option name="timeStamp" value="140" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>133</line>
+          <line>136</line>
           <properties />
           <option name="timeStamp" value="143" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>170</line>
+          <line>173</line>
           <properties />
           <option name="timeStamp" value="145" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>174</line>
+          <line>177</line>
           <properties />
           <option name="timeStamp" value="146" />
         </line-breakpoint>
@@ -1848,37 +1796,37 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>404</line>
+          <line>407</line>
           <properties />
           <option name="timeStamp" value="149" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>421</line>
+          <line>424</line>
           <properties />
           <option name="timeStamp" value="150" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>485</line>
+          <line>488</line>
           <properties />
           <option name="timeStamp" value="158" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>481</line>
+          <line>484</line>
           <properties />
           <option name="timeStamp" value="159" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>587</line>
+          <line>590</line>
           <properties />
           <option name="timeStamp" value="162" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>557</line>
+          <line>560</line>
           <properties />
           <option name="timeStamp" value="165" />
         </line-breakpoint>
@@ -1890,43 +1838,43 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>613</line>
+          <line>612</line>
           <properties />
           <option name="timeStamp" value="167" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>696</line>
+          <line>695</line>
           <properties />
           <option name="timeStamp" value="168" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>723</line>
+          <line>722</line>
           <properties />
           <option name="timeStamp" value="169" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>716</line>
+          <line>715</line>
           <properties />
           <option name="timeStamp" value="170" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>786</line>
+          <line>785</line>
           <properties />
           <option name="timeStamp" value="171" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>791</line>
+          <line>790</line>
           <properties />
           <option name="timeStamp" value="172" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>794</line>
+          <line>793</line>
           <properties />
           <option name="timeStamp" value="173" />
         </line-breakpoint>
@@ -1938,43 +1886,37 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1059</line>
-          <properties />
-          <option name="timeStamp" value="176" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1643</line>
+          <line>1636</line>
           <properties />
           <option name="timeStamp" value="179" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1638</line>
+          <line>1631</line>
           <properties />
           <option name="timeStamp" value="180" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1764</line>
+          <line>1757</line>
           <properties />
           <option name="timeStamp" value="182" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1780</line>
+          <line>1773</line>
           <properties />
           <option name="timeStamp" value="184" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1826</line>
+          <line>1819</line>
           <properties />
           <option name="timeStamp" value="185" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>912</line>
+          <line>911</line>
           <properties />
           <option name="timeStamp" value="186" />
         </line-breakpoint>
@@ -1986,13 +1928,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1684</line>
+          <line>1677</line>
           <properties />
           <option name="timeStamp" value="190" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1688</line>
+          <line>1681</line>
           <properties />
           <option name="timeStamp" value="191" />
         </line-breakpoint>
@@ -2004,157 +1946,157 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1712</line>
+          <line>1705</line>
           <properties />
           <option name="timeStamp" value="195" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1904</line>
+          <line>1897</line>
           <properties />
           <option name="timeStamp" value="198" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1898</line>
+          <line>1891</line>
           <properties />
           <option name="timeStamp" value="203" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1870</line>
+          <line>1863</line>
           <properties />
           <option name="timeStamp" value="204" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1881</line>
+          <line>1874</line>
           <properties />
           <option name="timeStamp" value="205" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1910</line>
+          <line>1903</line>
           <properties />
           <option name="timeStamp" value="206" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1447</line>
+          <line>1440</line>
           <properties />
           <option name="timeStamp" value="209" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1416</line>
+          <line>1409</line>
           <properties />
           <option name="timeStamp" value="210" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1941</line>
+          <line>1934</line>
           <properties />
           <option name="timeStamp" value="211" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1943</line>
+          <line>1936</line>
           <properties />
           <option name="timeStamp" value="212" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1945</line>
+          <line>1938</line>
           <properties />
           <option name="timeStamp" value="214" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1997</line>
+          <line>1990</line>
           <properties />
           <option name="timeStamp" value="216" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1980</line>
+          <line>1973</line>
           <properties />
           <option name="timeStamp" value="217" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>2016</line>
+          <line>2009</line>
           <properties />
           <option name="timeStamp" value="220" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>2032</line>
+          <line>2025</line>
           <properties />
           <option name="timeStamp" value="223" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>2050</line>
+          <line>2043</line>
           <properties />
           <option name="timeStamp" value="225" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1431</line>
+          <line>1424</line>
           <properties />
           <option name="timeStamp" value="227" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1435</line>
+          <line>1428</line>
           <properties />
           <option name="timeStamp" value="229" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>300</line>
+          <line>303</line>
           <properties />
           <option name="timeStamp" value="231" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>276</line>
+          <line>279</line>
           <properties />
           <option name="timeStamp" value="233" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>259</line>
+          <line>262</line>
           <properties />
           <option name="timeStamp" value="234" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>1741</line>
+          <line>1734</line>
           <properties />
           <option name="timeStamp" value="235" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>40</line>
+          <line>43</line>
           <properties />
           <option name="timeStamp" value="236" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>897</line>
+          <line>896</line>
           <properties />
           <option name="timeStamp" value="237" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>885</line>
+          <line>884</line>
           <properties />
           <option name="timeStamp" value="238" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>902</line>
+          <line>901</line>
           <properties />
           <option name="timeStamp" value="239" />
         </line-breakpoint>
@@ -2166,7 +2108,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java</url>
-          <line>45</line>
+          <line>46</line>
           <properties />
           <option name="timeStamp" value="241" />
         </line-breakpoint>
@@ -2208,13 +2150,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java</url>
-          <line>105</line>
+          <line>106</line>
           <properties />
           <option name="timeStamp" value="248" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java</url>
-          <line>107</line>
+          <line>108</line>
           <properties />
           <option name="timeStamp" value="249" />
         </line-breakpoint>
@@ -2268,7 +2210,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java</url>
-          <line>157</line>
+          <line>232</line>
           <properties />
           <option name="timeStamp" value="259" />
         </line-breakpoint>
@@ -2280,67 +2222,67 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java</url>
-          <line>193</line>
+          <line>278</line>
           <properties />
           <option name="timeStamp" value="264" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java</url>
-          <line>291</line>
+          <line>383</line>
           <properties />
           <option name="timeStamp" value="266" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java</url>
-          <line>390</line>
+          <line>482</line>
           <properties />
           <option name="timeStamp" value="267" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java</url>
-          <line>408</line>
+          <line>500</line>
           <properties />
           <option name="timeStamp" value="268" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java</url>
-          <line>441</line>
+          <line>533</line>
           <properties />
           <option name="timeStamp" value="270" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java</url>
-          <line>619</line>
+          <line>711</line>
           <properties />
           <option name="timeStamp" value="272" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java</url>
-          <line>657</line>
+          <line>749</line>
           <properties />
           <option name="timeStamp" value="273" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java</url>
-          <line>677</line>
+          <line>769</line>
           <properties />
           <option name="timeStamp" value="274" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java</url>
-          <line>714</line>
+          <line>806</line>
           <properties />
           <option name="timeStamp" value="275" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java</url>
-          <line>483</line>
+          <line>575</line>
           <properties />
           <option name="timeStamp" value="277" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java</url>
-          <line>510</line>
+          <line>602</line>
           <properties />
           <option name="timeStamp" value="279" />
         </line-breakpoint>
@@ -2358,33 +2300,285 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
-          <line>2244</line>
+          <line>2154</line>
           <properties />
           <option name="timeStamp" value="283" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java</url>
-          <line>154</line>
+          <line>155</line>
           <properties />
           <option name="timeStamp" value="285" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java</url>
-          <line>260</line>
+          <line>257</line>
           <properties />
           <option name="timeStamp" value="286" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java</url>
-          <line>238</line>
+          <line>235</line>
           <properties />
           <option name="timeStamp" value="287" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java</url>
-          <line>207</line>
+          <line>208</line>
           <properties />
           <option name="timeStamp" value="288" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
+          <line>2186</line>
+          <properties />
+          <option name="timeStamp" value="290" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
+          <line>2236</line>
+          <properties />
+          <option name="timeStamp" value="292" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java</url>
+          <line>158</line>
+          <properties />
+          <option name="timeStamp" value="295" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java</url>
+          <line>193</line>
+          <properties />
+          <option name="timeStamp" value="296" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java</url>
+          <line>201</line>
+          <properties />
+          <option name="timeStamp" value="297" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Greedy.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java</url>
+          <line>405</line>
+          <properties />
+          <option name="timeStamp" value="300" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java</url>
+          <line>435</line>
+          <properties />
+          <option name="timeStamp" value="301" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java</url>
+          <line>452</line>
+          <properties />
+          <option name="timeStamp" value="302" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/HashExample.java</url>
+          <line>186</line>
+          <properties />
+          <option name="timeStamp" value="303" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/HashExample.java</url>
+          <line>194</line>
+          <properties />
+          <option name="timeStamp" value="304" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
+          <line>2254</line>
+          <properties />
+          <option name="timeStamp" value="305" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
+          <line>2289</line>
+          <properties />
+          <option name="timeStamp" value="309" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
+          <line>2315</line>
+          <properties />
+          <option name="timeStamp" value="310" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
+          <line>2327</line>
+          <properties />
+          <option name="timeStamp" value="311" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java</url>
+          <line>2323</line>
+          <properties />
+          <option name="timeStamp" value="312" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java</url>
+          <line>387</line>
+          <properties />
+          <option name="timeStamp" value="313" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/ArrayExample.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="317" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/ArrayExample.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="318" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/ArrayExample.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="319" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BinarySearch.java</url>
+          <line>116</line>
+          <properties />
+          <option name="timeStamp" value="320" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BinarySearch.java</url>
+          <line>159</line>
+          <properties />
+          <option name="timeStamp" value="322" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/StackExample.java</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="323" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/ArrayExample.java</url>
+          <line>79</line>
+          <properties />
+          <option name="timeStamp" value="324" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/ArrayExample.java</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="325" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BinarySearch.java</url>
+          <line>189</line>
+          <properties />
+          <option name="timeStamp" value="326" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/ArrayExample.java</url>
+          <line>115</line>
+          <properties />
+          <option name="timeStamp" value="327" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/SlidingWindow.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="329" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/SlidingWindow.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="330" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/SlidingWindow.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="333" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DoubleIndex.java</url>
+          <line>131</line>
+          <properties />
+          <option name="timeStamp" value="334" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DoubleIndex.java</url>
+          <line>150</line>
+          <properties />
+          <option name="timeStamp" value="335" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/ListExample.java</url>
+          <line>116</line>
+          <properties />
+          <option name="timeStamp" value="337" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java</url>
+          <line>656</line>
+          <properties />
+          <option name="timeStamp" value="339" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java</url>
+          <line>660</line>
+          <properties />
+          <option name="timeStamp" value="340" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java</url>
+          <line>893</line>
+          <properties />
+          <option name="timeStamp" value="341" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java</url>
+          <line>703</line>
+          <properties />
+          <option name="timeStamp" value="347" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java</url>
+          <line>707</line>
+          <properties />
+          <option name="timeStamp" value="348" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/ListExample.java</url>
+          <line>228</line>
+          <properties />
+          <option name="timeStamp" value="349" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/ListExample.java</url>
+          <line>193</line>
+          <properties />
+          <option name="timeStamp" value="350" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/ListExample.java</url>
+          <line>212</line>
+          <properties />
+          <option name="timeStamp" value="351" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/ListExample.java</url>
+          <line>248</line>
+          <properties />
+          <option name="timeStamp" value="352" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/lijian/concurrent/completablefuture/Demo.java</url>
@@ -2395,7 +2589,7 @@
           <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="289" />
+      <option name="time" value="353" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -2410,139 +2604,58 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>p</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>right</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this.left.next</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Math.pow(10,s.length()/4-1)-1</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Math.pow(10,s.length()/4-1)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Long.valueOf(s.substring(cur, i))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>s.substring(cur,i)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Long.valueOf(s.substring(i))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>numChar2[j]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>dp</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>swapPairs(next.next)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>strlist[i]</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>reverse(head.next)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>erse(head.next)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>nums[i] != nums[i - 1]</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/trie/AC.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="63" column="14" lean-forward="true" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/trie/AcNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/trie/Trie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/path/DijkstraDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1936">
-          <caret line="88" column="57" selection-end-line="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/trie/AC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java-EE/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/net/www/http/KeepAliveStreamCleaner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/util/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14322">
-          <caret line="694" column="19" selection-start-line="694" selection-start-column="19" selection-end-line="694" selection-end-column="19" />
-          <folding>
-            <element signature="e#20770#20771#0" expanded="true" />
-            <element signature="e#20799#20800#0" expanded="true" />
-            <element signature="e#23214#23215#0" expanded="true" />
-            <element signature="e#23241#23242#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24662">
-          <caret line="1182" column="25" selection-start-line="1182" selection-start-column="25" selection-end-line="1182" selection-end-column="27" />
-          <folding>
-            <element signature="e#46227#46228#0" expanded="true" />
-            <element signature="e#46266#46267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="2229" column="29" lean-forward="true" selection-start-line="2229" selection-start-column="27" selection-end-line="2229" selection-end-column="29" />
-          <folding>
-            <element signature="e#66457#66458#0" expanded="true" />
-            <element signature="e#66495#66496#0" expanded="true" />
-            <element signature="e#82971#82972#0" expanded="true" />
-            <element signature="e#83020#83021#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/jeffE/CongressApportion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/jeffE/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/jeffE/Multiply.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-580">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/AlgorithmsApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -2628,38 +2741,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="563" column="6" selection-start-line="563" selection-start-column="6" selection-end-line="563" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="3798" column="30" selection-start-line="3798" selection-start-column="30" selection-end-line="3798" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/util/stream/Stream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20504">
           <caret line="982" column="36" selection-start-line="982" selection-start-column="36" selection-end-line="982" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java-EE/maven-localRepository/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/backtracking/EightQueen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1034">
-          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="66" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -2671,40 +2756,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Stack.java" />
-    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/StackExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java-EE/maven-localRepository/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DoubleIndex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1782">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Distribute.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/java-EE/Java/jdk1.8.0_131/jre/lib/ext/nashorn.jar!/jdk/nashorn/internal/objects/Global.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15950">
@@ -2754,28 +2805,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BinarySearch.java">
+    <entry file="jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/util/stream/IntStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        <state relative-caret-position="13640">
+          <caret line="662" column="40" selection-start-line="662" selection-start-column="40" selection-end-line="662" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/search/BinarySearch.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lijian/test/StreamTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1246">
-          <caret line="137" column="18" lean-forward="true" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="18" />
+        <state relative-caret-position="7018">
+          <caret line="335" selection-start-line="335" selection-end-line="335" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java">
+    <entry file="jar://D:/java-EE/maven-localRepository/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/statements/InvokeMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+        <state relative-caret-position="269">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/java-EE/maven-localRepository/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="324" selection-start-line="324" selection-end-line="324" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Greedy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/HashExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="184" column="14" selection-start-line="184" selection-start-column="14" selection-end-line="184" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#12350#12359#0" expanded="true" />
+            <element signature="e#5988#6002#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/backtracking/EightQueen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="281" column="30" selection-start-line="281" selection-start-column="30" selection-end-line="281" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/sort/Bubble.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="1430" column="27" selection-start-line="1430" selection-start-column="27" selection-end-line="1430" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="210" column="12" selection-start-line="210" selection-start-column="12" selection-end-line="210" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/StringExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -2786,44 +2893,143 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/HashExample.java">
+    <entry file="jar://D:/java-EE/maven-localRepository/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="142" column="36" selection-start-line="142" selection-start-column="36" selection-end-line="142" selection-end-column="36" />
+        <state relative-caret-position="264">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/java-EE/maven-localRepository/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#1464#1658#0" expanded="true" />
+            <element signature="e#1657#1658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/search/BinarySearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4290">
+          <caret line="195" column="28" selection-start-line="195" selection-start-column="28" selection-end-line="195" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/SlidingWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Distribute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/StackExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/util/stream/IntStream.java">
+    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/sort/Merge.java" />
+    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/ArrayExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="662" column="40" lean-forward="true" selection-start-line="662" selection-start-column="40" selection-end-line="662" selection-end-column="40" />
+        <state relative-caret-position="2860">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/lijian/test/StreamTest.java">
+    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/sort/MergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="335" lean-forward="true" selection-start-line="335" selection-end-line="335" />
+        <state relative-caret-position="572">
+          <caret line="26" column="66" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DoubleIndex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="141" column="34" lean-forward="true" selection-start-line="141" selection-start-column="34" selection-end-line="141" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BinarySearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="254" column="66" lean-forward="true" selection-start-line="254" selection-start-column="66" selection-end-line="254" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/DynamicProgram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="882" lean-forward="true" selection-start-line="882" selection-end-line="882" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-233">
-          <caret line="1043" column="10" selection-start-line="1043" selection-start-column="10" selection-end-line="1043" selection-end-column="10" />
+        <state relative-caret-position="-714">
+          <caret line="1442" column="30" lean-forward="true" selection-start-line="1442" selection-start-column="30" selection-end-line="1442" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="1924" column="18" selection-start-line="1924" selection-start-column="18" selection-end-line="1924" selection-end-column="18" />
+          <folding>
+            <element signature="e#66457#66458#0" expanded="true" />
+            <element signature="e#66495#66496#0" expanded="true" />
+            <element signature="e#82971#82972#0" expanded="true" />
+            <element signature="e#83020#83021#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/BackTrack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="198" column="6" lean-forward="true" selection-start-line="198" selection-start-column="6" selection-end-line="198" selection-end-column="6" />
+        <state relative-caret-position="121">
+          <caret line="708" column="64" lean-forward="true" selection-start-line="708" selection-start-column="64" selection-end-line="708" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#20525#20533#0" expanded="true" />
+            <element signature="e#20581#20589#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/java-EE/Java/jdk1.8.0_131/src.zip!/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/src/test/java/com/lijian/algorithms/leecode/ListExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="299" lean-forward="true" selection-start-line="299" selection-end-line="299" />
         </state>
       </provider>
     </entry>

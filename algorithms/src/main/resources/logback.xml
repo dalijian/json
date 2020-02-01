@@ -29,9 +29,9 @@
 			<!-- 文件最大保存历史数量 -->
 			<maxHistory>${log.maxHistory}</maxHistory>
 		</rollingPolicy>
-		<encoder>
+		<encboder>
 			<pattern>${log.pattern}</pattern>
-		</encoder>
+		</encboder>
 <!--		<filter class="ch.qos.logback.classic.filter.LevelFilter">-->
 <!--			<level>DEBUG</level>-->
 <!--			<onMatch>ACCEPT</onMatch>-->

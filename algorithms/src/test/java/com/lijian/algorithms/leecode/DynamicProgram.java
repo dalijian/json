@@ -144,7 +144,81 @@ public class DynamicProgram {
         }
         return dp[p.length()][s.length()];
     }
+@Test
+public void isMatch3Test(){
 
+    isMatch3("aa", "*");
+}
+
+    public boolean isMatch3(String s, String p) {
+        int sLen = s.length(), pLen = p.length();
+        boolean[][] memory = new boolean[sLen + 1][pLen + 1];
+        memory[0][0] = true;
+        for (int i = 0; i <= sLen; i++) {
+            for (int j = 1; j <= pLen; j++) {
+                if (p.charAt(j - 1) == '*') {
+                    if (memory[i][j - 2] || (i > 0 && (s.charAt(i - 1) == p.charAt(j - 2) ||
+                            p.charAt(j - 2) == '.') && memory[i - 1][j])) {
+                        memory[i][j] = true;
+                    } else {
+                        memory[i][j] = false;
+                    }
+                } else {
+                    if (i > 0 && (s.charAt(i - 1) == p.charAt(j - 1) || p.charAt(j - 1) == '.')
+                            && memory[i - 1][j - 1]) {
+                        memory[i][j] = true;
+                    } else {
+                        memory[i][j] = false;
+                    }
+                }
+            }
+        }
+        return memory[sLen][pLen];
+    }
+
+
+    @Test
+    public void isMatch4Test(){
+
+        boolean result = isMatch4("a", "a*");
+        System.out.println(result);
+    }
+
+    public boolean isMatch4(String str, String pStr) {
+
+        if (str.length() == 0 && pStr.equals("*")) {
+            return true;
+        }
+        int[][] dp = new int[pStr.length() + 1][str.length() + 1];
+        dp[0][0]=1;
+        int n = str.length();
+        int m = pStr.length();
+        for (int i = 1; i < m+1; i++) {
+            for (int j = 1; j < n+1; j++) {
+                if (pStr.charAt(i-1) == '*') {
+                    if (dp[i - 1][j-1] == 1) {
+                        dp[i][j-1]=1;
+                    }
+                    if (dp[i][j - 1] == 1) {
+                        dp[i][j] = dp[i][j - 1];
+                    }
+                    if (dp[i - 1][j] == 1) {
+                        dp[i][j] = dp[i - 1][j];
+                    }
+                }
+                if (pStr.charAt(i-1) == '?') {
+                    if (dp[i - 1][j - 1] == 1) {
+                        dp[i][j] = 1;
+                    }
+                }
+                if (dp[i-1][j-1]==1&&pStr.charAt(i-1) == str.charAt(j-1)) {
+                    dp[i][j]=1;
+
+                }
+            }
+        }
+            return dp[m][n]==1?true:false;
+    }
 
     @Test
     public void maxSubArrayTest() {
@@ -153,8 +227,9 @@ public class DynamicProgram {
         System.out.println(result);
 
     }
-
+    //53. 最长 子序列
     public int maxSubArray(int[] nums) {
+
         int n = nums.length, maxSum = nums[0];
         for (int i = 1; i < n; ++i) {
             if (nums[i - 1] > 0) nums[i] += nums[i - 1];
@@ -188,7 +263,17 @@ public class DynamicProgram {
         return list.size();
     }
 
-    // 打印 选择 的 路径
+
+
+    /**
+     *  //  動態 規劃  打印 选择 的 路径
+     * @param dp  状态 转义 矩阵
+     * @param m     当前 所在  矩阵 行数
+     * @param n     当前 所在  矩阵 列数
+     * @param count 递归 传参  返回 结果 参数
+     * @param m1 矩阵 行数
+     * @param n1 矩阵 列数
+     */
     private void distDP(int[][] dp, int m, int n, List<Integer> count, int m1, int n1) {
 
         if (m == m1 && n == n1) {
@@ -232,6 +317,37 @@ public class DynamicProgram {
         System.out.println("*********");
     }
 
+    @Test
+    public void uniquePathsTest2() {
+
+        int result = uniquePaths2(12, 13);
+        System.out.println(result);
+
+    }
+
+    //详细解释参考 官方题解
+//递推公式 ： a[x][y] = a[x -1][y] + a[x][y - 1]
+// 初始条件：a[m][] = 1; a[][n] = 1;
+
+    // 到达 dp[i][j] 的 路径 等于  到达 dp[i][j-1]的路径数 + 到达 dp[i-1][j]的 路径 数
+    public int uniquePaths2(int m, int n) {
+        int[][] dp = new int[m][n];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i == 0 || j == 0)
+                    dp[i][j] = 1;
+                else {
+                    dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+                }
+            }
+        }
+        return dp[m - 1][n - 1];
+
+    }
+
+
+
+
     public int minDistDP(int[][] matrix, int n) {
         int[][] states = new int[n][n];
         int sum = 0;
@@ -253,29 +369,7 @@ public class DynamicProgram {
         return states[n - 1][n - 1];
     }
 
-    @Test
-    public void uniquePathsTest2() {
-
-        int result = uniquePaths2(12, 13);
-        System.out.println(result);
-
-    }
-
-    // 到达 dp[i][j] 的 路径 等于  到达 dp[i][j-1]的路径数 + 到达 dp[i-1][j]的 路径 数
-    public int uniquePaths2(int m, int n) {
-        int[][] dp = new int[m][n];
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if (i == 0 || j == 0)
-                    dp[i][j] = 1;
-                else {
-                    dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
-                }
-            }
-        }
-        return dp[m - 1][n - 1];
-
-    }
+//63 不同 路徑
 
     @Test
     public void uniquePathsWithObstaclesTest() {
@@ -283,8 +377,6 @@ public class DynamicProgram {
 //        1,0
         int result = uniquePathsWithObstacles(new int[][]{{1, 0}});
         System.out.println(result);
-
-
     }
 
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
@@ -464,7 +556,7 @@ public class DynamicProgram {
 
         System.out.println(result);
     }
-
+//85. 最大矩形
     public int maximalRectangle(char[][] matrix) {
 
         if (matrix.length == 0) return 0;
@@ -768,6 +860,53 @@ public void isScrambleTest(){
     public void length() {
 
         System.out.println("865352031983496".length());
+    }
+
+//91. 解码方法
+
+    @Test
+    public void numDecodingsTest(){
+
+        int result = numDecodings("30");
+        System.out.println(result);
+    }
+    public int numDecodings(String s) {
+
+        if (s.length() == 0||(s.length() == 1&&Integer.parseInt(s)==0)||(s.charAt(0) == '0')) {
+            return 0;
+        }
+
+        if (s.length() == 1) {
+            return 1;
+        }
+
+
+        int[] dp = new int[s.length()];
+        if (s.length() >= 2 && Integer.parseInt(s.substring(0, 2))<=26&& Integer.parseInt(s.substring(0, 2))>10) {
+
+            dp[1] = 2;
+        }
+        if (s.length() >= 2&& (Integer.parseInt(s.substring(0, 2))>26||Integer.parseInt(s.substring(0, 2))==10)) {
+
+            dp[1] = 1;
+        }
+        dp[0]=1;
+        for (int i = 2; i < s.length(); i++) {
+            if (s.charAt(i) == '0' && s.charAt(i - 1) == '0') {
+                return 0;
+            }
+
+            if (s.charAt(i) <= '6' && s.charAt(i - 1) <= '2'&&s.charAt(i)!='0'&&s.charAt(i-1)!='0') {
+                dp[i]=dp[i-1]+dp[i-2];
+            }else if (s.charAt(i - 1) <= '2'&&s.charAt(i)=='0') {
+                dp[i]=dp[i-2];
+            }else if ( s.charAt(i - 1) > '2'&&s.charAt(i)=='0'){
+                return 0;
+            }else{
+                dp[i]=dp[i-1];
+            }
+        }
+        return dp[s.length()-1];
     }
 
 }

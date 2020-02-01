@@ -95,7 +95,67 @@ public class DoubleIndex {
         }
         return j;
     }
+//80 删除排序数组中的重复项 II
+
+    public int removeDuplicates(int[] nums) {
+        // 使用双指针
+        if (nums == null || nums.length == 1) {
+            return nums.length;
+        }
+        // 快慢指针
+        int i = 0, j = 1;
+        while (j < nums.length) {
+            if (nums[i] == nums[j]) {
+                j++;
+
+            } else {
+                i++;
+                nums[i] = nums[j];
+                j++;
+            }
+        }
+        return i + 1;
+    }
 
 
+    @Test
+    public void removeDuplicatesTest(){
+        int result = removeDuplicates22(new int[]{1, 1, 2});
+        System.out.println(result);
+    }
+
+//    1,1,2
+//    1,2,2
+
+    public int removeDuplicates2(int[] nums) {
+        // 使用双指针
+        if (nums == null || nums.length == 1) {
+            return nums.length;
+        }
+        // 快慢指针
+        int i = 0, j = 1;
+        while (j < nums.length) {
+            if (nums[i] == nums[j]) {
+                j++;
+            } else {
+                i++;
+                nums[i] = nums[j];
+                j++;
+            }
+        }
+        return i + 1;
+    }
+
+
+    public int removeDuplicates22(int[] nums) {
+        int i = 0;
+        for (int n : nums){
+            if (i < 2 || n != nums[i-2]){
+                nums[i] = n;
+                i++;
+            }
+        }
+        return i;
+    }
 
 }

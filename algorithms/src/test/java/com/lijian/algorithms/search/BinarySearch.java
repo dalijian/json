@@ -12,10 +12,10 @@ public class BinarySearch {
 
 
         int[] array = {1, 1, 1, 4, 9, 10, 34, 45, 65, 78,99};
-
         int index = bSearch(array, 0, array.length - 1, 1);
-
         int num = bSearchFirst(99);
+        System.out.println(num);
+
         System.out.println(index);
 
     }

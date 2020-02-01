@@ -2,6 +2,8 @@ package com.lijian.algorithms.leecode;
 
 import org.junit.Test;
 
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.Stack;
 
 public class StackExample {
@@ -63,5 +65,41 @@ public class StackExample {
         return false;
 
     }
+
+@Test
+public void simplifyPathTest(){
+
+    String result = simplifyPath("/home/");
+    System.out.println(result);
+}
+// 路径 转换 就是  处理 特殊 路径  /. /..
+    public String simplifyPath(String path) {
+        Deque<String> stack = new LinkedList<>();
+        for (String item : path.split("/")) {
+            if (item.equals("..")) {
+                // 这里 利用的 stack 的 lifo
+                if (!stack.isEmpty()) stack.pop();
+            } else if (!item.isEmpty() && !item.equals(".")) stack.push(item);
+        }
+        String res = "";
+        for (String d : stack) res = "/" + d + res;
+        return res.isEmpty() ? "/" : res;
+    }
+//    84. 柱状图中最大的矩形
+    public int largestRectangleArea(int[] heights) {
+        int max =0;
+        for (int i = 0; i < heights.length; i++) {
+            for (int j = i; j < heights.length; j++) {
+//                (j - i) * Math.min(heights[i], heights[j]);
+
+
+            }
+
+        }
+
+        return 0;
+    }
+
+
 
 }
