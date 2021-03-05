@@ -11,24 +11,27 @@ public class CyclicBarrierTest2 {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                try {
-                    c.await();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } catch (BrokenBarrierException e) {
-                    e.printStackTrace();
+                while (true) {
+                    try {
+                        c.await();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    } catch (BrokenBarrierException e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println(1);
                 }
-                System.out.println(1);
+
             }
         }).start();
-        try {
-            c.await();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (BrokenBarrierException e) {
-            e.printStackTrace();
-        }
-        System.out.println(2);
+//        try {
+//            c.await();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        } catch (BrokenBarrierException e) {
+//            e.printStackTrace();
+//        }
+//        System.out.println(2);
 
     }
 

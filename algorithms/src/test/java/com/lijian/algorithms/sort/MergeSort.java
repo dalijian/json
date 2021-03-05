@@ -1,5 +1,7 @@
 package com.lijian.algorithms.sort;
 
+import org.junit.Test;
+
 import java.util.Arrays;
 
 /**
@@ -88,5 +90,49 @@ public class MergeSort {
 //            array[i] = array2[k];
 //        }
         System.arraycopy(array2, 0, array, low, array2.length);
+    }
+    
+    
+    @Test
+    public void mergeSortTest(){
+        int []arr = {9,8,7,6,5,4,3,2,1,12,11,13,15};
+        sort2(arr);
+        
+        
+    }
+
+    private void sort2(int[] arr) {
+        int[] temp = new int[arr.length];
+
+        sortMerge(arr, 0, arr.length - 1, temp);
+    }
+
+    private void sortMerge(int[] arr, int left, int right, int[] temp) {
+        if (left < right) {
+            int middle = (left+right)/2;
+            sortMerge(arr, left, middle, temp);
+            sortMerge(arr,middle+1,right,temp);
+            merge2(arr,left,middle,right,temp);
+        }
+    }
+
+    private void merge2(int[] arr, int left, int middle, int right, int[] temp) {
+            int i = left;
+            int j= middle+1;
+            int t =0;
+        while (i <= middle && j <= right) {
+            if (arr[i] < arr[j]) {
+                temp[t++] = arr[i++];
+            }else {
+                temp[t++] = arr[j++];
+            }
+        }
+        while (i <= middle) {
+            temp[t++] = arr[i++];
+        }
+        while (i <= right) {
+            temp[t++] = arr[j++];
+        }
+        System.arraycopy(temp,0,arr,left,right-left+1);
     }
 }

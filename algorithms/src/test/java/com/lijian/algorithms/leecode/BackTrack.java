@@ -1,6 +1,7 @@
 package com.lijian.algorithms.leecode;
 
 import org.junit.Test;
+import org.springframework.util.StringUtils;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -11,10 +12,8 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.Stack;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 // 回溯算法
 
@@ -358,29 +357,8 @@ public class BackTrack {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @Test
-    public void permuteUnique2Test(){
+    public void permuteUnique2Test() {
 
         List<List<Integer>> result = permuteUnique2(new int[]{1, 1, 2});
         System.out.println(result);
@@ -390,29 +368,27 @@ public class BackTrack {
         List<List<Integer>> res = new ArrayList<>();
         Arrays.sort(candidates);
         //System.out.println(candidates);
-        backtrack(candidates,  res, 0, new ArrayList<Integer>());
+        backtrack(candidates, res, 0, new ArrayList<Integer>());
         return res;
     }
 
     /**
-
      * @param candidates
-
      * @param res
      * @param i
      * @param tmp_list
      */
-    private void backtrack(int[] candidates,List<List<Integer>> res, int i, ArrayList<Integer> tmp_list) {
-        if ( candidates.length< 0) return;
+    private void backtrack(int[] candidates, List<List<Integer>> res, int i, ArrayList<Integer> tmp_list) {
+        if (candidates.length < 0) return;
         if (i == candidates.length) {
             res.add(new ArrayList<>(tmp_list));
             return;
         }
         for (int start = 0; start < candidates.length; start++) {
 
-            if ( check(candidates, start, i, tmp_list)) {
+            if (check(candidates, start, i, tmp_list)) {
                 tmp_list.add(candidates[start]);
-                backtrack(candidates, res, i+ 1, tmp_list);
+                backtrack(candidates, res, i + 1, tmp_list);
                 tmp_list.remove(tmp_list.size() - 1);
             }
         }
@@ -424,7 +400,7 @@ public class BackTrack {
     }
 
     @Test
-    public void permuteUnique3Test(){
+    public void permuteUnique3Test() {
 
         List<List<Integer>> result = permuteUnique3(new int[]{1, 1, 2});
 
@@ -475,7 +451,7 @@ public class BackTrack {
 
 
     @Test
-    public void permuteUnique4Test(){
+    public void permuteUnique4Test() {
 
         List<List<Integer>> result = permuteUnique4(new int[]{1, 1, 2});
 
@@ -520,21 +496,23 @@ public class BackTrack {
         }
     }
 
-@Test
-public void getPermutationTest(){
-    String result = getPermutation(3, 3);
+    @Test
+    public void getPermutationTest() {
+        String result = getPermutation(3, 3);
 
-}
+    }
+
     public String getPermutation(int n, int k) {
-        int [] shu = new int[n];
+        int[] shu = new int[n];
         for (int i = 0; i < n; i++) {
-            shu[i]=i;
+            shu[i] = i;
         }
-        int [] temp = new int[n];
-        f3(shu, 2, 0, 0,temp, 0, k);
+        int[] temp = new int[n];
+        f3(shu, 2, 0, 0, temp, 0, k);
         return toString();
     }
-    private void f3(int[] shu, int targ, int has, int cur, int [] stack,int j, int k) {
+
+    private void f3(int[] shu, int targ, int has, int cur, int[] stack, int j, int k) {
         if (j == k) {
 
             return;
@@ -544,9 +522,9 @@ public void getPermutationTest(){
             return;
         }
         for (int i = cur; i < shu.length; i++) {
-            if (checkValue(shu[i],stack)) {
+            if (checkValue(shu[i], stack)) {
                 stack[has] = shu[i];
-                f3(shu, targ, has + 1, i, stack,j,k);
+                f3(shu, targ, has + 1, i, stack, j, k);
             }
         }
 
@@ -560,24 +538,33 @@ public void getPermutationTest(){
         }
         return false;
     }
-    @Test
-    public void combineTest(){
 
-        List<List<Integer>> result = combine(1, 1);
+    @Test
+    public void combineTest() {
+
+        List<List<Integer>> result = combine(5, 2);
         System.out.println(result);
     }
+
     public List<List<Integer>> combine(int n, int k) {
-        int [] shu = new int[n];
-        for (int i = 0; i < n+1; i++) {
-            shu[i]=i+1;
+        int[] shu = new int[n];
+        for (int i = 0; i < n; i++) {
+            shu[i] = i + 1;
         }
         List<List<Integer>> list = new LinkedList<>();
         f3(shu, k, 0, 0, list, new LinkedList<>());
         return list;
     }
 
-
-    private void f3(int[] shu, int targ, int has, int cur, List<List<Integer>> list, Deque<Integer> stack) {
+    /**
+     * @param shu   组合 数组
+     * @param targ  要选择多少个次
+     * @param has   当前 已有 数
+     * @param cur   当前选择的是第几次
+     * @param list  组合数据集合
+     * @param stack 选取 数据 暂存 集合
+     */
+    private void f3(int[] shu, int targ, int has, int cur, List<List<Integer>> list, LinkedList<Integer> stack) {
         if (has == targ) {
             list.add(new ArrayList<Integer>(stack));
             return;
@@ -585,21 +572,18 @@ public void getPermutationTest(){
         for (int i = cur; i < shu.length; i++) {
             if (!stack.contains(shu[i])) {
                 stack.add(shu[i]);
-                f3(shu, targ, has + 1, i,list,stack);
+                f3(shu, targ, has + 1, i, list, stack);
                 stack.removeLast();
             }
         }
-
     }
-
-
 
 
     // 字典序 處理法
     public List<List<Integer>> combine2(int n, int k) {
         // init first combination
         LinkedList<Integer> nums = new LinkedList<Integer>();
-        for(int i = 1; i < k + 1; ++i)
+        for (int i = 1; i < k + 1; ++i)
             nums.add(i);
         nums.add(n + 1);
 
@@ -619,38 +603,39 @@ public void getPermutationTest(){
     }
 
 
-//78  子集
-@Test
-public void subsetsTest(){
-
-    List<List<Integer>> result = subsets(new int[]{1, 2, 3});
-    System.out.println(result);
-}
-    public List<List<Integer>> subsets(int[] nums) {
-        List<List<Integer>> resultList = new ArrayList<>();
-        for (int i = 0; i < nums.length+1; i++) {
-            f3(nums, i, 0, 0, resultList, new LinkedList<>());
-        }
-       return resultList;
-    }
-
-
+    //78  子集
     @Test
-    public void subsetsWithDupTest(){
+    public void subsetsTest() {
 
-        List<List<Integer>> result = subsetsWithDup(new int[]{4,4,4,1,4});
+        List<List<Integer>> result = subsets(new int[]{1, 2, 3});
         System.out.println(result);
     }
-//90. 子集 II
-    public List<List<Integer>> subsetsWithDup(int[] nums) {
+
+    public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> resultList = new ArrayList<>();
-        Arrays.sort(nums);
-        for (int i = 0; i < nums.length+1; i++) {
-            f4(nums, i, 0, 0, resultList, new LinkedList<>());
+        for (int i = 0; i < nums.length + 1; i++) {
+            f3(nums, i, 0, 0, resultList, new LinkedList<Integer>());
         }
         return resultList;
     }
 
+
+    @Test
+    public void subsetsWithDupTest() {
+
+        List<List<Integer>> result = subsetsWithDup(new int[]{4, 4, 4, 1, 4});
+        System.out.println(result);
+    }
+
+    //90. 子集 II
+    public List<List<Integer>> subsetsWithDup(int[] nums) {
+        List<List<Integer>> resultList = new ArrayList<>();
+        Arrays.sort(nums);
+        for (int i = 0; i < nums.length + 1; i++) {
+            f4(nums, i, 0, 0, resultList, new LinkedList<>());
+        }
+        return resultList;
+    }
 
 
     private void f4(int[] shu, int targ, int has, int cur, List<List<Integer>> list, Deque<Integer> stack) {
@@ -660,33 +645,34 @@ public void subsetsTest(){
         }
         for (int i = cur; i < shu.length; i++) {
 //            if (!stack.contains(shu[i])) {
-                // 通过 剪枝 去重
+            // 通过 剪枝 去重
 //                if (i > 0 && shu[i] == shu[i - 1]&&has==i-1) {
 //                    continue;
 //                }
             if (i > cur && shu[i] == shu[i - 1]) continue;
-                stack.add(shu[i]);
-                f4(shu, targ, has + 1, i+1, list, stack);
-                stack.removeLast();
+            stack.add(shu[i]);
+            f4(shu, targ, has + 1, i + 1, list, stack);
+            stack.removeLast();
 //            }
         }
 
     }
 
-@Test
-public void restoreIpAddressesTest(){
+    @Test
+    public void restoreIpAddressesTest() {
 //        字符串 不包含 0 是 没问题的
-    List<String> result = restoreIpAddresses("010010");
-    System.out.println(result);
+        List<String> result = restoreIpAddresses("010010");
+        System.out.println(result);
 
-}
-//93. 复原IP地址
+    }
+
+    //93. 复原IP地址
     public List<String> restoreIpAddresses(String s) {
         if (s.length() > 12) {
-            return  Collections.emptyList();
+            return Collections.emptyList();
         }
         List<String> resultList = new ArrayList<>();
-        f5(s,4,0,0,resultList,new int[4] );
+        f5(s, 4, 0, 0, resultList, new int[4]);
         return resultList;
     }
 
@@ -696,7 +682,7 @@ public void restoreIpAddressesTest(){
             list.add(IntStream.of(values).boxed().map(x -> String.valueOf(x)).collect(Collectors.joining(".")));
             return;
         }
-        for (int i = cur; i < s.length()+1; i++) {
+        for (int i = cur; i < s.length() + 1; i++) {
             if (has == 3) {
 //                if (Long.valueOf(s.substring(i)) > 255) {
 //                    continue;
@@ -705,12 +691,12 @@ public void restoreIpAddressesTest(){
                     continue;
                 }
             }
-            if (s.substring(cur,i).equals("")) continue;
-            if (Long.valueOf(s.substring(cur, i))>255) continue;
+            if (s.substring(cur, i).equals("")) continue;
+            if (Long.valueOf(s.substring(cur, i)) > 255) continue;
 //            if (s.substring(cur,i).equals("00")) continue;
 //            if (s.substring(cur,i).equals("01")) continue;
 //            if (s.substring(cur,i).equals("011")) continue;
-            if (s.substring(cur,i).length()!=String.valueOf(Long.valueOf(s.substring(cur,i))).length()) continue;
+            if (s.substring(cur, i).length() != String.valueOf(Long.valueOf(s.substring(cur, i))).length()) continue;
 
 //            if (Long.valueOf(s.substring(cur, i))<=(int)Math.pow(10,s.length()/4-1)-2) continue;
 
@@ -719,9 +705,6 @@ public void restoreIpAddressesTest(){
         }
 
     }
-
-
-
 
 
     int n;
@@ -783,5 +766,164 @@ public void restoreIpAddressesTest(){
         this.s = s;
         backtrack(-1, 3);
         return output;
+    }
+
+
+    //97. 交错字符串
+//    将 s2 插入 s1 中
+//        将 s2与s1拼接，选择一个 合适的排列 ，判断是否与 目标字符串相同,这样 s1,s2 字符串本身的顺序就乱了
+    @Test
+    public void isTneterleaveTest() {
+        boolean result = isInterleave("ac", "b", "acb");
+
+        System.out.println(result);
+    }
+
+    public boolean isInterleave(String s1, String s2, String s3) {
+
+        char[] value = new char[s1.length() + s2.length()];
+        LinkedList<String> linkedList = new LinkedList<>();
+        List<String> list = new ArrayList<>();
+        isInterleaveRe2(s1, s2, 0, 0, s3, linkedList, list);
+
+        return list.size() > 0;
+    }
+
+
+    private void isInterleaveRe2(String s1, String s2, int i, int cur, String s3, LinkedList<String> values, List<String> list) {
+        if (i == s1.length() + s2.length() && values.stream().collect(Collectors.joining()).equals(s3)) {
+            list.add(values.stream().collect(Collectors.joining()));
+            return;
+        }
+        // 像这种 将 s1,s2 组合 并且 s1,s2 内部顺序 不乱的 写法 ，使用 回溯 for 循环 没法实现，只能使用 回溯，每次选择 s1 字串+1或者s2 字串+1
+//        for (int j = cur; j < s1.length(); j++) {
+//            String tempStr = values.stream().collect(Collectors.joining());
+//            if (!StringUtils.isEmpty(tempStr) && !s3.startsWith(tempStr))
+//             {
+//                continue;
+//            }
+//            values.add(s1.substring(j,j+1));
+//            isInterleaveRe2(s1,s2, i + 1, cur + 1, s3, values, list);
+//            values.removeLast();
+//        }
+//
+//
+//        for (int j = cur; j <s2.length(); j++) {
+//            String tempStr = values.stream().collect(Collectors.joining());
+//            if (!StringUtils.isEmpty(tempStr) && !s3.startsWith(tempStr))
+//            {
+//                continue;
+//            }
+//            values.add(s2.substring(j,j+1));
+//            isInterleaveRe2(s1,s2, i + 1, cur + 1, s3, values, list);
+//            values.removeLast();
+//        }
+    }
+
+
+//    我们首先将 s1 中的第一个字符作为开始字符，然后将 s1 字符串剩余部分和 s2 字符串所有可能情况添加在这个字符后面，
+//    每次用完所有字符后检查字符串与 s3 是否一致。
+//    类似的，我们可以选择 s2 第一个字符作为开始字符，
+//    然后将 s2 剩余字符串和 s1 字符串回溯地添加到该字符后面，看是否能形成 s3 。
+
+
+    public boolean is_Interleave(String s1, int i, String s2, int j, String res, String s3) {
+        if (res.equals(s3) && i == s1.length() && j == s2.length())
+            return true;
+        boolean ans = false;
+        if (i < s1.length())
+            ans |= is_Interleave(s1, i + 1, s2, j, res + s1.charAt(i), s3);
+        if (j < s2.length())
+            ans |= is_Interleave(s1, i, s2, j + 1, res + s2.charAt(j), s3);
+        return ans;
+
+    }
+
+    @Test
+    public void isTneterleave2Test() {
+        boolean result = isInterleave2("ac", "b", "abc");
+        System.out.println(result);
+    }
+
+    public boolean isInterleave2(String s1, String s2, String s3) {
+        return is_Interleave(s1, 0, s2, 0, "", s3);
+    }
+
+
+    public boolean isInterleave3(String s1, String s2, String s3) {
+        if (s3.length() != s1.length() + s2.length()) {
+            return false;
+        }
+//        dp[i][j] 表示用 s1s1 的前 (i+1)(i+1) 和 s2s2 的前 (j+1)(j+1) 个字符，总共 (i+j+2)(i+j+2) 个字符，是否交错构成 s3s3 的前缀。
+        boolean dp[][] = new boolean[s1.length() + 1][s2.length() + 1];
+        for (int i = 0; i <= s1.length(); i++) {
+            for (int j = 0; j <= s2.length(); j++) {
+                if (i == 0 && j == 0) {
+                    dp[i][j] = true;
+                } else if (i == 0) {
+                    dp[i][j] = dp[i][j - 1] && s2.charAt(j - 1) == s3.charAt(i + j - 1);
+                } else if (j == 0) {
+                    dp[i][j] = dp[i - 1][j] && s1.charAt(i - 1) == s3.charAt(i + j - 1);
+                } else {
+                    dp[i][j] = (dp[i - 1][j] && s1.charAt(i - 1) == s3.charAt(i + j - 1)) || (dp[i][j - 1] && s2.charAt(j - 1) == s3.charAt(i + j - 1));
+                }
+            }
+        }
+        return dp[s1.length()][s2.length()];
+    }
+
+
+    @Test
+    public void findTargetSumWaysTest(){
+
+        int result = findTargetSumWays(new int[]{1, 1, 1, 1, 1}, 3);
+        System.out.println(result);
+    }
+    //494  目标和
+    public int findTargetSumWays(int[] nums, int s) {
+        char[] list = new char[nums.length];
+        char[] chars= {'-', '+'};
+        List<char[]> result= new ArrayList<>();
+        findTargetSumWaysRe(nums, 0, 0, s, list,chars,result);
+        return result.size();
+    }
+
+    private void findTargetSumWaysRe(int[] nums, int i, int j, int s, char[] list, char[] chars, List<char[]> result) {
+
+        if (i == nums.length) {
+            int sum =0;
+            for (int k = 0; k < nums.length; k++) {
+                if( list[k] == '-'){
+                    sum += -nums[k];
+                }else {
+                    sum += nums[k];
+                }
+            }
+            if (sum == s) {
+                result.add(list);
+            }
+            return;
+        }
+        for (int k = 0; k < chars.length; k++) {
+            list[i] = chars[k];
+            findTargetSumWaysRe(nums, i + 1, j, s, list, chars, result);
+        }
+    }
+@Test
+public void chooseTest(){
+        choose(new int[]{1,2},0, 3,new LinkedList());
+}
+
+    public void choose(int[] nums, int i, int s, LinkedList linkedList) {
+        if (i == s) {
+            System.out.println(linkedList);
+            return;
+        }
+        for (int j = 0; j < nums.length; j++) {
+
+            linkedList.add(nums[j]);
+            choose(nums, i + 1, s, linkedList);
+            linkedList.removeLast();
+        }
     }
 }

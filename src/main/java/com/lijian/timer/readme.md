@@ -15,4 +15,5 @@ timer 定时函数
 2. timer
     1. cancel 终止次计时器
     2. purge() 从队列中移除取消的timerTask，返回移除取消的timerTask个数需，要先在timerTask 中cancel
-    
+### 线程 中断
+1. 线程池不关闭,主线程 是 没法 关闭的     

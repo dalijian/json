@@ -120,7 +120,7 @@ public class DoubleIndex {
 
     @Test
     public void removeDuplicatesTest(){
-        int result = removeDuplicates22(new int[]{1, 1, 2});
+        int result = removeDuplicates2(new int[]{1, 1, 2});
         System.out.println(result);
     }
 
@@ -158,4 +158,31 @@ public class DoubleIndex {
         return i;
     }
 
+//977. 有序数组的平方
+    @Test
+    public void sortedSquaresTest(){
+        int[] result = sortedSquares(new int[]{-4, -1, 0, 3, 10});
+        for (int i = 0; i < result.length; i++) {
+            System.out.println(result[i]);
+
+        }
+    }
+    public int[] sortedSquares(int[] a) {
+
+        int i=0,j=a.length-1;
+        int k=a.length-1;
+        int [] result = new int[a.length];
+        while (i <= j) {
+            if (Math.abs(a[i]) < Math.abs(a[j])) {
+                result[k] = a[j] * a[j];
+                j--;
+                k--;
+            }else{
+                result[k] = a[i] * a[i];
+                i++;
+                k--;
+            }
+        }
+        return result;
+    }
 }

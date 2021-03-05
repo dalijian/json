@@ -68,4 +68,6 @@ public class QuickSort {
         System.out.print("排序后:\t\t");
         quick.printPart(array, 0, array.length - 1);
     }
+
+
 }

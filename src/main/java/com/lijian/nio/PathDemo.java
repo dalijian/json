@@ -16,7 +16,9 @@ public class PathDemo {
 
     @Test
     public void test() throws IOException {
-        Path file = Paths.get("./alice.txt");
+        Path file = Paths.get("/alice.txt");
+        System.out.println(file.toAbsolutePath());
+
         Path path = FileSystems.getDefault().getPath("C:/users/lijian/desktop", "appTool-2019-06-26.log");
         BufferedReader reader = Files.newBufferedReader(path, StandardCharsets.UTF_8);
     }

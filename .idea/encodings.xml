@@ -3,7 +3,12 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/algorithms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/antlr" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jetty-jersey-restful" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/muti_thread" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/r2dbc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/selenium" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spi" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/lijian/poi/excel/CreteTemplate.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/lijian/poi/excel/PoiExpExcel_xls.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/lijian/poi/excel/PoiReadExcel.java" charset="UTF-8" />

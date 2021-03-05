@@ -237,7 +237,7 @@ public class BinTreeNode implements Node {
 
 
     }
-
+// 中序 遍历
     private void inOrderTraverse(BinTreeNode root, LinkedList list) {
         if (root == null) {
             return;
@@ -250,7 +250,7 @@ public class BinTreeNode implements Node {
 
 
     }
-
+// 中序 遍历 stack
     private void inOrderTraverseRe(BinTreeNode root, LinkedList list) {
         if (root == null) {
             return;
@@ -278,7 +278,7 @@ public class BinTreeNode implements Node {
 
     }
 
-
+//后序遍历 递归
     private void postOrderTraverseRe(BinTreeNode root, LinkedList list) {
         if (root == null) {
             return;
@@ -441,6 +441,7 @@ public class BinTreeNode implements Node {
             }
         }
     }
+    // 汉诺塔
 
     public void hanio (int n, char x, char y, char z){
         if (n==1) move ( x, n, z);

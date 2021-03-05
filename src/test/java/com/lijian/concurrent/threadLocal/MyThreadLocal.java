@@ -21,6 +21,7 @@ public class MyThreadLocal
      
     public static void main(String[] args)
     {
+
         new Thread(new MyIntegerTask("IntegerTask1")).start();
         new Thread(new MyStringTask("StringTask1")).start();
         new Thread(new MyIntegerTask("IntegerTask2")).start();

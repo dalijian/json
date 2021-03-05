@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Friend {
@@ -25,6 +24,13 @@ public class Friend {
 
     @JsonProperty(value = "count")
     private String amount;
+
+    public Friend(Date birthday, String nickname, int age, String amount) {
+        this.birthday = birthday;
+        this.nickname = nickname;
+        this.age = age;
+        this.amount = amount;
+    }
 
     public String getNickname() {
         return nickname;

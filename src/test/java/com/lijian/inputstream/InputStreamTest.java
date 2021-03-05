@@ -7,7 +7,11 @@ import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
 import java.io.EOFException;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 
 
@@ -79,6 +83,18 @@ public class InputStreamTest {
                 System.err.println("An IOException was caught: " + ex.getMessage());
                 ex.printStackTrace();
             }
+        }
+    }
+
+    @Test
+    public void readerTest(){
+
+        try {
+            Reader reader = new InputStreamReader(new FileInputStream(""), "utf-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
     }
 }

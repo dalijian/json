@@ -28,8 +28,8 @@ public class BlockQueueTest<T> {
             reentrantLock.unlock();
         }
     }
-
-    void sub(T x) {
+// 出队
+    void deq() {
         reentrantLock.lock();
         try {
             while (atomicLong.get() <= 0) {
@@ -54,4 +54,7 @@ public class BlockQueueTest<T> {
         }
         System.out.println(blockQueueTest.queue.size());
     }
+
+
+
 }

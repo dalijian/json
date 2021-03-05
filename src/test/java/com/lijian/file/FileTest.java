@@ -1,9 +1,16 @@
 package com.lijian.file;
 
 import org.junit.Test;
+import org.springframework.util.FileSystemUtils;
+import org.springframework.util.StreamUtils;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.nio.channels.FileChannel;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -85,16 +92,39 @@ public class FileTest {
             linuxPath =    linuxPath.replace(str, "_");
             }
         }
-
         System.out.println(linuxPath);
+    }
 
+    @Test
+    public void fileFormatTest(){
+        fileFormat();
+    }
+    /**
+     * 格式 化 文件 根据 ; 输出
+     */
+    public void fileFormat(){
 
-
-
-
-
-
+        try {
+            FileInputStream fileInputStream = new FileInputStream("C:\\Users\\lijian\\Desktop\\java_class_path.txt");
+            String  fileStr = StreamUtils.copyToString(fileInputStream, Charset.forName("utf-8"));
+            String formatStr = Stream.of(fileStr.split(";")).collect(Collectors.joining("\r\n"));
+            StreamUtils.copy(formatStr,Charset.forName("utf-8"),new FileOutputStream("C:\\Users\\lijian\\Desktop\\java_class_path_format.txt"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 
+    @Test
+    public void testFileLastModify(){
+//        修改 子文件  父文件 的 lastModify(), 也会 发生 改变
+        File file = new File("C:\\Users\\lijian\\IdeaProjects\\json\\algorithms");
+        System.out.println(file.lastModified());
+
+    }
+//1573038615765
+//    1609729039105
+//    1610617710976
 }

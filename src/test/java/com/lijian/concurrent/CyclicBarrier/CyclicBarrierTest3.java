@@ -10,6 +10,7 @@ public class CyclicBarrierTest3 {
       Thread thread =  new Thread(new Runnable() {
             @Override
             public void run() {
+
                 try {
                     c.await();
                 } catch (InterruptedException e) {

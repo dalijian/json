@@ -225,7 +225,28 @@ public class Demo {
             e.printStackTrace();
         }
     }
+/// 使用 FileChannel.map 复制文件
+//    FileChannel提供了map方法来把文件影射为内存映像文件
+    public static void main(String args[]){
+        RandomAccessFile f = null;
+        try {
+            f = new RandomAccessFile("C:/hinusDocs/hello.txt", "rw");
+            RandomAccessFile world = new RandomAccessFile("C:/hinusDocs/world.txt", "rw");
+            FileChannel fc = f.getChannel();
+            MappedByteBuffer buf = fc.map(FileChannel.MapMode.READ_WRITE, 0, 20);
 
+            FileChannel worldChannel = world.getChannel();
+            MappedByteBuffer worldBuf = worldChannel.map(FileChannel.MapMode.READ_WRITE, 0, 20);
+            worldBuf.put(buf);
+
+            fc.close();
+            f.close();
+            world.close();
+            worldChannel.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
     /*耗时4350ms*/
     @Test
     public void ByteBufferReadTest() {
@@ -433,7 +454,7 @@ public class Demo {
         try {
             socketChannel = SocketChannel.open();
             socketChannel.configureBlocking(false);
-            socketChannel.connect(new InetSocketAddress("172.19.12.129", 8080));
+            socketChannel.connect(new InetSocketAddress("127.0.0.1", 8088));
             if (socketChannel.finishConnect()) {
                 int i = 0;
                 while (true) {
@@ -467,7 +488,7 @@ public class Demo {
         ServerSocket serverSocket = null;
         InputStream in = null;
         try {
-            serverSocket = new ServerSocket(8080);
+            serverSocket = new ServerSocket(8088);
             int recvMsgSize = 0;
             byte[] recvBuf = new byte[1024];
             while (true) {

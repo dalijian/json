@@ -6,7 +6,7 @@ public class Host {
         System.out.println("    request(" + count + ", " + c + ") BEGIN");
 //        Thread-pre-message  设计模式， 将 任务 交给 新 线程 执行
         // (1) 创建FutureData的实例    创建  取货单
-        final FutureData future = new FutureData();
+        final FutureData future = new FutureData(); // 这个 FutureData 并不是 线程 共享 的
 
         // (2) 启动一个新线程，用于创建RealData的实例
         new Thread(() -> {

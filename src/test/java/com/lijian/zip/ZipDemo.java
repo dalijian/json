@@ -9,6 +9,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.zip.Adler32;
 import java.util.zip.CheckedOutputStream;
 import java.util.zip.ZipEntry;
@@ -65,5 +67,26 @@ public class ZipDemo {
         for (int i = 0; i < file.listFiles().length; i++) {
             recursion(file.listFiles()[i], out);
         }
+    }
+
+
+    @Test
+    public void testArrayEmpty(){
+
+        List<File> list = new ArrayList<>();
+        list.add(null);
+        list.add(null);
+        System.out.println(list.size());
+
+    }
+
+
+
+    @Test
+    public void stringToLowerCase(){
+
+
+        System.out.println("李健23LL".toLowerCase());
+
     }
 }

@@ -4,6 +4,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.springframework.util.CollectionUtils;
 
 
 import java.math.BigDecimal;
@@ -43,7 +44,7 @@ public class StreamTest {
     //使用stream 初始化 map
     public void initMap() {
         Map<String, Long> initMap = Stream.of("A", "B", "C", "D").collect(Collectors.toMap(x -> x, x -> 0L));
-
+        System.out.println(initMap);
     }
 
 
@@ -281,13 +282,12 @@ public class StreamTest {
         list.add(map5);
 
 
-//        Predicate<Map<String,Object>> distinctByKey = map -> {
-//            Map<Object,Boolean> seen = new ConcurrentHashMap<>();
-//            return t -> seen.putIfAbsent(map.get("createTime"), Boolean.TRUE) == null;
+//        Predicate<Map<String, Object>> distinctByKey = map -> {
+//            Map<Object, Boolean> seen = new ConcurrentHashMap<>();
+//            return false;
+////            return t -> seen.putIfAbsent(map.get("createTime"), Boolean.TRUE) == null;
 //        };
-//        list.stream().filter(distinctByKey).collect(Collectors.toList());
     }
-
 
     //    根据指定字段去重
     @Test

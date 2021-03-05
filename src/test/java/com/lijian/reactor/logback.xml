@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--scan =true  配置 文件 修改时 自动加载，debug = false  不展示 logback 内部状态-->
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+<!--	当多个应用输出日志到同一个目的地，设置 logger context 的名字可以更好的区分。 默认 default-->
+	<contextName>quartz</contextName>
+	<!-- 定义参数常量 -->
+	<!-- TRACE<DEBUG<INFO<WARN<ERROR -->
+	<!-- logger.trace("msg") logger.debug... -->
+<!--	scope 属性可能的值为：local，context，system。默认local-->
+	<property scope="local" name="log.level" value="debug" />
+	<property name="log.maxHistory" value="30" />
+	<property name="log.filePath" value="algorithms" />
+	<property name="log.pattern"
+		value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n" />
+	<!-- 控制台设置 -->
+	<appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>${log.pattern}</pattern>
+		</encoder>
+	</appender>
+	<!-- DEBUG -->
+	<appender name="debugAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<!-- 文件路径 -->
+		<file>${log.filePath}/debug.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- 文件名称 -->
+			<fileNamePattern>${log.filePath}/debug/debug.%d{yyyy-MM-dd}.log.gz
+			</fileNamePattern>
+			<!-- 文件最大保存历史数量 -->
+			<maxHistory>${log.maxHistory}</maxHistory>
+		</rollingPolicy>
+		<encboder>
+			<pattern>${log.pattern}</pattern>
+		</encboder>
+<!--		<filter class="ch.qos.logback.classic.filter.LevelFilter">-->
+<!--			<level>DEBUG</level>-->
+<!--			<onMatch>ACCEPT</onMatch>-->
+<!--			<onMismatch>DENY</onMismatch>-->
+<!--		</filter>-->
+	</appender>
+	<!-- INFO -->
+	<appender name="infoAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<!-- 文件路径 -->
+		<file>${log.filePath}/info.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- 文件名称 -->
+			<fileNamePattern>${log.filePath}/info/info.%d{yyyy-MM-dd}.log.gz
+			</fileNamePattern>
+			<!-- 文件最大保存历史数量 -->
+			<maxHistory>${log.maxHistory}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>${log.pattern}</pattern>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>INFO</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+	</appender>
+	<!-- ERROR -->
+	<appender name="errorAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<!-- 文件路径 -->
+		<file>${log.filePath}/error.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- 文件名称 -->
+			<fileNamePattern>${log.filePath}/error/error.%d{yyyy-MM-dd}.log.gz
+			</fileNamePattern>
+			<!-- 文件最大保存历史数量 -->
+			<maxHistory>${log.maxHistory}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>${log.pattern}</pattern>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>ERROR</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+	</appender>
+
+
+	<!-- warn -->
+	<appender name="warnAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<!-- 文件路径 -->
+		<file>${log.filePath}/warn.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- 文件名称 -->
+			<fileNamePattern>${log.filePath}/warn/warn.%d{yyyy-MM-dd}.log.gz
+			</fileNamePattern>
+			<!-- 文件最大保存历史数量 -->
+			<maxHistory>${log.maxHistory}</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>${log.pattern}</pattern>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>WARN</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+	</appender>
+<!--	additivity=false 不继承父类设置-->
+	<!--<logger name="org" level="${log.level}" additivity="false">-->
+		<!--<appender-ref ref="debugAppender"/>-->
+		<!--<appender-ref ref="infoAppender"/>-->
+		<!--<appender-ref ref="errorAppender"/>-->
+	<!--</logger>-->
+
+
+	<!--<root level="INFO">-->
+		<!--<appender-ref ref="consoleAppender"/>-->
+	<!--</root>-->
+	<logger name="org.springframework.transaction" level="ERROR"/>
+	<logger name="org.springframework.jms" level="DEBUG"/>
+	<logger name="org.springframework.jdbc" level="debug"/>
+	<logger name="org.springframework.orm.jpa" level="ERROR"/>
+	<logger name="javax.transaction" level="ERROR"/>
+	<logger name="javax.jms" level="ERROR"/>
+	<logger name="org.hibernate.jpa" level="ERROR"/>
+	<logger name="org.hibernate.SQL" level="ERROR"/>
+
+<!--	package 中 log 输出 级别 大于 对应logger level 才能 输出  TRACE < DEBUG < INFO < WARN < ERROR。-->
+<!--	Logger level  不设置 默认 为 debug ，当 level 的值为 INHERITED 或 NULL 时，将会强制 logger 继承上一层的级别。
+		继承 是 根据包 名 继承 -->
+<!--	<logger name="com.lijian.dispro" level="DEBUG">-->
+<!--	-->
+<!--	</logger>-->
+	<root level="INFO">
+		<appender-ref ref="consoleAppender"/>
+		<!--<appender-ref ref="debugAppender"/>-->
+		<!--<appender-ref ref="infoAppender"/>-->
+		<!--<appender-ref ref="errorAppender"/>-->
+		<!--<appender-ref ref="warnAppender"/>-->
+	</root>
+
+</configuration>

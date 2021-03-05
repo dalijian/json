@@ -11,13 +11,11 @@ public class BinarySearch {
     public void test() {
 
 
-        int[] array = {1, 1, 1, 4, 9, 10, 34, 45, 65, 78,99};
-        int index = bSearch(array, 0, array.length - 1, 1);
-        int num = bSearchFirst(99);
-        System.out.println(num);
-
+        int[] array = {1, 1, 1, 4, 9, 9, 10, 34, 45, 65, 78, 99};
+        int index = bSearchRecursionFirst(array, 0, array.length - 1, 1);
+//        int num = bSearchFirst(99);
+//        System.out.println(num);
         System.out.println(index);
-
     }
 //    递归式
 
@@ -29,10 +27,10 @@ public class BinarySearch {
      * @param i     查找值
      * @return
      */
-    private int bSearch(int[] array, int left, int right, int i) {
+//    查找第一个值等于给定值的元素
+    private int bSearchRecursionFirst(int[] array, int left, int right, int i) {
         int middle = (left + right) / 2;
         if (i == array[middle]) {
-
             if (middle == 0 || array[middle - 1] != i) {
                 return middle;
             }
@@ -41,9 +39,9 @@ public class BinarySearch {
             return -1;
         }
         if (i > array[middle]) {
-            return bSearch(array, middle + 1, right, i);
+            return bSearchRecursionFirst(array, middle + 1, right, i);
         } else {
-            return bSearch(array, left, middle - 1, i);
+            return bSearchRecursionFirst(array, left, middle - 1, i);
         }
 
     }
@@ -187,19 +185,19 @@ public class BinarySearch {
 
         int index = bsearchFirst(array, array.length, 2);
 
-        System.out.println(recursion(array,0,array.length-1,99));
+        System.out.println(recursion(array, 0, array.length - 1, 99));
         System.out.println(index);
     }
 
     public int recursion(int[] array, int left, int right, int target) {
 
         if (left <= right) {
-            int middle = (left+right)/2;
+            int middle = (left + right) / 2;
             if (array[middle] == target) {
-                return  middle;
+                return middle;
             }
             if (array[middle] > target) {
-               return  recursion(array, left, middle - 1, target);
+                return recursion(array, left, middle - 1, target);
             }
             return recursion(array, middle + 1, right, target);
         }
@@ -209,8 +207,8 @@ public class BinarySearch {
 
 
     @Test
-    public void firstBetter(){
-        int[] array = {1, 1, 1, 4, 4, 9, 10, 34, 45, 65, 78, 99};
+    public void firstBetter() {
+        int[] array = {1, 1, 1, 3, 4, 4, 9, 10, 34, 45, 65, 78, 99};
 
         int index = firstBetterRecursion(array, 0, array.length - 1, 3);
         System.out.println(index);
@@ -229,12 +227,12 @@ public class BinarySearch {
     public int firstBetterRecursion(int[] array, int left, int right, int target) {
 
         if (left <= right) {
-            int middle = (left+right)/2;
-            if (array[middle] >= target) {
-                if (middle == 0 || array[middle - 1] < target) {
+            int middle = (left + right) / 2;
+            if (array[middle] > target) {
+                if (middle == 0 || array[middle - 1] <= target) {
                     return middle;
                 }
-                return  firstBetterRecursion(array, left, middle - 1, target);
+                return firstBetterRecursion(array, left, middle - 1, target);
             }
             return firstBetterRecursion(array, middle + 1, right, target);
         }
@@ -243,9 +241,8 @@ public class BinarySearch {
     }
 
 
-
     @Test
-    public void lastLess(){
+    public void lastLess() {
         int[] array = {1, 1, 1, 4, 4, 9, 10, 34, 45, 65, 78, 99};
 
         int index = lastLessRecursion(array, 0, array.length - 1, 5);
@@ -265,14 +262,14 @@ public class BinarySearch {
     public int lastLessRecursion(int[] array, int left, int right, int target) {
 
         if (left <= right) {
-            int middle = (left+right)/2;
+            int middle = (left + right) / 2;
             if (array[middle] <= target) {
                 if (middle == right || array[middle + 1] > target) {
                     return middle;
                 }
-                return  lastLessRecursion(array, middle+1, right, target);
+                return lastLessRecursion(array, middle + 1, right, target);
             }
-            return lastLessRecursion(array, left, right-1, target);
+            return lastLessRecursion(array, left, right - 1, target);
         }
         return -1;
 

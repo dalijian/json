@@ -1,0 +1,1 @@
+1. 在 方法中 创建condition 与 在 属性 中 创建 condition 的 区别？？

@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class ExcelTest {
     public static void main(String[] args) {
-        ReadExcelUtils readExcelUtils = new ReadExcelUtils("C:/users/lijian/desktop/文体馆地址码.xlsx");
+        ReadExcelUtils readExcelUtils = new ReadExcelUtils("C:\\Users\\lijian\\Desktop\\BI\\bi查询.xlsx");
 
         try {
             LinkedHashMap<Integer,LinkedHashMap<String,Object>> resultMap = readExcelUtils.readExcelContent();

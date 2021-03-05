@@ -1,8 +1,10 @@
 package com.lijian.thread.deathLock;
 
+
 public class DeathLock {
     private String a ="A";
     private String b = "B";
+
     public void getA(){
        synchronized (a){
            System.out.println("thread " + Thread.currentThread().getName() + "get A");

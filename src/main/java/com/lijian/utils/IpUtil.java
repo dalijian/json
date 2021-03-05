@@ -2,6 +2,8 @@ package com.lijian.utils;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServletRequest;
 import java.net.InetAddress;
@@ -9,9 +11,9 @@ import java.net.UnknownHostException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-@Slf4j
-public class IpUtil {
 
+public class IpUtil {
+    public static Logger log = LoggerFactory.getLogger(IpUtil.class);
     public final static String ERROR_IP = "127.0.0.1";
 
     public final static Pattern pattern = Pattern.

@@ -1,0 +1,52 @@
+
+
+[
+  {
+    "value": "",
+    "key": 1608180661465,
+    "begin_factor": "B0217",
+    "operator": "+",
+    "middle_factor": "B0217",
+    "end_factor": "temp_code_5"
+  },
+  {
+    "value": "",
+    "key": 1608180661465,
+    "begin_factor": "temp_code_5",
+    "operator": "-",
+    "middle_factor": "B0122",
+    "end_factor": "temp_code_4"
+  },
+  {
+    "value": "",
+    "key": 1608180661465,
+    "begin_factor": "temp_code_4",
+    "operator": "/",
+    "middle_factor": "B0211",
+    "end_factor": "temp_code_3"
+  },
+  {
+    "value": "",
+    "key": 1608180661465,
+    "begin_factor": "temp_code_3",
+    "operator": "-",
+    "middle_factor": "B0121",
+    "end_factor": "temp_code_2"
+  },
+  {
+    "value": "",
+    "key": 1608180661465,
+    "begin_factor": "temp_code_2",
+    "operator": "*",
+    "middle_factor": "B0196",
+    "end_factor": "temp_code_1"
+  },
+  {
+    "value": "",
+    "key": 1608180661465,
+    "begin_factor": "temp_code_1",
+    "operator": "*",
+    "middle_factor": "B0140",
+    "end_factor": "temp_code_target"
+  }
+]

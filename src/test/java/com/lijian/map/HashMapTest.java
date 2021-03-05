@@ -22,8 +22,20 @@ public class HashMapTest {
     public void test(){
         Map<Person,String> personMap = new HashMap<>();
         personMap.put(new Person("lijian", 20), "lijian");
-        personMap.put(new Person("lijian", 20), "23");
-        System.out.println(personMap);
+        personMap.put(new Person("lijian", 21), "23");
+
+        Map<Integer,Integer> map =new HashMap<>();
+        map.put(1, 2);
+        map.put(2, 4);
+        Set<Integer> set = map.keySet();
+        set.iterator();
+
+        for (Map.Entry entry : personMap.entrySet()) {
+            System.out.println(entry.getKey());
+            System.out.println(entry.getValue());
+
+        }
+
 
     }
 //    根据value  排序

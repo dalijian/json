@@ -10,6 +10,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Queue;
@@ -20,6 +21,7 @@ import java.util.stream.Stream;
 import static com.lijian.algorithms.leecode.StackExample.isValid;
 
 public class Solution {
+
     public int[] twoSum(int[] nums, int target) {
         // force 双重for循环
 //            算法 复杂度 O(n2)
@@ -29,11 +31,8 @@ public class Solution {
                     return new int[]{i, j};
                 }
             }
-
         }
         return null;
-
-
     }
 
     public int[] twoSum2(int[] nums, int target) {
@@ -74,7 +73,7 @@ public class Solution {
     }
 
 
-    class ListNode {
+    static class ListNode {
         int val;
         ListNode next;
 
@@ -1039,6 +1038,33 @@ public class Solution {
     }
 
     @Test
+    public void f2List(){
+        int shu[] = {1, 2, 3, 4, 5};
+        f2List(shu,0,2);
+    }
+
+    private void f2List(int[] array, int has, int targ) {
+        LinkedList<Integer> value = new LinkedList<>();
+        List<List<Integer>> list = new LinkedList<>();
+        f2List2(array,has,targ,0,value,list);
+        System.out.println(list);
+    }
+    private void f2List2(int[] array, int has,  int targ, int cur, LinkedList<Integer> value, List<List<Integer>> list) {
+        if (has == targ) {
+            list.add(new LinkedList<>(value));
+            return;
+        }
+        for (int i =cur; i < array.length; i++) {
+            if (!value.contains(array[i])){
+                value.add(array[i]);
+                f2List2(array, has + 1, targ,i, value, list);
+                value.removeLast();
+            }
+        }
+    }
+
+
+    @Test
     public void f3Test() {
         int shu[] = {1, 2, 3, 4, 5};
         f3(shu, 2, 0, 0);
@@ -1071,9 +1097,7 @@ public class Solution {
                 System.out.println("stack'size:" + stack.size());
             }
         }
-
     }
-
 
     // 分治 二分法
 //     x=x*x; 会 随着 x 的 增大  x, 并不是 原始的 x

@@ -32,4 +32,9 @@ public class Greedy {
         return t;
     }
 
+//135. 分发糖果
+    public int candy(int[] ratings) {
+            return 0;
+    }
+
 }

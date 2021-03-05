@@ -1,5 +1,6 @@
 package com.lijian.guava;
 
+import com.google.common.collect.ImmutableMap;
 import com.google.common.graph.Graph;
 import com.google.common.graph.GraphBuilder;
 import com.google.common.graph.MutableGraph;
@@ -21,5 +22,9 @@ public class GraphTest {
         graph.nodes().stream().forEach(x-> System.out.println(x));
 
 
+    }
+
+    public static void main(String[] args) {
+        System.out.println((new ImmutableMap.Builder()).put("list", "").put("total", "").build());
     }
 }

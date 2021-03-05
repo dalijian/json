@@ -15,6 +15,7 @@ public class RealData implements Data {
         System.out.println("        making RealData(" + count + ", " + c + ") END");
         this.content = new String(buffer);
     }
+    @Override
     public String getContent() {
         return content;
     }

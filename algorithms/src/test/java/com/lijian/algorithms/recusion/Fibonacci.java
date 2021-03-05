@@ -13,4 +13,14 @@ public class Fibonacci {
             return fibonacciTest(x - 1) + fibonacciTest(x - 2);
         }
     }
+
+    @Test
+    public int  add(int n){
+        if (n <= 1) {
+            return n;
+        }
+        else{
+            return n + add(n - 1);
+        }
+    }
 }

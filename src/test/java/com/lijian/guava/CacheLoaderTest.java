@@ -6,6 +6,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -22,8 +24,10 @@ import static org.junit.Assert.assertThat;
  * authohr: wangji
  * date: 2018-02-05 14:05
  */
-@Slf4j
+
 public class CacheLoaderTest {
+    public static Logger log = LoggerFactory.getLogger(CacheLoaderTest.class);
+
     @Test
     public void testBaisc() throws ExecutionException, InterruptedException {
         LoadingCache<String, Employee> cache = CacheBuilder.newBuilder()
@@ -238,21 +242,21 @@ public class CacheLoaderTest {
         cache.getUnchecked("test");
         cache.getUnchecked("test1");
     }
-
-    @Test
-    public void testCachePreLoad() {
-        CacheLoader<String, String> loader = CacheLoader.from(String::toUpperCase);
-        LoadingCache<String, String> cache = CacheBuilder.newBuilder().build(loader);
-        Map<String, String> preData = new HashMap<String, String>() {
-            {
-                put("guava", "guava");
-                put("guava1", "guava1");
-            }
-        };
-        cache.putAll(preData); //提前插入
-        log.info("cache size :" + cache.size());
-        log.info("guava:" + cache.getUnchecked("guava"));
-    }
+//
+//    @Test
+//    public void testCachePreLoad() {
+//        CacheLoader<String, String> loader = CacheLoader.from(String::toUpperCase);
+//        LoadingCache<String, String> cache = CacheBuilder.newBuilder().build(loader);
+//        Map<String, String> preData = new HashMap<String, String>() {
+//            {
+//                put("guava", "guava");
+//                put("guava1", "guava1");
+//            }
+//        };
+//        cache.putAll(preData); //提前插入
+//        log.info("cache size :" + cache.size());
+//        log.info("guava:" + cache.getUnchecked("guava"));
+//    }
 
     @Test
     public void testCacheRefresh() throws InterruptedException {
@@ -276,27 +280,27 @@ public class CacheLoaderTest {
     }
 
 
-@Test
- public void testCache() throws InterruptedException {
-
-
-    // 通过CacheBuilder构建一个缓存实例
-    Cache<String, String> cache = CacheBuilder.newBuilder()
-            .maximumSize(100) // 设置缓存的最大容量
-            .expireAfterWrite(1, TimeUnit.SECONDS) // 设置缓存在写入一分钟后失效
-            .concurrencyLevel(10) // 设置并发级别为10
-            .recordStats() // 开启缓存统计
-            .build();
-// 放入缓存
-   cache.put("key", "value");
-    String result = cache.getIfPresent("key");
-    System.out.println("result->" + result);
-// 获取缓存
-
-
-    TimeUnit.SECONDS.sleep(2);
-    String value = cache.getIfPresent("key");
-
-    System.out.println("result->" + value);
-}
+//    @Test
+//    public void testCache() throws InterruptedException {
+//
+//
+//        // 通过CacheBuilder构建一个缓存实例
+//        Cache<String, String> cache = CacheBuilder.newBuilder()
+//                .maximumSize(100) // 设置缓存的最大容量
+//                .expireAfterWrite(1, TimeUnit.SECONDS) // 设置缓存在写入一分钟后失效
+//                .concurrencyLevel(10) // 设置并发级别为10
+//                .recordStats() // 开启缓存统计
+//                .build();
+//// 放入缓存
+//        cache.put("key", "value");
+//        String result = cache.getIfPresent("key");
+//        System.out.println("result->" + result);
+//// 获取缓存
+//
+//
+//        TimeUnit.SECONDS.sleep(2);
+//        String value = cache.getIfPresent("key");
+//
+//        System.out.println("result->" + value);
+//    }
 }

@@ -5,12 +5,16 @@ package com.lijian.algorithms.leecode;
 import org.junit.Test;
 
 import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Queue;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.stream.IntStream;
 
 public class DynamicProgram {
 
@@ -75,6 +79,7 @@ public class DynamicProgram {
     @Test
     public void isMatchTest() {
         boolean flag = isMatch("acdcb", "a*c?b");
+        System.out.println(flag);
     }
 
     public boolean isMatch(String s, String p) {
@@ -491,7 +496,8 @@ public void isMatch3Test(){
 
         String word1 = "horse";
         String word2 = "ros";
-        minDistance(word1, word2);
+        int result = minDistance(word1, word2);
+        System.out.println(result);
     }
 
     //    Levenshtein distance 莱文斯坦距离
@@ -516,7 +522,9 @@ public void isMatch3Test(){
     @Test
     public void minDistance2Test() {
 
-        minDistance("horse", "ros");
+        int result = minDistance21("horse", "ros");
+        System.out.println("******************");
+        System.out.println(result);
     }
 
     //    莱文斯坦 距离 回溯
@@ -527,11 +535,23 @@ public void isMatch3Test(){
         return priorityQueue.poll();
     }
 
-//    莱文斯坦 距离 回溯
 
+
+    /**
+     * 莱文斯坦 距离 回溯
+     * @param i 数组 a 的当前 下标
+     * @param j 数组 b 的当前 下标
+     * @param edist 最短距离
+     * @param priorityQueue
+     * @param a
+     * @param b
+     * @param n a 长度
+     * @param m b 长度
+     */
     public void lwstBT(int i, int j, int edist, PriorityQueue<Integer> priorityQueue, char[] a, char[] b, int n, int m) {
         Integer minDist = Integer.MIN_VALUE;
         if (i == n || j == m) {
+
             if (i < n) edist += (n - i);
             if (j < m) edist += (m - j);
             if (edist < minDist) minDist = edist;
@@ -545,6 +565,44 @@ public void isMatch3Test(){
             lwstBT(i + 1, j, edist + 1, priorityQueue, a, b, n, m); // 删除a[i]或者b[j]前添加一个字符
             lwstBT(i, j + 1, edist + 1, priorityQueue, a, b, n, m); // 删除b[j]或者a[i]前添加一个字符
             lwstBT(i + 1, j + 1, edist + 1, priorityQueue, a, b, n, m); // 将a[i]和b[j]替换为相同字符
+        }
+    }
+
+
+    public int minDistance21(String word1, String word2) {
+        List<Integer> integer =new LinkedList<>();
+        integer.add(0,Integer.MAX_VALUE);
+        lwstBT(0, 0, 0,integer , word1.toCharArray(), word2.toCharArray(), word1.length(), word2.length());
+        return ((LinkedList<Integer>) integer).getFirst();
+    }
+
+    /**
+     *  回溯 就是 把 word1 转换为 word2 的 全部路径 都 找 出来 ，选择 最小的 路径
+     * @param i 字符串 word1 的下标
+     * @param j 字符串 word2 的下标
+     * @param edist word1 转换为 word2 的距离
+     * @param minDist   word1 转换为 word2 的 最小距离
+     * @param a word1.toCharArray()
+     * @param b word2.toCharArray()
+     * @param n word1.length()
+     * @param m word2.length()
+     */
+
+    public void lwstBT(int i, int j, int edist, List<Integer> minDist, char[] a, char[] b, int n, int m) {
+
+        if (i == n || j == m) {
+            if (i < n) edist += (n - i);
+            if (j < m) edist += (m - j);
+            if (edist < minDist.get(0)) minDist.set(0,edist);
+//            System.out.println(edist);
+            return;
+        }
+        if (a[i] == b[j]) { // 两个字符匹配
+            lwstBT(i + 1, j + 1, edist,minDist, a, b, n, m);
+        } else { // 两个字符不匹配
+            lwstBT(i + 1, j, edist + 1, minDist, a, b, n, m); // 删除a[i]或者b[j]前添加一个字符
+            lwstBT(i, j + 1, edist + 1, minDist, a, b, n, m); // 删除b[j]或者a[i]前添加一个字符
+            lwstBT(i + 1, j + 1, edist + 1,minDist,  a, b, n, m); // 将a[i]和b[j]替换为相同字符
         }
     }
 
@@ -908,5 +966,52 @@ public void isScrambleTest(){
         }
         return dp[s.length()-1];
     }
+
+
+
+//115. 不同的子序列
+    public int numDistinct(String s, String t) {
+
+        return 0;
+
+    }
+
+
+//120. 三角形最小路径和
+
+    @Test
+    public void minimunTotalTest(){
+
+        List<List<Integer>> list = new LinkedList<>();
+        ((LinkedList<List<Integer>>) list).addLast(Arrays.asList(new Integer[]{-1}));
+        ((LinkedList<List<Integer>>) list).addLast(Arrays.asList(new Integer[]{3, 2}));
+        ((LinkedList<List<Integer>>) list).addLast(Arrays.asList(new Integer[]{-3,1,-1}));
+//        ((LinkedList<List<Integer>>) list).addLast(Arrays.asList(new Integer[] {4, 1, 8, 3}));
+
+        int result = minimumTotal(list);
+        System.out.println(result);
+
+    }
+    public int minimumTotal(List<List<Integer>> list) {
+
+        for (int i = 1; i < list.size(); i++) {
+
+            for (int j = 0; j <list.get(i).size(); j++) {
+                if (j == 0) {
+                    list.get(i).set(j, list.get(i-1).get(j)+list.get(i).get(j));
+                }
+               else if (j == i) {
+                    list.get(i).set(j, list.get(i-1).get(list.get(i-1).size()-1)+list.get(i).get(j));
+                } else {
+                    list.get(i).set(j, Math.min(list.get(i - 1).get(j - 1), list.get(i - 1).get(j)) + list.get(i).get(j));
+                }
+            }
+        }
+        return list.get(list.size()-1).stream().mapToInt(x->x).min().getAsInt();
+
+    }
+
+
+
 
 }

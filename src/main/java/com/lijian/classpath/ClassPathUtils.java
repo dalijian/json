@@ -165,5 +165,7 @@ public class ClassPathUtils {
     }
 
 
-
+    public static void main(String[] args) {
+        System.out.println(System.getProperty("lijian.user")); // 拿到 从 控制台 输入 的 -Dlijian.user=lijian  系统变量
+    }
 }

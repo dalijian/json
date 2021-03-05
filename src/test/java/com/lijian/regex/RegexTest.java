@@ -1,6 +1,7 @@
 package com.lijian.regex;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.common.collect.ImmutableMap;
 import org.junit.Test;
 
 import java.io.BufferedReader;
@@ -11,6 +12,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -144,5 +146,78 @@ public class RegexTest {
         System.out.println("appendReplacement: " + sb);
         m.appendTail(sb);
         System.out.println("appendTail: " + sb);
+    }
+
+
+
+
+    @Test
+    public void formulaTest() {
+        Pattern pattern = Pattern.compile("([a-zA-Z0-9])+");
+        String formula ="((B0087*1))";
+        Matcher matcher = pattern.matcher("((B0087*1))");
+        String groupOne =null;
+        int beforeIndex=0;
+        while (matcher.find()) {
+            groupOne = matcher.group();
+            int groupIndex = formula.indexOf(groupOne, beforeIndex);
+
+            System.out.println(formula.substring(beforeIndex, groupIndex));
+            System.out.println(groupOne);
+            beforeIndex=groupIndex+groupOne.length();
+            if (isLast(beforeIndex,groupOne, formula)) {
+                System.out.println("is last ");
+                System.out.println(formula.substring(beforeIndex));
+            }else{
+                System.out.println(" is not last ");
+            }
+            System.out.println("******************");
+        }
+
+    }
+    private boolean isLast(int groupIndex, String groupOne, String formula) {
+        Pattern pattern = Pattern.compile("([a-zA-Z0-9])+");
+        Matcher matcher =    pattern.matcher(formula.substring(groupIndex));
+        boolean flag = matcher.find();
+        return !flag;
+    }
+
+
+    static Pattern pattern = Pattern.compile("\\([a-zA-Z0-9_]+[\\+\\-\\*\\/][a-zA-Z0-9_]+\\)");
+    static Pattern endPattern = Pattern.compile("^[a-zA-Z0-9_]+[\\+\\-\\*\\/][a-zA-Z0-9_]+$");
+    List<Map<String, String>> formulaList = new ArrayList<>();
+    String endFormula = "";
+
+
+    /**
+     * 根据 公式 反推 生成 公式 的 记录
+     * @param formula 公式
+     * @param i  记录 初始 个数
+     */
+    public void   recursion2(String formula, int i) {
+        Matcher matcher = pattern.matcher(formula);
+        Matcher endMatcher = endPattern.matcher(formula);
+        if (endMatcher.find()) {
+            endFormula= formula;
+            return ;
+        }
+        while (matcher.find()) {
+            String group = matcher.group();
+
+            formula = formula.replace(group, "temp_code_" + i);
+            formulaList.add(new ImmutableMap.Builder<String, String>()
+                    .put("key", "temp_code_" + i)
+                    .put("value",group)
+                    .build());
+            i++;
+        }
+        recursion2(formula, i);
+    }
+
+    @Test
+    public void recursion2Test() {
+        recursion2("(B0221-B0220)*B0213", 0);
+        System.out.println("endFormula-->" + endFormula);
+        System.out.println(formulaList);
     }
 }

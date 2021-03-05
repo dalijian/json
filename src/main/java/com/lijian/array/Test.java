@@ -40,4 +40,8 @@ public class Test {
             System.out.print(array5[i]);
         }
     }
+    
+    public void init(){
+
+    }
 }

@@ -15,7 +15,7 @@ public class ThreadA extends Thread {
     public void run(){
         super.run();
         try {
-            object.methodA();
+            object.methodB();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
