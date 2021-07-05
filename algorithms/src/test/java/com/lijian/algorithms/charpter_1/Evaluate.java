@@ -19,7 +19,7 @@ public class Evaluate {
         Stack<Double> vals = new Stack<>();
 
 
-        String content = "(1+1+1+1)*(2+3)*3";
+        String content = "((1+2)*3)";
         Queue<String> queue = Stream.of(content.split("")).collect(Collectors.toCollection(ArrayDeque::new));
 
 
@@ -69,8 +69,6 @@ public class Evaluate {
                 else{
                 //  如果 字符 既不是 运算符，也不是 括号， 将 它 作为 double  值 压入 栈
                 vals.push(Double.parseDouble(s));
-
-
             }
 
         }

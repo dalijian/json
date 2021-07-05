@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
-@AllArgsConstructor
 @NoArgsConstructor
 public class Friend {
     //日期格式转换
