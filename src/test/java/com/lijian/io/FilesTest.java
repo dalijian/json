@@ -6,9 +6,18 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.sql.Connection;
 import java.util.UUID;
 import java.util.concurrent.atomic.LongAdder;
 import java.util.stream.Collectors;
@@ -37,7 +46,7 @@ public class FilesTest {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
 
         LongAdder longAdder = new LongAdder();
         IntStream.rangeClosed(1, 100000).forEach(i -> {
@@ -49,4 +58,33 @@ public class FilesTest {
         });
         log.info("total : {}", longAdder.longValue());
     }
+
+    /**
+     * 将 文件夹 下的文件  按行 写入 到 同一个 文件
+     * @throws IOException
+     */
+    @Test
+    public void writeToTxt() throws IOException {
+
+        File folder = new File("C:\\Users\\lijian\\Documents\\postman\\plc-1301-ALL-2021-11-05");
+        FileOutputStream fileOutputStream = new FileOutputStream("1301_all.txt");
+        String str = null;
+        FileWriter fw = null;
+        BufferedWriter writer = null;
+        fw = new FileWriter(new File("1301_all.txt"));
+        writer = new BufferedWriter(fw);
+        File[] files = folder.listFiles();
+        for (int i = 0; i < files.length; i++) {
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(files[i])));
+            while ((str = bufferedReader.readLine()) != null) {
+                writer.write(str);
+                writer.newLine();//换行
+            }
+        }
+        writer.flush();
+        writer.close();
+        fw.close();
+
+    }
+
 }

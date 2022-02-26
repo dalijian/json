@@ -8,12 +8,16 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -22,7 +26,7 @@ public class FileTest {
     @Test
     public void changeDirectory() {
 
-        File file = new File("C:\\Users\\lijian\\IdeaProjects\\java_多线程设计模式\\src");
+        File file = new File("C:\\Users\\lijian\\Workspaces\\his_2021_11_08_slf4j\\his\\src");
 
         List<File> fileList = Stream.of(file.listFiles()).collect(Collectors.toList());
         for (File file1 : fileList) {
@@ -48,6 +52,7 @@ public class FileTest {
     public static boolean changeFile(String fName, int start, int len) throws Exception {
 //创建一个随机读写文件对象 
         java.io.RandomAccessFile raf = new java.io.RandomAccessFile(fName, "rw");
+//        System.out.println(raf.readUTF());
         long totalLen = raf.length();
         System.out.println("文件总长字节是:" + totalLen);
 //打开一个文件通道 
@@ -67,11 +72,14 @@ public class FileTest {
         return true;
     }
 
+
     //测试主方法
-    public static void main(String[] args) throws Exception {
-        changeFile("BigFileRW.java", 3, 5);
+    @Test
+    public void changeFileTest() throws Exception {
+        changeFile("BigFileRW.txt", 3, 1);
         System.out.println("changeOK...");
     }
+
 
 
     @Test
@@ -120,11 +128,54 @@ public class FileTest {
     @Test
     public void testFileLastModify(){
 //        修改 子文件  父文件 的 lastModify(), 也会 发生 改变
-        File file = new File("C:\\Users\\lijian\\IdeaProjects\\json\\algorithms");
+        File file = new File("C:\\Users\\lijian\\Workspaces\\his_2021_11_08_slf4j\\his\\src");
         System.out.println(file.lastModified());
+        System.out.println(new SimpleDateFormat("yyyy-MM-dd HH-mm-ss:SSS").format(new Date(file.lastModified())));
 
     }
 //1573038615765
 //    1609729039105
 //    1610617710976
+
+    @Test
+    public void testDate(){
+        System.out.println(new SimpleDateFormat("yyyy-MM-dd HH-mm-ss:SSS").format(new Date(-28800000)));
+    }
+
+    public static void main(String[] args)  {
+        for (int i = 0; i < 200; i++) {
+            Thread thread = new Thread(() -> {
+                try {
+                    Thread.sleep(1000L);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                save2File(Thread.currentThread().getName(), "abc", "test_thread_name_with_synchronized");
+
+            });
+            thread.start();
+        }
+    }
+
+    public static synchronized void save2File(String message,String fixmedins_code,String file_name) {
+        try {
+            File file = new File(  new SimpleDateFormat("yyyy-MM-dd").format(new Date()) + System.getProperty("file.separator") +fixmedins_code+ System.getProperty("file.separator") + file_name + ".txt");
+            File fileParent = file.getParentFile();
+            if (!fileParent.exists()) {
+                fileParent.mkdirs();
+            }
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+            FileWriter fileWriter = new FileWriter(file, true);
+            fileWriter.write("\r\n");
+            fileWriter.write(message);
+            fileWriter.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+
+        }
+    }
+
 }

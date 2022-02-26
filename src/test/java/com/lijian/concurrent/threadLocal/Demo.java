@@ -16,6 +16,7 @@ public class Demo {
         for (int i = 0; i < 10; i++) {
             service.submit(()->{
                 Object result = threadLocal.get();
+
                 System.out.println(result);
                 if (result == null) {
                     threadLocal.set(Thread.currentThread().getName());

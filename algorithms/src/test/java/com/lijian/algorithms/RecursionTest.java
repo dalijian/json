@@ -29,8 +29,7 @@ public class RecursionTest {
         for (int i = 0; i < 101; i++) {
             sum += i;
         }
-        System.out.println(sum
-        );
+        System.out.println(sum);
     }
 
     @Test

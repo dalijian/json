@@ -1,3 +1,5 @@
+package com.lijian.muti_thread.AppendixB.Synchronized1;
+
 class Something {
     private int x = 0;
     private int y = 0;

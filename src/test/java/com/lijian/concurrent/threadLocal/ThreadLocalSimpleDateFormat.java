@@ -14,5 +14,15 @@ public  class  ThreadLocalSimpleDateFormat {
         }
 
         DateFormat df = SafeDateFormat.get();
+
+        public DateFormat getDf() {
+        return     tl.get();
+
+        }
+
+        public void setDf(DateFormat df) {
+            tl.set(df);
+
+        }
     }
 }

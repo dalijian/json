@@ -30,11 +30,13 @@ public class Test {
             System.out.println(result.get());
 
         }
+
         for (int i = 0; i < 3; i++) {
+            System.out.println(" cancel commition");
 //            取消任务
             furtureList.get(i).cancel(true);
         }
-
+        System.out.println(" end ");
 
     }
 

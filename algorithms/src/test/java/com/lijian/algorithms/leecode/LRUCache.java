@@ -2,6 +2,7 @@ package com.lijian.algorithms.leecode;
 
 import java.util.Deque;
 import java.util.Hashtable;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
 
 /**
@@ -120,5 +121,7 @@ public class LRUCache {
     lruCache.put(3,3);
 //    lruCache.get(1); // 是将  1 所对应 的 value 迁移到 DLinkedNode  的 head 位置， 在 cache 中 key 的 位置 不变
     System.out.println(lruCache);
+
+    LinkedHashMap linkedHashMap = new LinkedHashMap(10, 0.2f, true);
   }
 }

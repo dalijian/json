@@ -103,7 +103,13 @@ public class AbstractGraph implements Graph {
 
     }
 
-    //深度优先算法
+
+
+    /**
+     * 深度优先算法 --利用 回溯
+     * @param v
+     * @return
+     */
     public Iterator DFSTraverse(Vertex v) {
         LinkedList traverseSeq = new LinkedListDLNode();//遍历结果
 //        resetVexStatus(); //重置顶点状态

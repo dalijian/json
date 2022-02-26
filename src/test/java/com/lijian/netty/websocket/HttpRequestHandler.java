@@ -15,7 +15,7 @@ import io.netty.handler.codec.http.HttpVersion;
 import io.netty.handler.codec.http.LastHttpContent;
 import io.netty.handler.ssl.SslHandler;
 import io.netty.handler.stream.ChunkedNioFile;
-import org.eclipse.jetty.http.HttpHeader;
+
 
 import java.io.File;
 import java.io.RandomAccessFile;

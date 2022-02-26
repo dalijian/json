@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument
+        xmlns="urn:hl7-org:v3"
+        xmlns:mif="urn:hl7-org:v3/mif"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ..\sdschemas\SDA.xsd">
+    <realmCode code="CN"/>
+    <typeId extension="POCD_MT000040" root="2.16.840.1.113883.1.3"/>
+    <templateId root="2.16.156.10011.2.1.1.1"/>
+    <id extension="33078100200801314" root="2.16.156.10011.1.1.2"/>
+    <code code="HSDA00.01" codeSystem="2.16.156.10011.2.4" codeSystemName="卫生信息共享文档规范编码体系"/>
+    <title>个人基本健康信息登记</title>
+    <effectiveTime value="20180805081953" xsi:type="TS"/>
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" displayName="正常访问保密级别"/>
+    <languageCode code="zh-CN"/>
+    <setId/>
+    <versionNumber/>
+    <recordTarget contextControlCode="OP" typeCode="RCT">
+        <patientRole classCode="PAT">
+            <id extension="JT201885271996800" root="2.16.156.10011.1.2"/>
+            <addr use="H">
+                <houseNumber>枣树社区工人路37号16-203</houseNumber>
+                <streetName>枣树社区居委会</streetName>
+                <township>云山街道</township>
+                <county>兰溪市</county>
+                <city>金华市</city>
+                <state>浙江省</state>
+                <postalCode>321100</postalCode>
+            </addr>
+            <telecom use="H" value="152-5893-8419"/>
+            <patient classCode="PSN" determinerCode="INSTANCE">
+                <id extension="330719195008061121" root="2.16.156.10011.1.3"/>
+                <name>叶燕香</name>
+                <administrativeGenderCode code="2" codeSystem="2.16.156.10011.2.3.3.4" codeSystemName="生理性别代码表(GB/T 2261.1)" displayName="女性"/>
+                <birthTime value="19500806" xsi:type="TS"/>
+                <maritalStatusCode code="30" codeSystem="2.16.156.10011.2.3.3.5" codeSystemName="婚姻状况代码表(GB/T 2261.2)" displayName="丧偶"/>
+                <ethnicGroupCode code="01" codeSystem="2.16.156.10011.2.3.3.3" codeSystemName="民族类别代码表(GB 3304)" displayName="汉族"/>
+                <employerOrganization>
+                    <name>家务</name>
+                </employerOrganization>
+                <household>
+                    <houseType value="true" xsi:type="BL"/>
+                </household>
+                <educationLevel>
+                    <educationLevelCode code="81" codeSystem="2.16.156.10011.2.3.3.6" codeSystemName="学历代码表(GB/T 4658)" displayName="小学毕业"/>
+                </educationLevel>
+                <occupation>
+                    <occupationCode code="5" codeSystem="2.16.156.10011.2.3.3.7" codeSystemName="职业类别代码表(GB/T 6565)" displayName="农、林、牧、渔、水利业生产人员"/>
+                </occupation>
+            </patient>
+        </patientRole>
+    </recordTarget>
+    <author contextControlCode="OP" typeCode="AUT">
+        <time value="20180805081953" xsi:type="TS"/>
+        <assignedAuthor classCode="ASSIGNED">
+            <id extension="3307810020" root="2.16.156.10011.1.7"/>
+            <assignedPerson>
+                <name>鲍淑娟</name>
+            </assignedPerson>
+            <representedOrganization>
+                <id extension="3307810020" root="2.16.156.10011.1.5"/>
+                <name>第六团队</name>
+                <addr>浙江省金华市兰溪市与山街道</addr>
+            </representedOrganization>
+        </assignedAuthor>
+    </author>
+    <custodian typeCode="CST">
+        <assignedCustodian classCode="ASSIGNED">
+            <representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+                <id extension="PDY1000453" root="2.16.156.10011.1.6"/>
+                <name>兰溪市云山街道社区卫生服务中心</name>
+                <telecom value="152-5893-8419"/>
+                <addr>浙江省金华市兰溪市与山街道</addr>
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    <participant typeCode="NOT">
+        <associatedEntity classCode="ECON">
+            <telecom value="152-5893-8419"/>
+            <associatedPerson>
+                <name>肖兵</name>
+            </associatedPerson>
+        </associatedEntity>
+    </participant>
+    <relatedDocument typeCode="RPLC">
+        <parentDocument classCode="DOCCLIN" moodCode="EVN">
+            <id extension="D2011000000" root="2.16.156.10011.1.1.2"/>
+            <setId/>
+            <versionNumber value="1"/>
+        </parentDocument>
+    </relatedDocument>
+    <component>
+        <structuredBody>
+            <component>
+                <section>
+                    <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="STUDIES SUMMARY"/>
+                    <text/>
+                    <entry contextConductionInd="true" typeCode="COMP">
+                        <organizer classCode="BATTERY" moodCode="EVN">
+                            <statusCode/>
+                            <component typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="DE04.50.001.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" displayName="ABO血型代码表"/>
+                                    <value code="5" codeSystem="2.16.156.10011.2.3.1.85" codeSystemName="ABO血型代码表" displayName="不详" xsi:type="CD"/>
+                                </observation>
+                            </component>
+                            <component typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="DE04.50.010.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" displayName="Rh(D)血型代码表"/>
+                                    <value code="3" codeSystem="2.16.156.10011.2.3.1.250" codeSystemName="Rh(D)血型代码表" displayName="不详" xsi:type="CD"/>
+                                </observation>
+                            </component>
+                        </organizer>
+                    </entry>
+                </section>
+            </component>
+            <component>
+                <section>
+                    <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PAYMENT SOURCES"/>
+                    <text/>
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="DE07.00.007.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" displayName="医疗付款方式代码"/>
+                            <value code="02" codeSystem="2.16.156.10011.2.3.1.197" codeSystemName="医疗费用来源类别代码表" displayName="城镇居民基本医疗保险" xsi:type="CD"/>
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+            <component>
+                <section>
+                    <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
+                    <text/>
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="DE02.10.023.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" displayName="药物过敏史标志"/>
+                            <value value="false" xsi:type="BL"/>
+                            <entryRelationship typeCode="SUBJ">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="DE05.01.022.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" displayName="过敏源代码"/>
+                                    <effectiveTime value="20210502112530"/>
+                                    <value code="9" codeSystem="2.16.156.10011.2.3.1.137" codeSystemName="过敏源代码表" displayName="其他过敏源" xsi:type="CD"/>
+                                </observation>
+                            </entryRelationship>
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+            <component>
+                <section>
+                    <code code="10161-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF OCCUPATIONAL EXPOSURE"/>
+                    <text/>
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="DE03.00.021.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" displayName="环境危险因素暴露类别代码"/>
+                            <value code="1" codeSystem="2.16.156.10011.2.3.1.33" codeSystemName="环境危险因素暴露类别代码表" displayName="无" xsi:type="CD"/>
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+            <component>
+                <section>
+                    <code code="11348-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PAST ILLNESS"/>
+                    <text/>
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="DE02.10.021.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" displayName="既往患病种类代码"/>
+                            <effectiveTime value="20180805"/>
+                            <value code="01" codeSystem="2.16.156.10011.2.3.1.12" codeSystemName="既往常见疾病种类代码表" displayName="无" xsi:type="CD"/>
+                        </observation>
+                    </entry>
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="DE02.10.062.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" displayName="手术史标志"/>
+                            <effectiveTime value="20001106"/>
+                            <value value="false" xsi:type="BL"/>
+                            <entryRelationship negationInd="false" typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="DE02.10.061.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" displayName="手术史"/>
+                                    <value xsi:type="ST">胆结石手术</value>
+                                </observation>
+                            </entryRelationship>
+                        </observation>
+                    </entry>
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="DE02.10.069.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" displayName="外伤史标志"/>
+                            <effectiveTime value="20160302121230"/>
+                            <value value="true" xsi:type="BL"/>
+                            <entryRelationship negationInd="false" typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="DE02.10.068.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" displayName="外伤史名称"/>
+                                    <value xsi:type="ST">头部撞击伤</value>
+                                </observation>
+                            </entryRelationship>
+                        </observation>
+                    </entry>
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="DE06.00.106.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" displayName="输血史标志"/>
+                            <effectiveTime value="20001106121230"/>
+                            <value value="true" xsi:type="BL"/>
+                            <entryRelationship negationInd="false" typeCode="RSON">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="DE06.00.107.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" displayName="输血原因"/>
+                                    <value xsi:type="ST">胆结石手术</value>
+                                </observation>
+                            </entryRelationship>
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+            <component>
+                <section>
+                    <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF FAMILY MEMBER DISEASES"/>
+                    <text/>
+                    <entry>
+                        <organizer classCode="CLUSTER" moodCode="EVN">
+                            <statusCode/>
+                            <subject typeCode="SBJ">
+                                <relatedSubject classCode="PRS">
+                                    <code code="0" codeSystem="2.16.156.10011.2.3.3.8" codeSystemName="家庭关系代码表(GB/T 4761)" displayName="本人或户主"/>
+                                    <subject>
+                                        <administrativeGenderCode code="0" codeSystem="2.16.156.10011.2.3.3.4" codeSystemName="生理性别代码表(GB/T 2261.1)" displayName="未知的性别"/>
+                                    </subject>
+                                </relatedSubject>
+                            </subject>
+                            <component typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="DE02.10.095.50" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" displayName="家族性疾病名称代码"/>
+                                    <value code="01" codeSystem="2.16.156.10011.2.3.1.12" codeSystemName="既往常见疾病种类代码表" displayName="无" xsi:type="CD"/>
+                                </observation>
+                            </component>
+                        </organizer>
+                    </entry>
+                </section>
+            </component>
+            <component>
+                <section>
+                    <code displayName="遗传病史"/>
+                    <text/>
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="DE02.10.026.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" displayName="遗传病名称"/>
+                            <value xsi:type="ST">无</value>
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+            <component>
+                <section>
+                    <code code="8671-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of functional status"/>
+                    <text/>
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="DE05.10.006.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" displayName="残疾情况代码"/>
+                            <effectiveTime value="20210502112530"/>
+                            <value code="01" codeSystem="2.16.156.10011.2.3.1.139" codeSystemName="残疾情况代码表" displayName="无残疾" xsi:type="CD"/>
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+            <component>
+                <section>
+                    <code displayName="生活环境"/>
+                    <text/>
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="DE03.00.099.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" />
+                            <value value="true" xsi:type="BL"/>
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="DE03.00.006.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" displayName="厨房排风设施类别代码表"/>
+                                    <value code="1" codeSystem="2.16.156.10011.2.3.1.34" codeSystemName="厨房排风设施类别代码表" displayName="油烟机" xsi:type="CD"/>
+                                </observation>
+                            </entryRelationship>
+                        </observation>
+                    </entry>
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="DE03.00.050.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" displayName="家庭燃料类型类别代码"/>
+                            <value code="1" codeSystem="2.16.156.10011.2.3.1.35" codeSystemName="家庭燃料类型类别代码表" displayName="液化气" xsi:type="CD"/>
+                        </observation>
+                    </entry>
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="DE03.00.082.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="饮水类别代码表" displayName="家庭饮水类别代码"/>
+                            <value code="1" codeSystem="2.16.156.10011.2.3.1.27" codeSystemName="饮水类别代码表" displayName="自来水" xsi:type="CD"/>
+                        </observation>
+                    </entry>
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="DE03.00.005.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" displayName="厕所类别代码表"/>
+                            <value code="1" codeSystem="2.16.156.10011.2.3.1.36" codeSystemName="厕所类别代码表" displayName="卫生厕所" xsi:type="CD"/>
+                        </observation>
+                    </entry>
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="DE03.00.049.00" codeSystem="2.16.156.10011.2.2.1" codeSystemName="卫生信息数据元目录" displayName="家庭禽畜栏类别"/>
+                            <value code="2" codeSystem="2.16.156.10011.2.3.2.2" codeSystemName="家庭禽畜栏类别表" displayName="室内" xsi:type="CD"/>
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>

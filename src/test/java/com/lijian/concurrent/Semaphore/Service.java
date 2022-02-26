@@ -16,8 +16,10 @@ public class Service {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
+        }finally {
+            System.out.println(Thread.currentThread().getName() + " begin time=" + System.currentTimeMillis());
+            semaphore.release();
         }
-        System.out.println(Thread.currentThread().getName() + " begin time=" + System.currentTimeMillis());
-semaphore.release();
+
     }
 }

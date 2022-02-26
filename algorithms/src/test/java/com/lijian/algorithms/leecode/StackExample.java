@@ -8,7 +8,24 @@ import java.util.Stack;
 
 public class StackExample {
 
-
+    /**
+     *  i386 标志函数 进入 和 退出指令序列
+     *  push ebp
+     *  mov ebp,esp
+     *  sub esp,x
+     *  push reg1
+     *  ...
+     *  push regn
+     *
+     *  函数实际内容
+     *
+     *  [pop regn]
+     *  ...
+     *  [pop reg1]
+     *  mov esp,ebp
+     *  pop ebp
+     *  ret
+     */
 
 
     // 这个 不适合 用 回文数 判断
@@ -101,6 +118,8 @@ public void simplifyPathTest(){
     }
 //224. 基本计算器
 public int calculate(String s) {
+
+
     Stack<Integer> stack = new Stack<Integer>();
     // sign 代表正负
     int sign = 1, res = 0;
@@ -127,5 +146,9 @@ public int calculate(String s) {
     }
     return res;
 }
+
+
+
+
 
 }

@@ -22,6 +22,9 @@ public class Person implements PersonMBean {
 
     @Override
     public String sayHello(String hello) {
+        System.out.println("GlobalCache.MAP.size:"+GlobalCache.MAP.size());
+        GlobalCache.MAP.clear();
+        System.out.println("GlobalCache.MAP.size:"+GlobalCache.MAP.size());
         System.out.println(hello);
         return this.name+":"+hello;
     }

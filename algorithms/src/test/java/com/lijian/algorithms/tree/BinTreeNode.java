@@ -20,6 +20,7 @@ public class BinTreeNode implements Node {
     private int height; //以该结点为根的子树的高度, 只有 自身 节点时 高度 为 0
     private int size; //该结点子孙数（包括结点本身）
     private Strategy strategy;
+
     public BinTreeNode() {
 
         this(null);
@@ -180,6 +181,12 @@ public class BinTreeNode implements Node {
 //    }
 
 
+    /**
+     * 先序遍历
+     * middle->left -> right
+     *
+     * @return
+     */
     public Iterator preOrder() {
 
 
@@ -188,6 +195,23 @@ public class BinTreeNode implements Node {
         preOrderTraverse(this.root, list);
 
         return list.elements();
+    }
+
+    /**
+     * 先序 遍历
+     * middle -> left -> right
+     *
+     * @param root
+     * @param list
+     */
+    private void preOrderTraverseRe(BinTreeNode root, LinkedList list) {
+        if (root == null) {
+            return;
+        }
+        list.insertLast(root);
+        inOrderTraverse(root.getLChild(), list);
+
+        inOrderTraverse(root.getRChild(), list);
 
 
     }
@@ -202,12 +226,9 @@ public class BinTreeNode implements Node {
             return;
         }
         BinTreeNode p = root;
-
         Stack stack = new StackSLinked();
-
         while (p != null) {
             while (p != null) {
-
                 // 插入 根节点
                 list.insertLast(p);
 
@@ -216,8 +237,6 @@ public class BinTreeNode implements Node {
                 if (root.hasRChild()) {
                     stack.push(RNode);
                 }
-
-
                 p = p.getLChild();
             }
             if (!stack.isEmpty()) {
@@ -237,7 +256,15 @@ public class BinTreeNode implements Node {
 
 
     }
-// 中序 遍历
+
+
+    /**
+     * 中序 遍历
+     * left ->middle->right
+     *
+     * @param root
+     * @param list
+     */
     private void inOrderTraverse(BinTreeNode root, LinkedList list) {
         if (root == null) {
             return;
@@ -250,7 +277,8 @@ public class BinTreeNode implements Node {
 
 
     }
-// 中序 遍历 stack
+
+    // 中序 遍历 stack
     private void inOrderTraverseRe(BinTreeNode root, LinkedList list) {
         if (root == null) {
             return;
@@ -278,7 +306,13 @@ public class BinTreeNode implements Node {
 
     }
 
-//后序遍历 递归
+    /**
+     * 后序遍历 递归
+     * right -> middle -> left
+     *
+     * @param root
+     * @param list
+     */
     private void postOrderTraverseRe(BinTreeNode root, LinkedList list) {
         if (root == null) {
             return;
@@ -291,7 +325,7 @@ public class BinTreeNode implements Node {
         list.insertLast(root);
     }
 
-        // 后序 遍历 的 非 递归
+    // 后序 遍历 的 非 递归
     private void postOrderTraverse(BinTreeNode root, LinkedList list) {
         if (root == null) {
             return;
@@ -315,21 +349,21 @@ public class BinTreeNode implements Node {
             }
             if (!s.isEmpty()) {
                 //取出 栈顶 根 结点 访问
-                p= (BinTreeNode) s.pop();
+                p = (BinTreeNode) s.pop();
                 list.insertLast(p);
             }
 
 // 满足 条件 时， 说明 栈顶 根 节点 右子树 已 访问， 应 出 栈 访问 之
             while (!s.isEmpty() && ((BinTreeNode) s.peek()).getRChild() == p) {
-                p= (BinTreeNode) s.pop();
+                p = (BinTreeNode) s.pop();
                 list.insertLast(p);
             }
 // 转 向 栈顶 根 结点 的 右子树 继续 后序 遍历
             if (!s.isEmpty()) {
-                p=((BinTreeNode)s.peek()).getRChild();
+                p = ((BinTreeNode) s.peek()).getRChild();
 
-            }else{
-                p=null;
+            } else {
+                p = null;
             }
 
         }
@@ -337,21 +371,21 @@ public class BinTreeNode implements Node {
 
     }
 
-
-    /***
+    /**
      * 安 层 遍历   使用 queue 队列
+     *
+     * @return
      */
+    public Iterator levelOrder() {
 
-        public Iterator levelOrder(){
-
-            LinkedList linkedList = new LinkedListDLNode();
-
-
-            levelOrderTraverse(this.root, linkedList);
+        LinkedList linkedList = new LinkedListDLNode();
 
 
-            return  linkedList.elements();
-        }
+        levelOrderTraverse(this.root, linkedList);
+
+
+        return linkedList.elements();
+    }
 
     private void levelOrderTraverse(BinTreeNode root, LinkedList linkedList) {
 
@@ -366,16 +400,16 @@ public class BinTreeNode implements Node {
             BinTreeNode p = (BinTreeNode) q.dequeue();
 
             linkedList.insertLast(p);
-              if (p.hasLChild()) {
-                    // 将 p 的 非空 左右 孩子 依次 入 队
-                    q.enqueue(p.getLChild());
-                }
-                if (p.hasRChild()) {
-                    q.enqueue(p.getRChild());
-                }
+            if (p.hasLChild()) {
+                // 将 p 的 非空 左右 孩子 依次 入 队
+                q.enqueue(p.getLChild());
             }
-
+            if (p.hasRChild()) {
+                q.enqueue(p.getRChild());
+            }
         }
+
+    }
 
     /***
      *  在 树中 查找 元素 object 对应 的 结点
@@ -398,7 +432,7 @@ public class BinTreeNode implements Node {
             return null;
         }
         if (strategy.equal(root.getData(), object)) {
-            return  root;
+            return root;
         }
         BinTreeNode v = searchE(root.getLChild(), object);
         if (v == null) {
@@ -408,7 +442,7 @@ public class BinTreeNode implements Node {
     }
 
 
-    public void testpreOrder(BinTreeNode root,LinkedList list){
+    public void testpreOrder(BinTreeNode root, LinkedList list) {
 //        1.   stack 辅助
 //        2.  先 序 遍历  新 结点 ，再 左 结点 ，再 右 结点
 //        3. 将 右节点 入栈
@@ -417,7 +451,7 @@ public class BinTreeNode implements Node {
             // 向 左 结点 走到底
             while (root != null) {
                 list.insertLast(root);
-                if(root.hasRChild()) stack.push(root.getRChild());
+                if (root.hasRChild()) stack.push(root.getRChild());
                 root = root.getLChild();
             }
             //  遍历 右节点
@@ -443,16 +477,17 @@ public class BinTreeNode implements Node {
     }
     // 汉诺塔
 
-    public void hanio (int n, char x, char y, char z){
-        if (n==1) move ( x, n, z);
+    public void hanio(int n, char x, char y, char z) {
+        if (n == 1) move(x, n, z);
         else {
-            hanio (n-1, x, z, y);
-            move (x, n, z);
-            hanio(n-1, y, x, z);
+            hanio(n - 1, x, z, y);
+            move(x, n, z);
+            hanio(n - 1, y, x, z);
         }
     }
+
     private void move(char x, int n, char y) {
-        System.out.println ("Move " + n + " from " + x + " to " + y);
+        System.out.println("Move " + n + " from " + x + " to " + y);
     }
 
 

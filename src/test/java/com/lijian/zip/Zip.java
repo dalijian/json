@@ -23,7 +23,7 @@ public class Zip {
 //out.setMethod(ZipOutputStream.DEFLATED);
             byte data[] = new byte[BUFFER];
 // get a list of files from current directory
-            File f = new File("C:\\Users\\lijian\\Desktop\\NIO");
+            File f = new File("C:\\Users\\lijian\\Desktop\\netty");
 
             File[] files = f.listFiles();
             for (int i = 0; i < files.length; i++) {

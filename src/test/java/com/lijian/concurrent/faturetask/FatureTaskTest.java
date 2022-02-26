@@ -18,6 +18,7 @@ public class FatureTaskTest {
             return "当前线程名:" + Thread.currentThread().getName();
         });
         futureTask.run();
+
         ExecutorService executorService = Executors.newFixedThreadPool(1);
 
         Result r = new Result();

@@ -32,7 +32,4 @@ public class DeathLock {
         }
     }
 
-    public static void main(String[] args) {
-
-    }
 }

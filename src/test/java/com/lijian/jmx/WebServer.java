@@ -16,7 +16,7 @@ public class WebServer implements WebServerMBean {
         WebServer ws = new WebServer();
         MBeanServer server = ManagementFactory.getPlatformMBeanServer();
         server.registerMBean(ws, new ObjectName("myapp:type=webserver,name=Port 8080"));
-        Thread.sleep(60000);
+        Thread.sleep(600000);
     }
 
     @Override

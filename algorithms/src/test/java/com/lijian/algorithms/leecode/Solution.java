@@ -1087,6 +1087,7 @@ public class Solution {
             System.out.println(stack);
             return;
         }
+        // i 不是 从 0 开始
         for (int i = cur; i < shu.length; i++) {
             if (!stack.contains(shu[i])) {
                 stack.add(shu[i]);
@@ -1621,52 +1622,7 @@ public class Solution {
         System.out.println();
     }
 
-    @Test
-    public void removeNthFromEndTest() {
-        ListNode head = new ListNode(1);
-        ListNode head2 = new ListNode(2);
-        ListNode head3 = new ListNode(3);
-        ListNode head4 = new ListNode(4);
-        ListNode head5 = new ListNode(5);
-//        head.next=head2;
-//        head.next.next=head3;
-//        head.next.next.next=head4;
-//        head.next.next.next.next=head5;
-//        拿到 ListNode  长度
 
-        removeNthFromEnd(head, 1);
-    }
-
-    public ListNode removeNthFromEnd(ListNode head, int len) {
-        ListNode temp = head;
-        int length = 0;         // 这里 为什么 temp 不随着 head 改变 ？？
-        while (head != null) {
-            length++;
-            head = head.next;
-        }
-        return removeNthFromEndRe(temp, len, 0, length);
-    }
-
-
-    public ListNode removeNthFromEndRe(ListNode head, int n, int i, int length) {
-
-        if (length == n) {
-            return head.next;
-        }
-        if (head == null) {
-            return null;
-        }
-        ListNode node = null;
-        node = head;
-        i++;
-        if (length - i == n) {
-            node.next = removeNthFromEndRe(head.next.next, n, i, length);
-            return node;
-        }
-        node.next = removeNthFromEndRe(head.next, n, i, length);
-        //为什么 return node, 与 return head  ，head 与 node 相等
-        return node;
-    }
 
 
     // 生成 有效 括号

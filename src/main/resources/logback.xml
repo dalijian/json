@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!--scan =true  配置 文件 修改时 自动加载，debug = false  不展示 logback 内部状态-->
 <configuration scan="true" scanPeriod="60 seconds" debug="false">

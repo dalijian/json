@@ -11,3 +11,5 @@ Web 资源可以有不同的表现形式，服务端与客户端之间需要一�
     2. Consumes 标注用于指定请求体的数据格式；作为客户端，
     3. Accept 请求头用于选择响应体的数据格式，
     4. Content-Type 请求头用于标识请求体的数据格式。
+    
+### jaxb 实现 xml to java bean ,java bean to xml 

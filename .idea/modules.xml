@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/go_jvm/go_jvm.iml" filepath="$PROJECT_DIR$/go_jvm/go_jvm.iml" />
       <module fileurl="file://$PROJECT_DIR$/jar_package/jar_package.iml" filepath="$PROJECT_DIR$/jar_package/jar_package.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-agent/java-agent.iml" filepath="$PROJECT_DIR$/java-agent/java-agent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webservice/webservice.iml" filepath="$PROJECT_DIR$/webservice/webservice.iml" />
     </modules>
   </component>
 </project>

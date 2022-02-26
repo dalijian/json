@@ -3,6 +3,8 @@ package com.lijian.algorithms.heap;
 //1. 动态 数据 处理 top K
 //2. 维护 k 长度的 priorityQueue
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
@@ -17,6 +19,8 @@ public class TopM {
     volatile PriorityQueue<String> priorityQueue;
     List<String> list;
 
+    public TopM() {
+    }
 
     public TopM(int size) {
 
@@ -55,16 +59,13 @@ public class TopM {
                 topM.add(UUID.randomUUID().toString());
             }
         }).start();
-
         try {
             TimeUnit.SECONDS.sleep(1);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         new Thread(() -> {
-
             while (true) {
-
                 System.out.println(topM.getMax());
             }
         }).start();
@@ -78,12 +79,9 @@ public class TopM {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
         }
         return priorityQueue.remove();
-
     }
-
 
 }
 

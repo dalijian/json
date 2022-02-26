@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+    <employee>
+        <userId>johnsmith@company.com</userId>
+        <password>abc123_</password>
+        <name>John Smith</name>
+        <age>24</age>
+        <gender>Male</gender>
+    </employee>
+    <employee>
+        <userId>christinechen@company.com</userId>
+        <password>123456</password>
+        <name>christine chen</name>
+        <age>27</age>
+        <gender>Female</gender>
+    </employee>
+</employees>

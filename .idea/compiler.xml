@@ -9,9 +9,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="algorithms" />
         <module name="antlr" />
+        <module name="design_pattern" />
         <module name="excel-chart" />
         <module name="java-utils" />
         <module name="jettyjerseyrestful" />
+        <module name="lyz_yibao" />
         <module name="muti_thread" />
         <module name="r2dbc" />
         <module name="selenium" />
@@ -20,6 +22,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="dom4j" target="1.5" />
       <module name="jetty_restful" target="8" />
       <module name="r2jdbc" target="8" />
       <module name="tomcat_embed" target="1.5" />

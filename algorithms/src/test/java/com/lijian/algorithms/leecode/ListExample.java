@@ -144,8 +144,6 @@ public class ListExample {
 
         head.next = deleteDuplicates(head.next);
         return head;
-
-
     }
 
 
@@ -335,6 +333,18 @@ public class ListExample {
         }
     }
 
+    @Test
+    public void reverseListWhileTest() {
+        ListNode listNode = new ListNode(1);
+        listNode.next = new ListNode(2);
+        listNode.next.next = new ListNode(3);
+        ListNode result = reverseListWhile(listNode);
+        while (result != null) {
+            System.out.println(result.val);
+            result = result.next;
+        }
+    }
+
     //206. 反转链表-递归
     public ListNode reverseList2(ListNode head) {
         if (head == null || head.next == null) return head;
@@ -352,8 +362,8 @@ public class ListExample {
         while (node != null) {
             next = node.next;
             node.next = pre;  // 第一个 node  拿到 当前值 ，  将 之前的  node 设置 成 现在 的 next 值，
-            pre = node;        // 第一 次   pre   等于 当前值，                                    ，将
-            node = next;
+            pre = node;        // 第一 次   pre   等于 当前值,将
+            node = next;        // next 就是 中间 传递变量 使用
         }
         return pre;
     }
@@ -367,6 +377,7 @@ public class ListExample {
         node.next = null;
         return p;
     }
+
 
     //  反转 链表
     public ListNode reverseList3(ListNode node) {
@@ -445,18 +456,22 @@ public class ListExample {
         return head;
     }
 
-    //141. 环形链表
+    //141. 环形链表 - 双指针
+
     public boolean hasCycle(ListNode head) {
-
-        int value = head.val;
-
-        while (head != null) {
-            if (head.next.val == value) {
-                return true;
-            }
-            head = head.next;
+        if (head == null || head.next == null) {
+            return false;
         }
-        return false;
+        ListNode slow = head;
+        ListNode fast = head.next;
+        while (slow != fast) {
+            if (fast == null || fast.next == null) {
+                return false;
+            }
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return true;
     }
 
     //203.移除链表元素
@@ -488,4 +503,135 @@ public class ListExample {
         return temp;
     }
 
+    @Test
+    public void removeNthFromEndTest() {
+        Solution.ListNode head = new Solution.ListNode(1);
+        Solution.ListNode head2 = new Solution.ListNode(2);
+        Solution.ListNode head3 = new Solution.ListNode(3);
+        Solution.ListNode head4 = new Solution.ListNode(4);
+        Solution.ListNode head5 = new Solution.ListNode(5);
+//        head.next=head2;
+//        head.next.next=head3;
+//        head.next.next.next=head4;
+//        head.next.next.next.next=head5;
+//        拿到 ListNode  长度
+
+        removeNthFromEnd(head, 1);
+    }
+
+    public Solution.ListNode removeNthFromEnd(Solution.ListNode head, int len) {
+        Solution.ListNode temp = head;
+        int length = 0;         // 这里 为什么 temp 不随着 head 改变 ？？
+        while (head != null) {
+            length++;
+            head = head.next;
+        }
+        return removeNthFromEndRe(temp, len, 0, length);
+    }
+
+
+    public Solution.ListNode removeNthFromEndRe(Solution.ListNode head, int n, int i, int length) {
+
+        if (length == n) {
+            return head.next;
+        }
+        if (head == null) {
+            return null;
+        }
+        Solution.ListNode node = null;
+        node = head;
+        i++;
+        if (length - i == n) {
+            node.next = removeNthFromEndRe(head.next.next, n, i, length);
+            return node;
+        }
+        node.next = removeNthFromEndRe(head.next, n, i, length);
+        //为什么 return node, 与 return head  ，head 与 node 相等
+        return node;
+    }
+
+
+    @Test
+    public void removeNthFromEnd2Test() {
+        Solution.ListNode head = new Solution.ListNode(1);
+        Solution.ListNode head2 = new Solution.ListNode(2);
+        Solution.ListNode head3 = new Solution.ListNode(3);
+        Solution.ListNode head4 = new Solution.ListNode(4);
+        Solution.ListNode head5 = new Solution.ListNode(5);
+        head.next = head2;
+        head.next.next = head3;
+        head.next.next.next = head4;
+        head.next.next.next.next = head5;
+//        拿到 ListNode  长度
+
+        removeNthFromEnd2(head, 2);
+        while (head != null) {
+            System.out.println(head.val);
+            head = head.next;
+        }
+    }
+
+    public Solution.ListNode removeNthFromEnd2(Solution.ListNode head, int len) {
+        int[] index = {0};
+        return removeNthFromEndRe2(head, len, 1, index);
+    }
+
+    /**
+     * 删除 链表 倒数 第几个 元素 ， 采用 递归 写法 ， 使用 int[] 传递 该元素 顺数 顺序 ，在 递归 返回 时 判断 删除 。
+     * 采用 隐式 传值， 不需要 通过 返回值 传参
+     *
+     * @param head
+     * @param n
+     * @param current_index
+     * @param asc_index
+     * @return
+     */
+    public Solution.ListNode removeNthFromEndRe2(Solution.ListNode head, int n, int current_index, int[] asc_index) {
+
+        if (head == null) {
+            asc_index[0] = current_index - n;
+            return null;
+        }
+        current_index++;
+        removeNthFromEndRe2(head.next, n, current_index, asc_index);
+        if (current_index == asc_index[0]) {
+            head.next = head.next.next;
+        }
+        return head;
+
+    }
+
+
+    @Test
+    public void recursionReverse() {
+        ListNode head = new ListNode(1);
+        ListNode head2 = new ListNode(2);
+        ListNode head3 = new ListNode(3);
+        ListNode head4 = new ListNode(4);
+        ListNode head5 = new ListNode(5);
+        head.next = head2;
+        head.next.next = head3;
+        head.next.next.next = head4;
+        head.next.next.next.next = head5;
+        ListNode listNode = recursion(head);
+
+
+        while (listNode != null) {
+            System.out.println(listNode.val);
+            listNode = listNode.next;
+        }
+    }
+
+    public ListNode recursion(ListNode head) {
+        if (head.next == null) {
+            return head;
+        }
+
+        ListNode temp = recursion(head.next);
+
+        head.next.next = head;
+        head.next = null;
+
+        return temp;
+    }
 }

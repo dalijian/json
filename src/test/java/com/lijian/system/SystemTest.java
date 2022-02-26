@@ -16,6 +16,7 @@ public class SystemTest {
     }
     @Test
     public void testDouble(){
+        System.out.println(0==new Double(0));
         System.out.println(0 == Double.valueOf(String.valueOf(new Double(0))).intValue());
 
     }

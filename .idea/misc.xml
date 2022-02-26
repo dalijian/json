@@ -16,6 +16,8 @@
         <option value="$PROJECT_DIR$/algorithms/pom.xml" />
         <option value="$PROJECT_DIR$/r2dbc/pom.xml" />
         <option value="$PROJECT_DIR$/selenium/pom.xml" />
+        <option value="$PROJECT_DIR$/lyz_yibao/pom.xml" />
+        <option value="$PROJECT_DIR$/design_pattern/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

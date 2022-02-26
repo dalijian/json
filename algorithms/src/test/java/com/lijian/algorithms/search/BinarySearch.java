@@ -5,14 +5,52 @@ import org.junit.Test;
 //二分查找法
 
 public class BinarySearch {
+    @Test
+    public void test2() {
 
+
+        int[] array = {1, 1, 1, 4, 9, 9, 10, 34, 45, 65, 78, 99};
+        int index = binarySearch(array, 0, array.length - 1, 9);
+        System.out.println(index);
+    }
+
+    /**
+     * 二分法 查询
+     *
+     * @param array
+     * @param left
+     * @param right
+     * @param target
+     * @return
+     */
+    public int binarySearch(int[] array, int left, int right, int target) {
+        if (left > right) {
+            return -1;
+        }
+        int middle = (left + right) / 2;
+
+        if (array[middle] == target) {
+            if (middle == 0 || array[middle - 1] != target) {
+                return middle;
+            }
+
+        }
+        // 查找 第一个 等于    array[middle] >= target   , 要使用  >=
+        // 查找 最后一个 等于    array[middle] <=  target   , 要使用 <=
+        if (array[middle] >= target) {
+            return binarySearch(array, left, middle - 1, target);
+        } else {
+            return binarySearch(array, middle + 1, right, target);
+        }
+
+    }
 
     @Test
     public void test() {
 
 
         int[] array = {1, 1, 1, 4, 9, 9, 10, 34, 45, 65, 78, 99};
-        int index = bSearchRecursionFirst(array, 0, array.length - 1, 1);
+        int index = bSearchRecursionFirst(array, 0, array.length - 1, 9);
 //        int num = bSearchFirst(99);
 //        System.out.println(num);
         System.out.println(index);

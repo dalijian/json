@@ -18,7 +18,7 @@ public class ProcessTest {
         String arr[] = {"CLASSPATH=D://","Path=C:\\Program Files\\Java\\jdk1.8.0_131\\bin"};//执行exec时的环境变量
 
         //exec方法第一个参数是执行的命令，第二个参数是环境变量，第三个参数是工作目录
-        Process pr = rt.exec("cmd /c javac a.java && java a", arr, new File("D://"));
+        Process pr = rt.exec("cmd /c javac a.java && java a", arr, new File("E://"));
 
         //获取输出流并转换成缓冲区
         BufferedWriter bout = new BufferedWriter(new OutputStreamWriter(pr.getOutputStream()));

@@ -2,6 +2,8 @@ package com.lijian.string;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Calendar;
+
 public class TestJVM {
     public static void main(String[] args) {
         create();
@@ -23,6 +25,6 @@ public class TestJVM {
         System.out.println(flag2);
         int flag3 = "2020-09-07".compareTo("2020-09-08");
         System.out.println(flag3);
-
+        Calendar.getInstance();
     }
 }
