@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{ISO8601} %p (%F:%L) %c - %m%n" />
+		</layout>
+	</appender>
+	<!-- 日志输出到文件，可以配置多久产生一个新的日志信息文件 -->
+	<appender name="DailyRollingFileAppender" class="org.apache.log4j.DailyRollingFileAppender">
+		<!-- 文件文件全路径名 -->
+		<param name="File" value="${user.dir}/log4j_blocked_test/log4j_blocked.log"/>
+		<param name="Append" value="true" />
+		<!-- 设置日志备份频率，默认：为每天一个日志文件 -->
+		<param name="DatePattern" value="'.'yyyy-MM-dd'.log'" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				   value="[%d{yyyy-MM-dd HH:mm:ss:SSS\} %-5p] [%L] [%t] %c{3\} %M{3\} - %m%n" />
+		</layout>
+	</appender>
+
+
+	<category name="com.lijian.log4j_blocked_test">
+		<priority value="all" />
+		<appender-ref ref="STDOUT"/>
+	</category>
+	<category name="com.c.AnObjectThread">
+		<priority value="all" />
+		<appender-ref ref="STDOUT"/>
+	</category>
+
+	<category name="com.main.RootLoggerThread">
+		<priority value="all" />
+		<appender-ref ref="STDOUT"/>
+	</category>
+
+	<category name="com.a.AnObject">
+		<priority value="all" />
+		<appender-ref ref="STDOUT"/>
+	</category>
+	<!--<root>-->
+		<!--<priority value="info" />-->
+		<!--<appender-ref ref="STDOUT" />-->
+		<!--<appender-ref ref="DailyRollingFileAppender" />-->
+	<!--</root>-->
+</log4j:configuration>

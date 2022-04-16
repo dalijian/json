@@ -4,7 +4,31 @@ import org.junit.Test;
 
 public class DP {
 
-    // 使用 回溯 算法 + 备忘录
+
+    @Test
+    public void f_re_Test() {
+        f_re(0, 0);
+        System.out.println(maxW);
+    }
+
+    // 回溯算法实现。注意：我把输入的变量都定义成了成员变量。
+//private int maxW = Integer.MIN_VALUE; // 结果放到 maxW 中
+//private int[] weight = {2，2，4，6，3};  // 物品重量
+//private int n = 5; // 物品个数
+//private int w = 9; // 背包承受的最大重量
+    public void f_re(int i, int cw) { // 调用 f(0, 0)
+        if (cw == w || i == n) { // cw==w 表示装满了，i==n 表示物品都考察完了
+            if (cw > maxW) maxW = cw;
+            return;
+        }
+        f_re(i + 1, cw); // 选择不装第 i 个物品
+        if (cw + weight[i] <= w) {
+            f_re(i + 1, cw + weight[i]); // 选择装第 i 个物品
+        }
+    }
+
+
+    // 使用 回溯 算法 + 备忘录 用来 减少 相同状态 的 重复计算
     private int maxW = Integer.MIN_VALUE; // 结果放到maxW中
     private int[] weight = {2, 2, 4, 6, 3};  // 物品重量
     private int n = 5; // 物品个数
@@ -35,24 +59,31 @@ public class DP {
 
     }
 
-
-    //    weight:物品重量，n:物品个数，w:背包可承载重量
+    /**
+     * weight:物品重量，n:物品个数，w:背包可承载重量 , n 个 物品 只能 按 顺序 决定 是否 放入, 不是 每次 决定 放入 哪个 ，不是 组合
+     *
+     * @param weight
+     * @param n
+     * @param w
+     * @return
+     */
     public int knapsack(int[] weight, int n, int w) {
         boolean[][] states = new boolean[n][w + 1]; // 默认值false
         states[0][0] = true;  // 第一行的数据要特殊处理，可以利用哨兵优化
         if (weight[0] <= w) {
             states[0][weight[0]] = true;
         }
-        for (int i = 1; i < n; ++i) { // 动态规划状态转移
-            //  两条 动态 规划 路线
-            for (int j = 0; j <= w; ++j) {// 不把第i个物品放入背包   // 由于 我们 不知道 第 i个 物品 的 重量 ， 所以 要使用 循环  判断 第 i个 物品的 重量
+        for (int i = 1; i < n; ++i) { // 动态规划状态转移 ， 控制 n 个 物品 放入
+            //  两条 动态 规划 路线      ,查 动态规划状态 转移 表  ， 依据 上次 转移 状态 决定 本次 转移 结果
+            for (int j = 0; j <= w; ++j) {
+                // 不把第i个物品放入背包 // 由于 我们 不知道 第 i个 物品 的 重量 ， 所以 要使用 循环  判断 第 i个 物品的 重量
                 if (states[i - 1][j] == true) states[i][j] = states[i - 1][j];
             }
             for (int j = 0; j <= w - weight[i]; ++j) {//把第i个物品放入背包
                 if (states[i - 1][j] == true) states[i][j + weight[i]] = true;
             }
         }
-        for (int i = w; i >= 0; --i) { // 输出结果
+        for (int i = w; i >= 0; --i) { // 输出结果,  状态转移表 最后 一行，最后一行 表示 当 物品 全部 放入 之后 的 总重量
             if (states[n - 1][i] == true) return i;
         }
         return 0;
@@ -69,7 +100,13 @@ public class DP {
 
     }
 
-
+    /**
+     * 将 问题 转成 了 组合 模式， 外层 for 循环 控制 要 从 集合 中 选择 的 个数 ，内存 for 循环 控制 放入 哪一个 元素 。
+     * @param items
+     * @param n
+     * @param w
+     * @return
+     */
     public static int knapsack2(int[] items, int n, int w) {
         boolean[] states = new boolean[w + 1]; // 默认值false
         states[0] = true;  // 第一行的数据要特殊处理，可以利用哨兵优化
@@ -131,6 +168,14 @@ public class DP {
 
     private int minDist = Integer.MAX_VALUE; // 全局变量或者成员变量
 
+    /**
+     *  回溯 算法 倒退
+     * @param i
+     * @param j
+     * @param dist
+     * @param w
+     * @param n
+     */
     // 调用方式：minDistBacktracing(0, 0, 0, w, n);
     public void minDistBT(int i, int j, int dist, int[][] w, int n) {
         // 到达了n-1, n-1这个位置了，这里看着有点奇怪哈，你自己举个例子看下
@@ -146,6 +191,12 @@ public class DP {
         }
     }
 
+    /**
+     * 状态 转移 矩阵
+     * @param matrix
+     * @param n
+     * @return
+     */
     //最短 路径
     public int minDistDP(int[][] matrix, int n) {
         int[][] states = new int[n][n];
@@ -261,7 +312,6 @@ public class DP {
         if (z < minv) minv = z;
         return minv;
     }
-
 
 
 }

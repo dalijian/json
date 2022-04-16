@@ -35,7 +35,7 @@ public class FunctionCondition implements Runnable {
                 System.out.println(Thread.currentThread().getName()+",开始等待");
                 condition.await();
 
-               {
+                {
                     System.out.println(Thread.currentThread().getName()+",等待结束");
                 }
             }

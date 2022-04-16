@@ -27,7 +27,7 @@ public class ServerConnect {
         sc.configureBlocking(false);
         sc.register(key.selector(), SelectionKey.OP_READ, ByteBuffer.allocateDirect(BUF_SIZE));
         // 将 channel 注册到 selector 上
-        //与Selector 一起使用时，channel必须处于 非阻塞模式下，这意味着不能将FileChannel与Selector一起使用，
+        // 与Selector 一起使用时，channel必须处于 非阻塞模式下，这意味着不能将FileChannel与Selector一起使用，
         // 因为FileChannel不能切换到非阻塞模式。而套接字通道都可以
 //        注意register()方法的第二个参数。这是一个“interest集合”，意思是在通过Selector监听Channel时对什么事件感兴趣。
 //        可以监听四种不同类型的事件：OP_CONNECT,OP_ACCEPT,OP_READ,OP_WRITE

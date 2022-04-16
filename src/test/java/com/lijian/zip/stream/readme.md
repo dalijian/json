@@ -1,0 +1,1 @@
+1. 使用GzipOutputStream 压缩 对象 

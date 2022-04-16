@@ -85,7 +85,8 @@ public class Demo {
 
 //            fileChannel.read(byteBuffer);  //Reads a sequence of bytes from this channel into the given buffer.
             while (fileChannel.read(byteBuffer) != -1) {
-                byteBuffer.flip();   ;// 翻转
+                byteBuffer.flip();
+                ;// 翻转
                 while (byteBuffer.hasRemaining()) {
 //                    get() increment ,  汉字 占用 两个 字节， 所以  byte 转  char  会乱码
                     System.out.print((char) byteBuffer.get());   //Reads the byte at this buffer's current position, and then increments the position.
@@ -225,9 +226,10 @@ public class Demo {
             e.printStackTrace();
         }
     }
-/// 使用 FileChannel.map 复制文件
+
+    /// 使用 FileChannel.map 复制文件
 //    FileChannel提供了map方法来把文件影射为内存映像文件
-    public static void main(String args[]){
+    public static void main(String args[]) {
         RandomAccessFile f = null;
         try {
             f = new RandomAccessFile("C:/hinusDocs/hello.txt", "rw");
@@ -247,6 +249,7 @@ public class Demo {
             e.printStackTrace();
         }
     }
+
     /*耗时4350ms*/
     @Test
     public void ByteBufferReadTest() {
@@ -368,9 +371,6 @@ public class Demo {
     }
 
 
-
-
-
     public void UDPreveive() {
         DatagramChannel channel = null;
         try {
@@ -432,8 +432,6 @@ public class Demo {
     }
 
 
-
-
     @Test
     public void selectorTest() {
 
@@ -444,7 +442,6 @@ public class Demo {
 //        boolean isInterestedInWrite   = interestSet & SelectionKey.OP_WRITE;
 
     }
-
 
 
     @Test

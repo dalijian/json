@@ -21,7 +21,8 @@ public class NIOSocketServer extends Thread {
 	private Selector selector;
  
 	private ServerSocketChannel ssc;
- 
+
+
 	/**
 	 * @param args
 	 */
@@ -50,15 +51,17 @@ public class NIOSocketServer extends Thread {
 						if (key.isAcceptable()) {
 							doAcceptable(key);
 						}
-						if (key.isWritable()) {
-							doWriteMessage(key);
+						if (key.isConnectable()) {
+							doConnectable(key);
 						}
 						if (key.isReadable()) {
 							doReadMessage(key);
 						}
-						if (key.isConnectable()) {
-							doConnectable(key);
+						if (key.isWritable()) {
+							doWriteMessage(key);
 						}
+
+
 						iter.remove();
 					}
 				}
@@ -129,6 +132,7 @@ public class NIOSocketServer extends Thread {
 		while (buffer.hasRemaining()) {
 			sc.write(buffer);
 		}
+//		sc.close();
 //		 sk.interestOps(SelectionKey.OP_READ);
 	}
  

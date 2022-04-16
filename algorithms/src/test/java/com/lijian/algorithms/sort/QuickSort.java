@@ -20,8 +20,12 @@ public class QuickSort {
         }
  
         // 最后将base放到left位置。此时，left位置的左侧数值应该都比left小；
-        // 而left位置的右侧数值应该都比left大。
-        list[left] = base;
+        // 而left位置的右侧数值应该都比left大。 实际上 最后  left ==right
+//        list[left] = base;
+        list[right]= base;
+        if (left == right) {
+            System.out.println("left==right,left:"+left+",right:"+right);
+        }
         return left;
     }
  

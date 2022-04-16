@@ -38,7 +38,7 @@ public class Demo {
                     '}';
         }
     }
-
+    // 枚举类型 支持 values() 方法
     public static void main(String[] args) {
         for (FactorCalMethodParameters factorCalMethodParameters : FactorCalMethodParameters.values()) {
             System.out.println(factorCalMethodParameters.name());

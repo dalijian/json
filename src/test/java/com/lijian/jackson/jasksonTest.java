@@ -1,5 +1,6 @@
 package com.lijian.jackson;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -125,6 +126,26 @@ public class jasksonTest {
      */
     public static JavaType getCollectionType(Class<?> collectionClass, Class<?>... elementClasses) {
         return mapper.getTypeFactory().constructParametricType(collectionClass, elementClasses);
+    }
+
+
+    @Test
+    public void jsonCreatorTest(){
+
+
+        String json = "{\n" +
+                "  \"id\"   : 1234,\n" +
+                "  \"name\" : \"John\"\n" +
+                "}";
+
+        ObjectMapper objectMapper = new ObjectMapper();
+        try {
+            PersonImmutable person = objectMapper.readValue(json, PersonImmutable.class);
+
+            System.out.println(person);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }

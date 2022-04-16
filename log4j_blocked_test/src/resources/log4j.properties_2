@@ -1,0 +1,17 @@
+log4j.rootLogger=INFO, ConsoleAppender
+log4j.logger.com.c=INFO, ConsoleAppender
+log4j.logger.com.d=INFO, ConsoleAppender
+log4j.logger.com.lijian.log4j_blocked_test=INFO, ConsoleAppender
+log4j.logger.com.lijian.log4j_blocked_test.Log4jBlockedTest=INFO, ConsoleAppender
+log4j.additivity.com.d=false
+log4j.additivity.com.c=false
+log4j.additivity.com.e=false
+log4j.additivity.com.a=false
+log4j.additivity.com.a.AnObject=false
+# 只在 com.lijian.log4j_blocked_test.Log4jBlockedTest 中 输出 ，不查找 parent
+log4j.additivity.com.lijian.log4j_blocked_test.Log4jBlockedTest=false
+
+
+log4j.appender.ConsoleAppender=org.apache.log4j.ConsoleAppender
+log4j.appender.ConsoleAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.ConsoleAppender.layout.ConversionPattern=[%d{dd-MM-yyyy HH:mm:ss,SSS}][%-5p][%c] %M : %m%n

@@ -24,14 +24,14 @@ public class PathDemo {
     }
 
     @Test
-    public void divide(){
-        System.out.println(90/100);
+    public void divide() {
+        System.out.println(90 / 100);
     }
 
 
     @Test
-    public void loopMap(){
-Map<String,String> map = new HashMap<>();
+    public void loopMap() {
+        Map<String, String> map = new HashMap<>();
         for (int i = 0; i < 10000000; i++) {
 
             map.put(String.valueOf(i), String.valueOf(i));

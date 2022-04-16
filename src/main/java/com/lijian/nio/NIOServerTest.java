@@ -22,9 +22,11 @@ public class NIOServerTest {
         // configureBlocking 如果不设置非阻塞，register的时候会报异常
         // java.nio.channels.IllegalBlockingModeException
         serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
-
+        int max = 0;
         while (true) {
             int selected = selector.select();
+            max=Math.max(max,selected);
+            System.out.println("selector.select() max :"+max);
             if (selected > 0) {
                 Iterator<SelectionKey> iterator = selector.selectedKeys().iterator();
                 while (iterator.hasNext()) {
@@ -32,7 +34,7 @@ public class NIOServerTest {
                     iterator.remove();
                     if (selectionKey.isAcceptable()) {
                         System.err.println("Acceptable");
-                        SocketChannel socketChannel = serverSocketChannel.accept();
+                        SocketChannel socketChannel = serverSocketChannel.accept();// 新建 客户端 SocketChannel
                         socketChannel.configureBlocking(false);
                         socketChannel.register(selector, SelectionKey.OP_READ);
                     } else if (selectionKey.isReadable()) {
@@ -58,12 +60,16 @@ public class NIOServerTest {
                     } else if (selectionKey.isWritable()) {
                         System.err.println("Writable");
                         SocketChannel channel = (SocketChannel) selectionKey.channel();
-//                        String content = "向客户端发送数据 : " + System.currentTimeMillis();
+                        System.out.println("向客户端发送数据 : " + System.currentTimeMillis());
                         String content = ("HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\nhelloworld");
                         ByteBuffer buffer = ByteBuffer.wrap(content.getBytes());
                         channel.write(buffer);
-                        selectionKey.interestOps(SelectionKey.OP_READ);
-                        channel.close();
+
+//                        selectionKey.interestOps(SelectionKey.OP_READ);
+//                        client 请求 在 一个 connect 中 重复 读取 需要  使用 SelectionKey.OP_READ  因为 client interestOps(SelectionKey.OP_READ)
+                        selectionKey.interestOps(SelectionKey.OP_CONNECT);
+                        // http 请求 需要 close()
+//                        channel.close();
                     }
                 }
             }

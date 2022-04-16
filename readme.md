@@ -13,3 +13,19 @@ Web 资源可以有不同的表现形式，服务端与客户端之间需要一�
     4. Content-Type 请求头用于标识请求体的数据格式。
     
 ### jaxb 实现 xml to java bean ,java bean to xml 
+
+
+
+----------
+2022/4/3 21:10:12 
+#### crc32 checksum 校验 文件 类似 文件 的 hashcode 
+
+
+----------
+2022/4/9 23:00:58 
+###NIO
+1. selector.select() 只会 阻塞 
+2. selector.select() 返回 int 值 为 register  SelectionKey 数量 。与 http 请求数 无关
+3. 处理 SelectionKey.OP_READ 不能 关闭 channel 否则 就 不能 往 channel 写入 bufferByte ,SelectionKey.OP_WRITE 需要 关闭 channel  否则  selector.select() 不为0 不会 阻塞 
+4. SelectionKey 是channel 的 映射 ，存放 的 就是 channel
+
