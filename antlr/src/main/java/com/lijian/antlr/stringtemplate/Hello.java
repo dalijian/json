@@ -9,6 +9,6 @@ public class Hello {
         hello.add("name", "World");
         System.out.println(hello.render());
 
-        System.out.println("select * from orders where cust_id = 'SDYT987645".toUpperCase());
+        System.out.println("select * from orders where cust_id = 'SDYT987645'".toUpperCase());
     }
 }

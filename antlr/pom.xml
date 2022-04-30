@@ -11,12 +11,18 @@
     <name>antlr</name>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>antlr</artifactId>
+    <groupId>com.lijian</groupId>
 
     <dependencies>
         <dependency>
             <groupId>org.antlr</groupId>
             <artifactId>antlr4</artifactId>
             <version>4.9.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.antlr</groupId>
+            <artifactId>antlr-runtime</artifactId>
+            <version>4.3.1</version>
         </dependency>
         <dependency>
             <groupId>org.antlr</groupId>
