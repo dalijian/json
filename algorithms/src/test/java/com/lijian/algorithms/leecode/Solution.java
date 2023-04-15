@@ -1057,7 +1057,8 @@ public class Solution {
         for (int i =cur; i < array.length; i++) {
             if (!value.contains(array[i])){
                 value.add(array[i]);
-                f2List2(array, has + 1, targ,i, value, list);
+
+                f2List2(array, has+1, targ,i, value, list);
                 value.removeLast();
             }
         }
@@ -1625,7 +1626,7 @@ public class Solution {
 
 
 
-    // 生成 有效 括号
+    //leetCode 22. 生成 有效 括号
     //  回溯 算法 甩起来
 //    [
 //            "((()))",

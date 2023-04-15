@@ -36,6 +36,11 @@ public class StackExample {
         System.out.println(flag);
     }
 
+    /**
+     * 使用 栈 判断 是否 有效
+     * @param s
+     * @return
+     */
     public static boolean isValid(String s) {
 
         char[] chars = s.toCharArray();
