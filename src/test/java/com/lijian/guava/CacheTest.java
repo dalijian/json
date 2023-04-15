@@ -8,6 +8,7 @@ import com.google.common.cache.RemovalCause;
 import com.google.common.cache.RemovalListener;
 import com.google.common.cache.Weigher;
 import com.google.common.graph.Graph;
+import com.google.common.util.concurrent.RateLimiter;
 import org.junit.Test;
 import org.junit.platform.commons.logging.Logger;
 import org.junit.platform.commons.logging.LoggerFactory;
@@ -23,6 +24,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 //        缓存中存放的数据总量不会超出内存容量
 public class CacheTest {
     Logger log = LoggerFactory.getLogger(CacheTest.class);
+
+
     @Test
     public void test() throws ExecutionException {
 

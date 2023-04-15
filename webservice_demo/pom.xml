@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>groupId</groupId>
+    <artifactId>webservice-demo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <parent>
+        <artifactId>java_modules_parent</artifactId>
+        <groupId>com.lijian</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <!--<build>-->
+        <!--<plugins>-->
+
+            <!--&lt;!&ndash; 下面这个plugin&ndash;&gt;-->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-jar-plugin</artifactId>-->
+                <!--<configuration>-->
+                    <!--<archive>-->
+                        <!--<manifest>-->
+                            <!--<addClasspath>true</addClasspath>-->
+                            <!--<classpathPrefix>lib/</classpathPrefix>&lt;!&ndash;指定classpath的前缀&ndash;&gt;-->
+                            <!--<mainClass>com.lijian.webservice_demo.CxfClient</mainClass>&lt;!&ndash;指定主类的类名&ndash;&gt;-->
+                        <!--</manifest>-->
+                    <!--</archive>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+
+
+            <!--&lt;!&ndash;  &ndash;&gt;-->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-dependency-plugin</artifactId>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>copy-dependencies</id>-->
+                        <!--<phase>prepare-package</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>copy-dependencies</goal>-->
+                        <!--</goals>-->
+                        <!--<configuration>-->
+
+
+                            <!--&lt;!&ndash;指定outputDirectory&ndash;&gt;-->
+                            <!--<outputDirectory>${project.build.directory}/lib</outputDirectory>-->
+
+
+                            <!--&lt;!&ndash;-->
+                                <!--<outputDirectory>${project.build.directory}/classes/lib</outputDirectory>-->
+                                <!--Alternatively use ${project.build.directory}/classes/lib as OutputDirectory to integrate all jar-files into the main jar, but then you will need to add custom classloading code to load the jars.-->
+                                <!--&ndash;&gt;-->
+
+
+                            <!--<overWriteReleases>false</overWriteReleases>-->
+                            <!--<overWriteSnapshots>false</overWriteSnapshots>-->
+                            <!--<overWriteIfNewer>true</overWriteIfNewer>-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
+
+
+        <!--</plugins>-->
+    <!--</build>-->
+
+    <!--&lt;!&ndash; 项目依赖的jar包 &ndash;&gt;-->
+    <!--<dependencies>-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.cxf</groupId>-->
+            <!--<artifactId>cxf-rt-frontend-jaxws</artifactId>-->
+            <!--<version>3.1.8</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.cxf</groupId>-->
+            <!--<artifactId>cxf-rt-transports-http</artifactId>-->
+            <!--<version>3.1.8</version>-->
+        <!--</dependency>-->
+
+    <!--</dependencies>-->
+
+
+    <!--&lt;!&ndash; 指定工程编码为UTF-8-->
+    <!--这样maven install就不会发出警告 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!-->
+    <!--&ndash;&gt;-->
+    <!--<properties>-->
+        <!--<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
+    <!--</properties>-->
+
+</project>

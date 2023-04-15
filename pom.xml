@@ -5,21 +5,34 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.lijian</groupId>
-    <artifactId>json</artifactId>
+    <artifactId>java_modules_parent</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>jetty-jersey-restful</module>
-        <!--<module>jetty_restful</module>-->
-        <!--<module>r2jdbc</module>-->
-        <module>spi</module>
-        <module>tomcat_embed</module>
-        <module>antlr</module>
-    </modules>
-    <packaging>pom</packaging>
-
-    <name>json Maven Webapp</name>
+    <name>java_modules_parent</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
+    <modules>
+        <module>algorithms</module>
+        <module>antlr</module>
+        <module>antlr_java</module>
+        <module>concurrent</module>
+        <module>design_pattern</module>
+        <module>dubbo_consumer</module>
+        <module>dubbo_test</module>
+        <module>excel-chart-master</module>
+        <module>hanlp_demo</module>
+        <module>jetty-jersey-restful</module>
+        <module>java-agent</module>
+        <module>java_doc</module>
+        <module>muti_thread</module>
+        <module>nio_test</module>
+        <module>spi</module>
+        <module>selenium</module>
+        <module>tomcat_embed</module>
+        <module>webservice_demo</module>
+
+
+    </modules>
+    <packaging>pom</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -221,7 +234,7 @@
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.belerweb/pinyin4j -->
 
-
+        <!--hanlp-->
         <dependency>
             <groupId>com.hankcs</groupId>
             <artifactId>hanlp</artifactId>
@@ -346,13 +359,15 @@
         <!--<artifactId>jetty-webapp</artifactId>-->
         <!--<version>9.2.15.v20160210</version>-->
         <!--</dependency>-->
-        <dependency>
-            <groupId>org.eclipse.jetty.aggregate</groupId>
-            <artifactId>jetty-all</artifactId>
-            <!--<version>9.2.15.v20160210</version>-->
-            <version>9.4.28.v20200408</version>
-            <!--<scope>test</scope>-->
-        </dependency>
+
+        <!--<dependency>-->
+            <!--<groupId>org.eclipse.jetty.aggregate</groupId>-->
+            <!--<artifactId>jetty-all</artifactId>-->
+            <!--&lt;!&ndash;<version>9.2.15.v20160210</version>&ndash;&gt;-->
+            <!--<version>9.4.28.v20200408</version>-->
+            <!--&lt;!&ndash;<scope>test</scope>&ndash;&gt;-->
+        <!--</dependency>-->
+
         <dependency>
             <groupId>org.glassfish.jersey.core</groupId>
             <artifactId>jersey-server</artifactId>
@@ -477,11 +492,11 @@
         </dependency>
 
 
-        <dependency>
-            <groupId>org.antlr</groupId>
-            <artifactId>ST4</artifactId>
-            <version>4.3</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.antlr</groupId>-->
+            <!--<artifactId>ST4</artifactId>-->
+            <!--<version>4.3</version>-->
+        <!--</dependency>-->
         <!--<dependency>-->
         <!--<groupId>org.dom4j</groupId>-->
         <!--<artifactId>dom4j</artifactId>-->
@@ -529,7 +544,148 @@
             <scope>test</scope>
         </dependency>
 
+        <!--jackson 转 xml -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>2.9.9</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>2.9.9</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>2.9.9</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>2.9.9</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>edu.stanford.nlp</groupId>
+            <artifactId>stanford-corenlp</artifactId>
+            <version>3.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>edu.stanford.nlp</groupId>
+            <artifactId>stanford-corenlp</artifactId>
+            <version>3.9.2</version>
+            <classifier>models</classifier>
+        </dependency>
 
+
+        <!--<dependency>-->
+            <!--<groupId>fr.opensagres.xdocreport</groupId>-->
+            <!--<artifactId>fr.opensagres.poi.xwpf.converter.pdf-gae</artifactId>-->
+            <!--&lt;!&ndash;<version>2.0.1</version>&ndash;&gt;-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>fr.opensagres.xdocreport</groupId>-->
+            <!--<artifactId>fr.opensagres.poi.xwpf.converter.xhtml</artifactId>-->
+            <!--<version>2.0.2</version>-->
+        <!--</dependency>-->
+
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/fr.opensagres.xdocreport/fr.opensagres.xdocreport.converter.docx.xwpf &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>fr.opensagres.xdocreport</groupId>-->
+            <!--<artifactId>fr.opensagres.xdocreport.converter.docx.xwpf</artifactId>-->
+            <!--<version>2.0.1</version>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>com.aspose</groupId>-->
+            <!--<artifactId>aspose-words</artifactId>-->
+            <!--<version>15.8.0</version>-->
+            <!--<scope>system</scope>-->
+            <!--<systemPath>${project.basedir}/lib/aspose-words-15.8.0-jdk16.jar</systemPath>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.xhtmlrenderer</groupId>-->
+            <!--<artifactId>flying-saucer-pdf-itext5</artifactId>-->
+            <!--<version>9.1.18</version>-->
+        <!--</dependency>-->
+        <!-- FlyingSaucer依赖 https://mvnrepository.com/artifact/org.xhtmlrenderer/flying-saucer-pdf -->
+        <!--<dependency>-->
+            <!--<groupId>org.xhtmlrenderer</groupId>-->
+            <!--<artifactId>flying-saucer-pdf</artifactId>-->
+            <!--<version>9.0.1</version>-->
+        <!--</dependency>-->
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itextpdf</artifactId>
+            <version>5.5.13.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itextpdf</artifactId>
+            <version>5.5.13.2</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk15on</artifactId>
+            <version>1.64</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk15on</artifactId>
+            <version>1.64</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk15on</artifactId>
+            <version>1.64</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itextpdf</artifactId>
+            <version>5.5.13.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itextpdf</artifactId>
+            <version>5.5.13.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itextpdf</artifactId>
+            <version>5.5.13.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itextpdf</artifactId>
+            <version>5.5.13.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itextpdf</artifactId>
+            <version>5.5.13.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itextpdf</artifactId>
+            <version>5.5.13.2</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
 

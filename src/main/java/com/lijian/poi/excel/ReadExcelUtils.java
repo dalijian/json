@@ -1,13 +1,22 @@
 package com.lijian.poi.excel;
 
+import org.apache.poi.hssf.usermodel.DVConstraint;
+import org.apache.poi.hssf.usermodel.HSSFDataValidation;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.ss.util.CellRangeAddressList;
+import org.apache.poi.xssf.usermodel.XSSFDataValidation;
+import org.apache.poi.xssf.usermodel.XSSFDataValidationConstraint;
+import org.apache.poi.xssf.usermodel.XSSFDataValidationHelper;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Date;
@@ -22,6 +31,25 @@ public class ReadExcelUtils {
     private Workbook wb;
     private Sheet sheet;
     private Row row;
+
+    public ReadExcelUtils(InputStream inputStream,String ext) {
+        if(inputStream==null){
+            return;
+        }
+        try {
+            if(".xls".equals(ext)){
+                wb = new HSSFWorkbook(inputStream);
+            }else if(".xlsx".equals(ext)){
+                wb = new XSSFWorkbook(inputStream);
+            }else{
+                wb=null;
+            }
+        } catch (FileNotFoundException e) {
+            logger.error("FileNotFoundException", e);
+        } catch (IOException e) {
+            logger.error("IOException", e);
+        }
+    }
 
     public ReadExcelUtils(String filepath) {
         if(filepath==null){
@@ -151,5 +179,40 @@ public class ReadExcelUtils {
         }
         return cellvalue;
     }
-    
+
+
+
+
+    public static void write(InputStream inputStream) throws IOException, ClassNotFoundException {
+        // 初始一个workbook
+        XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
+        // 创建一个sheet
+        XSSFSheet sheet = workbook.getSheetAt(0);
+
+        XSSFDataValidationHelper dvHelper = new XSSFDataValidationHelper(sheet);
+
+// 下拉框可选的数据，作为约束
+        XSSFDataValidationConstraint dvConstraint =
+                (XSSFDataValidationConstraint) dvHelper.createExplicitListConstraint(new String[]{"a", "b", "c"});
+// 设置为下拉框的范围
+        CellRangeAddressList addressList =
+                new CellRangeAddressList(0, 65536, 3, 3);
+// 创建 DataValidation 对象
+        XSSFDataValidation validation =
+                (XSSFDataValidation)dvHelper.createValidation(dvConstraint, addressList);
+        validation.setShowErrorBox(true);
+
+// 作用于指定工作表
+        sheet.addValidationData(validation);
+        try {
+            FileOutputStream outputStream = new FileOutputStream("test_categray.xlsx");
+
+            workbook.write(outputStream);
+            outputStream.flush();
+            outputStream.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }        workbook.close();
+    }
+
 }

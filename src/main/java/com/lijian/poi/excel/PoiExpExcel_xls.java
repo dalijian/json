@@ -46,7 +46,7 @@ public class PoiExpExcel_xls {
 			cell2.setCellValue("男");
 		}
 		//创建一个文件
-		File file = new File("e:/poi_test.xls");
+		File file = new File("poi_test.xls");
 		try {
 
 			//将Excel内容存盘    Opens a {@link FileOutputStream} for the specified file, checking and

@@ -44,7 +44,8 @@ public class PoiExpExcel2_xlsx {
 			cell2.setCellValue("男");
 		}
 		//创建一个文件
-		File file = new File("e:/poi_test.xlsx");
+		File file = new File("./poi_test.xlsx");
+		System.out.println(file.getAbsolutePath());
 		try {
 			file.createNewFile();
 			//将Excel内容存盘

@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class RegexTest {
+public class  RegexTest {
     @Test
     public void dateTest() {
         Pattern pattern = Pattern.compile("(.*?)\\[");

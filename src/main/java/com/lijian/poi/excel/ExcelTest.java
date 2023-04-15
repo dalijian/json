@@ -1,12 +1,16 @@
 package com.lijian.poi.excel;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class ExcelTest {
-    public static void main(String[] args) {
-        ReadExcelUtils readExcelUtils = new ReadExcelUtils("C:\\Users\\lijian\\Desktop\\BI\\bi查询.xlsx");
+    public static void main(String[] args) throws FileNotFoundException {
+
+
+        ReadExcelUtils readExcelUtils = new ReadExcelUtils(new FileInputStream("C:\\Users\\lijian\\IdeaProjects\\json\\100thousand_xls.xls"),".xls");
 
         try {
             LinkedHashMap<Integer,LinkedHashMap<String,Object>> resultMap = readExcelUtils.readExcelContent();
