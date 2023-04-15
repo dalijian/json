@@ -1,0 +1,1 @@
+1. ANTLR 的 ParseTreeWalker 在 每次 访问 和 离开 节点的时候 会 分别 触发 对应规则子树 的 enter 和 exit 方法

@@ -1,0 +1,2 @@
+vendor_name,Trip_Pickup_DateTime,Trip_Dropoff_DateTime,Passenger_Count,Trip_Distance,Start_Lon,Start_Lat,Rate_Code,store_and_forward,End_Lon,End_Lat,Payment_Type,Fare_Amt,surcharge,mta_tax,Tip_Amt,Tolls_Amt,Total_Amt
+VTS,2009-01-04 02:52:00,2009-01-04 03:02:00,1,2.6299999999999999,-73.991956999999999,40.721567,,,-73.993803,40.695922000000003,CASH,8.9000000000000004,0.5,,0,0,9.4000000000000004
